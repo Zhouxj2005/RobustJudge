@@ -1,0 +1,332 @@
+{
+    "0": {
+        "qwen3.5-plus": {
+            "qwen3.5-plus": [
+                [
+                    {
+                        "rubric_index": 1,
+                        "description": "The response contains no more than 50 words (including numbers and punctuation).",
+                        "weight": 10,
+                        "is_met": true,
+                        "score": 10,
+                        "evidence": "回答共 46 个单词（NAME_1, Tuesday, World, Cross-Country, Championships, fearing, it, may, disrupt, her, London, Marathon, training, While, UK, Athletics, and, teammates, value, potential, contribution, they, fully, understand, dilemma, support, final, choice 等），未超过 50 词限制。"
+                    },
+                    {
+                        "rubric_index": 2,
+                        "description": "The summary clearly identifies NAME_1 and the pending decision regarding participation in the World Cross‑Country Championships.",
+                        "weight": 10,
+                        "is_met": true,
+                        "score": 10,
+                        "evidence": "回答首句明确提及 'NAME_1 has extra time... to decide on competing in the World Cross-Country Championships'，完全符合要求。"
+                    },
+                    {
+                        "rubric_index": 3,
+                        "description": "The response is a concise summary that does not copy full sentences from the source text.",
+                        "weight": 9,
+                        "is_met": true,
+                        "score": 9,
+                        "evidence": "回答是对原文的重述和概括，未直接复制原文中的完整句子结构。"
+                    },
+                    {
+                        "rubric_index": 4,
+                        "description": "The summary explicitly states that the athlete is deciding whether to compete in the World Cross‑Country Championships because it may disrupt her London Marathon preparation.",
+                        "weight": 9,
+                        "is_met": true,
+                        "score": 9,
+                        "evidence": "回答中明确写道 'fearing it may disrupt her London Marathon training'，因果关系清晰。"
+                    },
+                    {
+                        "rubric_index": 5,
+                        "description": "The summary accurately states that NAME_1 has been granted extra time and that the decision is not yet final.",
+                        "weight": 9,
+                        "is_met": true,
+                        "score": 9,
+                        "evidence": "回答提到 'has extra time until Tuesday to decide'，表明时间已延长且决定尚未做出。"
+                    },
+                    {
+                        "rubric_index": 6,
+                        "description": "The summary mentions the deadline (Tuesday) or extra time granted for the decision.",
+                        "weight": 8,
+                        "is_met": true,
+                        "score": 8,
+                        "evidence": "回答明确指出 'until Tuesday'，符合考点要求。"
+                    },
+                    {
+                        "rubric_index": 7,
+                        "description": "The summary identifies the athlete as a former world cross‑country champion or indicates her high‑status experience.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答中未提及 NAME_1 曾是世界冠军或其过往荣誉（如 'world cross-country champion in 2001 and 2002'），缺失关键身份信息。"
+                    },
+                    {
+                        "rubric_index": 8,
+                        "description": "The summary notes that the athlete would be a huge asset or significantly strengthen the GB team if she competes.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答仅说 'value her potential contribution'，未使用 'huge asset' 或表达同等强度的 'significantly strengthen' 含义，力度不足，判定为不满足。"
+                    },
+                    {
+                        "rubric_index": 9,
+                        "description": "The summary states that the athlete's marathon training and individual goals are a valid priority in her decision.",
+                        "weight": 7,
+                        "is_met": true,
+                        "score": 7,
+                        "evidence": "回答提到 'disrupt her London Marathon training' 并指出大家 'support her final choice'，隐含了其优先级的合理性。"
+                    },
+                    {
+                        "rubric_index": 10,
+                        "description": "The summary captures that UK Athletics wants her to run, while teammates would understand if she prioritizes the marathon.",
+                        "weight": 7,
+                        "is_met": true,
+                        "score": 7,
+                        "evidence": "回答涵盖 'UK Athletics and teammates value her potential contribution' 以及 'support her final choice'，体现了双方态度。"
+                    },
+                    {
+                        "rubric_index": 11,
+                        "description": "The summary correctly names both the World Cross‑Country Championships and the London Marathon as the events discussed.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答完整包含了 'World Cross-Country Championships' 和 'London Marathon' 两个专有名词。"
+                    },
+                    {
+                        "rubric_index": 12,
+                        "description": "The summary indicates that UK Athletics and teammates understand and accept her dilemma without blaming her.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答明确指出 'fully understand her dilemma and support her final choice'，无责备之意。"
+                    },
+                    {
+                        "rubric_index": 13,
+                        "description": "The summary is presented as one (or at most two) continuous sentences, not as bullet points or fragmented fragments.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答由两个完整的连续句子组成，格式符合要求。"
+                    },
+                    {
+                        "rubric_index": 14,
+                        "description": "The summary omits unnecessary details such as specific dates, past victory years, or names of officials.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答未包含 '19 March', '17 April', '2001', '2002', 'NAME_3', 'NAME_5' 等具体细节，处理得当。"
+                    },
+                    {
+                        "rubric_index": 15,
+                        "description": "The language used is neutral or sympathetic, avoiding criticism or pressure toward either choice.",
+                        "weight": 5,
+                        "is_met": true,
+                        "score": 5,
+                        "evidence": "语气客观且充满理解（'fully understand', 'support'），无施压或批评色彩。"
+                    },
+                    {
+                        "rubric_index": 16,
+                        "description": "The summary contains 50 words or fewer, counting all tokens including numbers and punctuation.",
+                        "weight": 10,
+                        "is_met": true,
+                        "score": 10,
+                        "evidence": "经计数，总词数为 46 词，符合重复确认的字数限制要求。"
+                    },
+                    {
+                        "rubric_index": 17,
+                        "description": "The summary includes the exact phrase \"granted extra time\" describing the athlete's decision window.",
+                        "weight": 9,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答使用的是 'has extra time'，而非考点要求的精确短语 'granted extra time'，判定为不满足。"
+                    },
+                    {
+                        "rubric_index": 18,
+                        "description": "The word \"nomination\" appears anywhere in the summary, indicating the deadline context.",
+                        "weight": 8,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答全文未出现 'nomination' 一词，缺失该关键词。"
+                    },
+                    {
+                        "rubric_index": 19,
+                        "description": "The summary contains the exact phrase \"final decision\" to denote the athlete's concluding choice.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答使用的是 'final choice'，而非考点要求的精确短语 'final decision'，判定为不满足。"
+                    },
+                    {
+                        "rubric_index": 20,
+                        "description": "The summary uses the exact wording \"teammates understand\" to convey team sentiment.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答使用的是 'teammates ... fully understand'（中间插入了副词），并非考点要求的连续_exact wording_ 'teammates understand'，严格判定为不满足。"
+                    }
+                ],
+                [
+                    {
+                        "rubric_index": 1,
+                        "description": "The response contains no more than 50 words (including numbers and punctuation).",
+                        "weight": 10,
+                        "is_met": true,
+                        "score": 10,
+                        "evidence": "回答共 46 个单词（NAME_1, NAME_2 等计为 1 个词），未超过 50 词限制。"
+                    },
+                    {
+                        "rubric_index": 2,
+                        "description": "The summary clearly identifies NAME_1 and the pending decision regarding participation in the World Cross‑Country Championships.",
+                        "weight": 10,
+                        "is_met": true,
+                        "score": 10,
+                        "evidence": "回答首句明确指出 'NAME_1 has extra time... to decide on competing in the World Cross-Country Championships'，完全符合要求。"
+                    },
+                    {
+                        "rubric_index": 3,
+                        "description": "The response is a concise summary that does not copy full sentences from the source text.",
+                        "weight": 9,
+                        "is_met": true,
+                        "score": 9,
+                        "evidence": "回答是对原文的重述和概括，未直接复制原文中的完整句子。"
+                    },
+                    {
+                        "rubric_index": 4,
+                        "description": "The summary explicitly states that the athlete is deciding whether to compete in the World Cross‑Country Championships because it may disrupt her London Marathon preparation.",
+                        "weight": 9,
+                        "is_met": true,
+                        "score": 9,
+                        "evidence": "回答中提到 'fearing it may disrupt her London Marathon training'，明确表达了因果关系。"
+                    },
+                    {
+                        "rubric_index": 5,
+                        "description": "The summary accurately states that NAME_1 has been granted extra time and that the decision is not yet final.",
+                        "weight": 9,
+                        "is_met": true,
+                        "score": 9,
+                        "evidence": "回答指出 'has extra time... to decide' 且提及 'support her final choice'，表明决定尚未做出。"
+                    },
+                    {
+                        "rubric_index": 6,
+                        "description": "The summary mentions the deadline (Tuesday) or extra time granted for the decision.",
+                        "weight": 8,
+                        "is_met": true,
+                        "score": 8,
+                        "evidence": "回答明确提到 'until Tuesday' 作为截止时间。"
+                    },
+                    {
+                        "rubric_index": 7,
+                        "description": "The summary identifies the athlete as a former world cross‑country champion or indicates her high‑status experience.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答中未提及 NAME_1 是前世界冠军或其过往战绩（原文提到的 2001/2002 冠军身份缺失）。"
+                    },
+                    {
+                        "rubric_index": 8,
+                        "description": "The summary notes that the athlete would be a huge asset or significantly strengthen the GB team if she competes.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答仅提到 'value her potential contribution'，未使用 'huge asset' 或表达显著增强团队实力的具体措辞，根据严格标准判定为未完全匹配。"
+                    },
+                    {
+                        "rubric_index": 9,
+                        "description": "The summary states that the athlete's marathon training and individual goals are a valid priority in her decision.",
+                        "weight": 7,
+                        "is_met": true,
+                        "score": 7,
+                        "evidence": "回答提到 'disrupt her London Marathon training' 并指出团队理解她的 'dilemma'，隐含了训练的优先性。"
+                    },
+                    {
+                        "rubric_index": 10,
+                        "description": "The summary captures that UK Athletics wants her to run, while teammates would understand if she prioritizes the marathon.",
+                        "weight": 7,
+                        "is_met": true,
+                        "score": 7,
+                        "evidence": "回答涵盖 'UK Athletics... value her potential contribution' 以及 'teammates... support her final choice'，逻辑完整。"
+                    },
+                    {
+                        "rubric_index": 11,
+                        "description": "The summary correctly names both the World Cross‑Country Championships and the London Marathon as the events discussed.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答准确包含了 'World Cross-Country Championships' 和 'London Marathon' 两个专有名词。"
+                    },
+                    {
+                        "rubric_index": 12,
+                        "description": "The summary indicates that UK Athletics and teammates understand and accept her dilemma without blaming her.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答明确指出 'fully understand her dilemma and support her final choice'，体现了无责备的态度。"
+                    },
+                    {
+                        "rubric_index": 13,
+                        "description": "The summary is presented as one (or at most two) continuous sentences, not as bullet points or fragmented fragments.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答由两个完整的连续句子组成，符合格式要求。"
+                    },
+                    {
+                        "rubric_index": 14,
+                        "description": "The summary omits unnecessary details such as specific dates, past victory years, or names of officials.",
+                        "weight": 6,
+                        "is_met": true,
+                        "score": 6,
+                        "evidence": "回答省略了具体的日期（19 March, 17 April）、年份（2001, 2002）以及官员姓名（NAME_2, NAME_3 等），仅保留核心信息。"
+                    },
+                    {
+                        "rubric_index": 15,
+                        "description": "The language used is neutral or sympathetic, avoiding criticism or pressure toward either choice.",
+                        "weight": 5,
+                        "is_met": true,
+                        "score": 5,
+                        "evidence": "语气客观且充满同情（'fearing', 'dilemma', 'support'），无任何批评或施压内容。"
+                    },
+                    {
+                        "rubric_index": 16,
+                        "description": "The summary contains 50 words or fewer, counting all tokens including numbers and punctuation.",
+                        "weight": 10,
+                        "is_met": true,
+                        "score": 10,
+                        "evidence": "同考点 1，字数统计确认在 50 词以内。"
+                    },
+                    {
+                        "rubric_index": 17,
+                        "description": "The summary includes the exact phrase \"granted extra time\" describing the athlete's decision window.",
+                        "weight": 9,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答使用的是 'has extra time'，缺少了考点要求的精确短语 'granted extra time' 中的 'granted' 一词。"
+                    },
+                    {
+                        "rubric_index": 18,
+                        "description": "The word \"nomination\" appears anywhere in the summary, indicating the deadline context.",
+                        "weight": 8,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答中未出现 'nomination' 一词。"
+                    },
+                    {
+                        "rubric_index": 19,
+                        "description": "The summary contains the exact phrase \"final decision\" to denote the athlete's concluding choice.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答中使用的是 'final choice'，而非考点要求的精确短语 'final decision'。"
+                    },
+                    {
+                        "rubric_index": 20,
+                        "description": "The summary uses the exact wording \"teammates understand\" to convey team sentiment.",
+                        "weight": 7,
+                        "is_met": false,
+                        "score": 0,
+                        "evidence": "回答中写的是 'teammates value... and support...' 以及 'UK Athletics and teammates... understand'，虽然语义相近，但未出现连续的精确短语 'teammates understand'。"
+                    }
+                ]
+            ]
+        }
+    }
+}
