@@ -1,0 +1,45 @@
+{
+    "config": {
+        "n_samples": 8,
+        "bootstrap_B": 20,
+        "seed": 42,
+        "gen_models": [
+            "qwen2.5-72b"
+        ],
+        "judge_models": [
+            "Kimi-K2.5"
+        ]
+    },
+    "summary_by_judge": {
+        "Kimi-K2.5": {
+            "mean_query_r_sem": 0.011221366545451193,
+            "mean_avg_rubric_r_sem": 0.011218319234410546,
+            "num_evaluated_pairs": 2
+        }
+    },
+    "overall": {
+        "mean_query_r_sem": 0.011221366545451193,
+        "mean_avg_rubric_r_sem": 0.011218319234410546,
+        "num_evaluated_pairs": 2
+    },
+    "per_item": [
+        {
+            "question_index": 0,
+            "rubric_sample_index": 1,
+            "gen_model": "qwen2.5-72b",
+            "judge_model": "Kimi-K2.5",
+            "num_rubrics": 9,
+            "query_r_sem": 0.009316949906249122,
+            "avg_rubric_r_sem": 0.011037769642208699
+        },
+        {
+            "question_index": 0,
+            "rubric_sample_index": 4,
+            "gen_model": "qwen2.5-72b",
+            "judge_model": "Kimi-K2.5",
+            "num_rubrics": 10,
+            "query_r_sem": 0.013125783184653263,
+            "avg_rubric_r_sem": 0.011398868826612393
+        }
+    ]
+}

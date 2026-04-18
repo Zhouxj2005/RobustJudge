@@ -1,0 +1,1131 @@
+{
+    "0": {
+        "question": "Please read the following text and summarize it. The final output should be limited to 50 words. Here is the text: NAME_1 has been granted extra time to decide whether to compete in the World Cross-Country Championships.The 31-year-old is concerned the event, which starts on 19 March in France, could upset her preparations for the London Marathon on 17 April. 'There is no question that NAME_2 would be a huge asset to the GB team,' said NAME_3 of UK Athletics. 'But she is working out whether she can accommodate the worlds without too much compromise in her marathon training.' NAME_4 must make a decision by Tuesday - the deadline for team nominations. British team member NAME_5 said the team would understand if NAME_4 opted out of the event. 'It would be fantastic to have NAME_2 in the team,' said the European cross-country champion. 'But you have to remember that athletics is basically an individual sport and anything achieved for the team is a bonus. 'She is not messing us around. We all understand the problem.' NAME_4 was world cross-country champion in 2001 and 2002 but missed last year's event because of injury. In her absence, the GB team won bronze in Brussels.",
+        "rubric_samples": {
+            "1": {
+                "rubric_list": [
+                    {
+                        "criterion": "The response is a summary of the provided text.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response is limited to 50 words or fewer.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_1 has been granted extra time to decide on competing in the World Cross-Country Championships.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions the concern that the event may interfere with NAME_1's London Marathon preparations.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes the statement from NAME_3 about NAME_1 being a huge asset to the GB team.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes the deadline for team nominations, which is Tuesday.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that NAME_5 said the team would understand if NAME_1 opted out of the event.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response notes that NAME_1 was a world cross-country champion in 2001 and 2002 but missed the event last year due to injury.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that the GB team won bronze in the absence of NAME_1 at last year's event.",
+                        "points": 1
+                    }
+                ],
+                "gen_models": {
+                    "qwen2.5-72b": {
+                        "Kimi-K2.5": [
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Captures main points of the text"
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "52 words exceeds 50 word limit"
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not state she was granted extra time"
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Mentions concern about marathon preparation"
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits NAME_3 and specific quote about huge asset"
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Includes Tuesday deadline"
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits NAME_5 and specific statement"
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Missing 2001/2002 championship history"
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Missing bronze medal information"
+                                }
+                            ],
+                            [],
+                            [],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response summarizes key points of the text."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response contains 52 words, exceeding the 50-word limit."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response states the deadline but omits 'granted extra time'."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response mentions concern about marathon preparation interference."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response paraphrases without citing NAME_3 or 'huge asset' quote."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response includes Tuesday deadline."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response attributes understanding to UK Athletics, not NAME_5."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response omits 2001/2002 championships and last year's injury."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response omits GB team's bronze medal win."
+                                }
+                            ],
+                            [],
+                            [],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response summarizes the main points of the text."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response contains 52 words, exceeding the 50-word limit."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response states the deadline but does not mention she was granted extra time."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response mentions the event may affect her marathon preparation."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response does not attribute the 'huge asset' statement to NAME_3."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response mentions the Tuesday deadline."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response does not mention NAME_5 or attribute the understanding to them."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response omits her 2001/2002 championships and last year's injury."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response omits the GB team's bronze medal win."
+                                }
+                            ],
+                            []
+                        ]
+                    }
+                }
+            },
+            "2": {
+                "rubric_list": [
+                    {
+                        "criterion": "The response includes that NAME_1 has been granted extra time to decide whether to compete in the World Cross-Country Championships.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_1 is concerned the World Cross-Country Championships could upset her preparations for the London Marathon.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that NAME_2 is considered a huge asset to the GB team by NAME_3 of UK Athletics.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response notes that NAME_2 is evaluating whether she can accommodate the championships without compromising her marathon training.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response indicates that NAME_2 must make a decision by Tuesday, the deadline for team nominations.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes that British team member NAME_5 said the team would understand if NAME_2 opted out of the event.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_2 was world cross-country champion in 2001 and 2002 but missed last year's event due to injury.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response notes that in NAME_2's absence, the GB team won bronze in Brussels.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response is limited to 50 words or fewer.",
+                        "points": 1
+                    }
+                ],
+                "gen_models": {
+                    "qwen2.5-72b": {
+                        "Kimi-K2.5": [
+                            [],
+                            [],
+                            [],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "States the Tuesday deadline but omits that extra time was granted."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "States the event may affect preparation but omits her concern."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits NAME_3 and the phrase 'huge asset' to GB team."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Mentions opting out rather than evaluating accommodation without compromise."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Mentions Tuesday deadline but omits it is for team nominations."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Attributes understanding to UK Athletics generally, not NAME_5."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits her 2001/2002 championships and last year's injury absence."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits the GB team's bronze medal in Brussels."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response is 52 words, exceeding the 50-word limit."
+                                }
+                            ],
+                            [],
+                            [],
+                            [],
+                            []
+                        ]
+                    }
+                }
+            },
+            "3": {
+                "rubric_list": [
+                    {
+                        "criterion": "The response summarizes the given text.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response is 50 words or fewer.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions NAME_1 being granted extra time to decide about competing in the World Cross-Country Championships.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states NAME_1 is concerned the event might disrupt her preparation for the London Marathon.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes a quote from NAME_3 about NAME_1 being a huge asset to the GB team.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response notes NAME_1 must make a decision by Tuesday for team nominations.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions NAME_5 saying the team would understand if NAME_1 opted out of the event.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes information that NAME_1 was world cross-country champion in 2001 and 2002.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions the GB team won bronze in Brussels when NAME_1 missed the event due to injury.",
+                        "points": 1
+                    }
+                ],
+                "gen_models": {
+                    "qwen2.5-72b": {
+                        "Kimi-K2.5": [
+                            [],
+                            [],
+                            [],
+                            [],
+                            [],
+                            [],
+                            [],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Summarizes main conflict and decision deadline"
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Contains 52 words, exceeding 50-word limit"
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not mention 'extra time' being granted"
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not state NAME_1 is concerned, only mentions potential effect"
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "No quote from NAME_3 included"
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits 'for team nominations' context"
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Attributes understanding to UK Athletics, not NAME_5"
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Missing 2001/2002 championship information"
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Missing Brussels bronze medal information"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            },
+            "4": {
+                "rubric_list": [
+                    {
+                        "criterion": "The response is a summary of the provided text.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response is limited to 50 words or fewer.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that NAME_1 has been granted extra time to decide on competing in the World Cross-Country Championships.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that the World Cross-Country Championships begin on 19 March in France.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response notes the London Marathon is scheduled for 17 April.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions NAME_3's statement about NAME_4 being a huge asset to the GB team.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response indicates that NAME_4 must make a decision by Tuesday for the team nominations.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes that NAME_5 said the team would understand if NAME_4 opted out of the event.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_4 was world cross-country champion in 2001 and 2002.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that the GB team won bronze in the absence of NAME_4 at the event in Brussels.",
+                        "points": 1
+                    }
+                ],
+                "gen_models": {
+                    "qwen2.5-72b": {
+                        "Kimi-K2.5": [
+                            [],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response summarizes key points of the text."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response contains 52 words, exceeding the 50-word limit."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not mention that extra time was granted."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "States the event starts March 19 in France."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Notes the London Marathon is on April 17."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not mention NAME_3 or the phrase 'huge asset'."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Mentions Tuesday deadline but not team nominations."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Attributes understanding to UK Athletics, not NAME_5."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits 2001 and 2002 championship wins."
+                                },
+                                {
+                                    "rubric_index": 10,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits GB team bronze medal in Brussels."
+                                }
+                            ],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response condenses main points of the text."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response contains 52 words, exceeding the 50-word limit."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response states the deadline but omits 'granted extra time'."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response states 'starting March 19 in France'."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Response states 'London Marathon on April 17'."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response attributes sentiment to UK Athletics generally, not NAME_3 specifically."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response mentions Tuesday deadline but omits 'team nominations'."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response does not mention NAME_5 or their statement."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response omits 2001 and 2002 championship history."
+                                },
+                                {
+                                    "rubric_index": 10,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response omits GB bronze medal in Brussels."
+                                }
+                            ],
+                            [],
+                            [],
+                            [],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Captures main points about the decision deadline and conflict."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Contains 52 words, exceeding the 50-word limit."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "States the deadline but omits that extra time was granted."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Includes the date and location."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Includes the marathon date."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not mention NAME_3 or the phrase 'huge asset'."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Mentions Tuesday deadline but omits team nominations context."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not mention NAME_5 or the team's understanding."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits past championship years 2001 and 2002."
+                                },
+                                {
+                                    "rubric_index": 10,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits GB bronze medal in Brussels."
+                                }
+                            ],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Summarizes the main conflict and deadline"
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "52 words exceeds 50-word limit"
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not mention 'granted extra time'"
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "States event starts March 19 in France"
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Notes London Marathon on April 17"
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits NAME_3 and 'huge asset' quote"
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits 'team nominations'"
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits NAME_5 attribution"
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits 2001 and 2002 championships"
+                                },
+                                {
+                                    "rubric_index": 10,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits GB bronze in Brussels"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            },
+            "5": {
+                "rubric_list": [
+                    {
+                        "criterion": "The response is a summary of the provided text.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response is limited to 50 words or fewer.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions NAME_1 being granted extra time to decide on competing in the World Cross-Country Championships.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions the concern about the event potentially disrupting NAME_1's preparations for the London Marathon.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes a quote or statement indicating NAME_2 is considered a valuable asset to the GB team.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_1 has until Tuesday to make a decision for the team nominations.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions NAME_5 expressing understanding if NAME_1 chooses not to compete in the event.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_1 was world cross-country champion in 2001 and 2002.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that the GB team won bronze in the absence of NAME_1 at last year's event.",
+                        "points": 1
+                    }
+                ],
+                "gen_models": {
+                    "qwen2.5-72b": {
+                        "Kimi-K2.5": [
+                            [],
+                            [],
+                            [],
+                            [],
+                            [],
+                            [],
+                            [],
+                            []
+                        ]
+                    }
+                }
+            },
+            "6": {
+                "rubric_list": [
+                    {
+                        "criterion": "The response summarizes the provided text.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response is limited to 50 words or fewer.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions NAME_1 being granted extra time to decide on competing in the World Cross-Country Championships.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response includes the concern about the World Cross-Country Championships possibly affecting NAME_1's marathon training for the London Marathon.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_1 must make a decision by Tuesday for the team nomination deadline.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response notes that NAME_5 said the team would understand if NAME_1 chooses not to compete.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that NAME_1 is a former world cross-country champion (2001 and 2002).",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response states that NAME_1 missed last year's event due to injury.",
+                        "points": 1
+                    },
+                    {
+                        "criterion": "The response mentions that the GB team won bronze in the absence of NAME_1.",
+                        "points": 1
+                    }
+                ],
+                "gen_models": {
+                    "qwen2.5-72b": {
+                        "Kimi-K2.5": [
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Captures main points of the text"
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Contains 52 words, exceeding 50-word limit"
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "States NAME_4 (NAME_1) has until Tuesday to decide on championships"
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Notes the event may affect London Marathon preparation"
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Specifies Tuesday decision deadline"
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Attributes understanding to UK Athletics, not NAME_5 specifically"
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits 2001 and 2002 championship titles"
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits absence due to injury last year"
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits GB team bronze medal win"
+                                }
+                            ],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Captures main points: decision deadline, event conflict, and UK Athletics stance."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Response is 52 words, exceeding the 50-word limit."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Mentions NAME_4 (same person as NAME_1 in text) has until Tuesday to decide on World Cross-Country Championships."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "States the event may affect her preparation for the London Marathon."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Mentions Tuesday deadline but omits that it is specifically for team nominations."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Attributes understanding to UK Athletics generally, not specifically to NAME_5."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits that NAME_1 was world champion in 2001 and 2002."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits that NAME_1 missed last year's event due to injury."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits that GB team won bronze in her absence."
+                                }
+                            ],
+                            [
+                                {
+                                    "rubric_index": 1,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Captures main points: decision deadline, event conflict, and team stance."
+                                },
+                                {
+                                    "rubric_index": 2,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Contains 52 words, exceeding the 50-word limit."
+                                },
+                                {
+                                    "rubric_index": 3,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "States NAME_4 has until Tuesday to decide on competing."
+                                },
+                                {
+                                    "rubric_index": 4,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Notes the concern about affecting London Marathon preparation."
+                                },
+                                {
+                                    "rubric_index": 5,
+                                    "is_met": true,
+                                    "score": 1,
+                                    "weight": 1,
+                                    "reason": "Explicitly states the Tuesday decision deadline."
+                                },
+                                {
+                                    "rubric_index": 6,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Does not mention NAME_5; attributes understanding to UK Athletics generally."
+                                },
+                                {
+                                    "rubric_index": 7,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits mention of 2001 and 2002 championships."
+                                },
+                                {
+                                    "rubric_index": 8,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits mention of missing last year's event due to injury."
+                                },
+                                {
+                                    "rubric_index": 9,
+                                    "is_met": false,
+                                    "score": 0,
+                                    "weight": 1,
+                                    "reason": "Omits mention of GB team winning bronze."
+                                }
+                            ],
+                            [],
+                            [],
+                            [],
+                            [],
+                            []
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

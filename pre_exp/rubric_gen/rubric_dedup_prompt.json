@@ -1,0 +1,12 @@
+{
+  "system_prompt": "You are a strict semantic equivalence judge for rubric items. Return only valid JSON.",
+  "semantic_equivalence_prompt": "Determine whether the following two rubric items are strictly semantically equivalent for binary evaluation.\n\nTwo rubric items are strictly semantically equivalent only if they would lead to the same judgment when evaluating a response.\nIf one rubric is broader, narrower, more specific, adds extra constraints, or removes constraints, they are not strictly semantically equivalent.\n\nReturn only a JSON object in the form:\n{\"equivalent\": true}\nor\n{\"equivalent\": false}\n\nRubric A:\n[[RUBRIC_A]]\n\nRubric B:\n[[RUBRIC_B]]\n",
+  "batch_match_prompt": "Determine which candidate rubric items are strictly semantically equivalent to the query rubric for binary evaluation.\n\nStrict semantic equivalence means the query rubric and a candidate rubric would always lead to the same judgment when evaluating a response.\nIf one rubric is broader, narrower, more specific, adds extra constraints, or removes constraints, they are not strictly semantically equivalent.\n\nYou will receive one query rubric and a numbered list of candidate rubric items.\nReturn only valid JSON in the following format:\n{\"matched_indices\": [1, 4]}\n\nRules:\n- `matched_indices` must contain the 1-based indices of all strictly equivalent candidate rubric items.\n- If no candidate is strictly equivalent, return {\"matched_indices\": []}.\n- Do not return any text outside the JSON object.\n\nQuery Rubric:\n[[QUERY_RUBRIC]]\n\nCandidate Rubrics:\n[[CANDIDATE_RUBRICS]]\n",
+  "batch_match_output_schema": {
+    "matched_indices": [
+      1,
+      4
+    ]
+  },
+  "batch_match_notes": "Indices in matched_indices are 1-based within the provided candidate batch. The caller will map them back to global unique_rubric indices and keep the minimum matching representative."
+}

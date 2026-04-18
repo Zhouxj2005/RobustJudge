@@ -1,6 +1,14 @@
 # Ignore RubricHub_v1 dataset folder
 RubricHub_v1/
 
+# Large generated outputs
+exp2_result.json
+pre_exp/rubric_gen/generated_rubric_judge_result.json
+temp.py
+
+# Keep local oversized tracked output changes out of future commits
+result.json
+
 # Python cache
 __pycache__/
 *.py[cod]
