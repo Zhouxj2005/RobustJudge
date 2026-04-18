@@ -5,7 +5,7 @@ import time
 import requests
 
 
-API_KEY = "QST4e0788eb8f1eb7f7a228fa490b526e71"
+API_KEY = "your_api_key_here"
 BASE_URL = "https://maas.devops.beta.xiaohongshu.com/dqaservice-medical-v25/v1"
 MODEL = "Kimi-K2.5"
 MAX_RETRIES = 5

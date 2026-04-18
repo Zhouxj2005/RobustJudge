@@ -4,7 +4,7 @@ import time
 import requests
 
 
-API_KEY = "MAASee984d11177e419293ee7fc8f5dd6248"
+API_KEY = "your_api_key_here"
 BASE_URL = "https://maas.devops.xiaohongshu.com/v1"
 MODEL = "qwen3-32b"
 MAX_RETRIES = 5
