@@ -1,0 +1,7177 @@
+{
+  "config": {
+    "rubric_path": "D:\\学校学习\\李侃老师科研\\Evaluation\\LLM-as-a-Judge鲁棒性分析\\RobutsEval\\RubricHub\\pre_exp\\rubric_gen\\rubric_with_simplified_prompt.json",
+    "result_path": "D:\\学校学习\\李侃老师科研\\Evaluation\\LLM-as-a-Judge鲁棒性分析\\RobutsEval\\RubricHub\\pre_exp\\rubric_gen\\generated_rubric_judge_result.json",
+    "ground_truth_path": "D:\\学校学习\\李侃老师科研\\Evaluation\\LLM-as-a-Judge鲁棒性分析\\RobutsEval\\RubricHub\\ground_truth.json",
+    "bootstrap_B": 50,
+    "seed": 42,
+    "query_common_n_range": [
+      1,
+      8
+    ],
+    "query_fused_full_n_range": [
+      1,
+      48
+    ]
+  },
+  "dataset_summary": {
+    "num_questions_in_result": 100,
+    "num_gt_pairs": 300,
+    "num_query_buckets": 1738,
+    "num_fused_query_buckets": 297
+  },
+  "query_level_rubric_sample_independent": {
+    "n_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "mean_spearman": [
+      0.3198468037348972,
+      0.3213671914821842,
+      0.32599755167668554,
+      0.3257770255678211,
+      0.32183955495788724,
+      0.3167213876013253,
+      0.3245049506409614,
+      0.33377282706793404
+    ],
+    "group_counts_by_n": [
+      297,
+      297,
+      297,
+      297,
+      297,
+      295,
+      295,
+      295
+    ],
+    "num_groups": 297,
+    "per_group_summary": [
+      {
+        "group_key": [
+          0,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.32679738562091504
+      },
+      {
+        "group_key": [
+          0,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5882352941176471
+      },
+      {
+        "group_key": [
+          0,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5359477124183006
+      },
+      {
+        "group_key": [
+          1,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.04
+      },
+      {
+        "group_key": [
+          1,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          1,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.48444444444444446
+      },
+      {
+        "group_key": [
+          2,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5045045045045045
+      },
+      {
+        "group_key": [
+          2,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6306306306306306
+      },
+      {
+        "group_key": [
+          2,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6306306306306306
+      },
+      {
+        "group_key": [
+          3,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 2,
+        "num_available_samples_per_rubric": [
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4161073825503356
+      },
+      {
+        "group_key": [
+          3,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 2,
+        "num_available_samples_per_rubric": [
+          8,
+          8
+        ],
+        "gt_relative_score": 0.30201342281879195
+      },
+      {
+        "group_key": [
+          3,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 2,
+        "num_available_samples_per_rubric": [
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6442953020134228
+      },
+      {
+        "group_key": [
+          5,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.08771929824561403
+      },
+      {
+        "group_key": [
+          5,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5906432748538012
+      },
+      {
+        "group_key": [
+          5,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          6,
+          3,
+          5,
+          5,
+          7
+        ],
+        "gt_relative_score": 0.40350877192982454
+      },
+      {
+        "group_key": [
+          6,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7165354330708661
+      },
+      {
+        "group_key": [
+          6,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7283464566929134
+      },
+      {
+        "group_key": [
+          6,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7165354330708661
+      },
+      {
+        "group_key": [
+          7,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.40828402366863903
+      },
+      {
+        "group_key": [
+          7,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7633136094674556
+      },
+      {
+        "group_key": [
+          7,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6863905325443787
+      },
+      {
+        "group_key": [
+          8,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3970037453183521
+      },
+      {
+        "group_key": [
+          8,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          8,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5168539325842697
+      },
+      {
+        "group_key": [
+          9,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.10919540229885058
+      },
+      {
+        "group_key": [
+          9,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 1.0
+      },
+      {
+        "group_key": [
+          9,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6954022988505747
+      },
+      {
+        "group_key": [
+          10,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5757575757575758
+      },
+      {
+        "group_key": [
+          10,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          7,
+          6,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          10,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6477272727272727
+      },
+      {
+        "group_key": [
+          11,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.23394495412844038
+      },
+      {
+        "group_key": [
+          11,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5091743119266054
+      },
+      {
+        "group_key": [
+          11,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          7,
+          7,
+          6,
+          8
+        ],
+        "gt_relative_score": 0.3486238532110092
+      },
+      {
+        "group_key": [
+          12,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 4,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.11442786069651742
+      },
+      {
+        "group_key": [
+          12,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 4,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6119402985074627
+      },
+      {
+        "group_key": [
+          12,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 4,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.14925373134328357
+      },
+      {
+        "group_key": [
+          13,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4146341463414634
+      },
+      {
+        "group_key": [
+          13,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5853658536585366
+      },
+      {
+        "group_key": [
+          13,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6524390243902439
+      },
+      {
+        "group_key": [
+          14,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.11594202898550725
+      },
+      {
+        "group_key": [
+          14,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          3,
+          4,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3507246376811594
+      },
+      {
+        "group_key": [
+          14,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6376811594202898
+      },
+      {
+        "group_key": [
+          15,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7548387096774194
+      },
+      {
+        "group_key": [
+          15,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7870967741935484
+      },
+      {
+        "group_key": [
+          15,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7548387096774194
+      },
+      {
+        "group_key": [
+          16,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.26666666666666666
+      },
+      {
+        "group_key": [
+          16,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.44166666666666665
+      },
+      {
+        "group_key": [
+          16,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4583333333333333
+      },
+      {
+        "group_key": [
+          17,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.135678391959799
+      },
+      {
+        "group_key": [
+          17,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3165829145728643
+      },
+      {
+        "group_key": [
+          17,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3768844221105528
+      },
+      {
+        "group_key": [
+          18,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          2
+        ],
+        "gt_relative_score": 0.6865671641791045
+      },
+      {
+        "group_key": [
+          18,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.22388059701492538
+      },
+      {
+        "group_key": [
+          18,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.22388059701492538
+      },
+      {
+        "group_key": [
+          19,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.1606425702811245
+      },
+      {
+        "group_key": [
+          19,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6465863453815262
+      },
+      {
+        "group_key": [
+          19,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3493975903614458
+      },
+      {
+        "group_key": [
+          20,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.33962264150943394
+      },
+      {
+        "group_key": [
+          20,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6226415094339622
+      },
+      {
+        "group_key": [
+          20,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4528301886792453
+      },
+      {
+        "group_key": [
+          21,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.38
+      },
+      {
+        "group_key": [
+          21,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          21,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.265
+      },
+      {
+        "group_key": [
+          22,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6176470588235294
+      },
+      {
+        "group_key": [
+          22,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6882352941176471
+      },
+      {
+        "group_key": [
+          22,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5941176470588235
+      },
+      {
+        "group_key": [
+          23,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.43670886075949367
+      },
+      {
+        "group_key": [
+          23,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8164556962025317
+      },
+      {
+        "group_key": [
+          23,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5759493670886076
+      },
+      {
+        "group_key": [
+          24,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "gt_relative_score": 0.12547528517110265
+      },
+      {
+        "group_key": [
+          24,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          24,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          6,
+          6,
+          7,
+          8,
+          7
+        ],
+        "gt_relative_score": 0.3726235741444867
+      },
+      {
+        "group_key": [
+          25,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4476744186046512
+      },
+      {
+        "group_key": [
+          25,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8488372093023255
+      },
+      {
+        "group_key": [
+          25,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5406976744186046
+      },
+      {
+        "group_key": [
+          26,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4488888888888889
+      },
+      {
+        "group_key": [
+          26,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7244444444444444
+      },
+      {
+        "group_key": [
+          26,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5911111111111111
+      },
+      {
+        "group_key": [
+          27,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.472636815920398
+      },
+      {
+        "group_key": [
+          27,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8208955223880597
+      },
+      {
+        "group_key": [
+          27,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          7,
+          7,
+          8
+        ],
+        "gt_relative_score": 0.6169154228855721
+      },
+      {
+        "group_key": [
+          28,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5371428571428571
+      },
+      {
+        "group_key": [
+          28,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4514285714285714
+      },
+      {
+        "group_key": [
+          28,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6057142857142858
+      },
+      {
+        "group_key": [
+          29,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 5,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8235294117647058
+      },
+      {
+        "group_key": [
+          29,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 5,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7330316742081447
+      },
+      {
+        "group_key": [
+          29,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 5,
+        "num_available_samples_per_rubric": [
+          8,
+          6,
+          8,
+          6,
+          7
+        ],
+        "gt_relative_score": 0.7375565610859729
+      },
+      {
+        "group_key": [
+          30,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.668918918918919
+      },
+      {
+        "group_key": [
+          30,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7432432432432432
+      },
+      {
+        "group_key": [
+          30,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.668918918918919
+      },
+      {
+        "group_key": [
+          31,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.1712962962962963
+      },
+      {
+        "group_key": [
+          31,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4537037037037037
+      },
+      {
+        "group_key": [
+          31,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          6,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.375
+      },
+      {
+        "group_key": [
+          32,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5448275862068965
+      },
+      {
+        "group_key": [
+          32,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7034482758620689
+      },
+      {
+        "group_key": [
+          32,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          7,
+          6,
+          7,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6137931034482759
+      },
+      {
+        "group_key": [
+          33,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5595238095238095
+      },
+      {
+        "group_key": [
+          33,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6904761904761905
+      },
+      {
+        "group_key": [
+          33,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6904761904761905
+      },
+      {
+        "group_key": [
+          34,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8368794326241135
+      },
+      {
+        "group_key": [
+          34,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8723404255319149
+      },
+      {
+        "group_key": [
+          34,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8723404255319149
+      },
+      {
+        "group_key": [
+          35,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.05789473684210526
+      },
+      {
+        "group_key": [
+          35,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.49473684210526314
+      },
+      {
+        "group_key": [
+          35,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.11578947368421053
+      },
+      {
+        "group_key": [
+          36,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5129533678756477
+      },
+      {
+        "group_key": [
+          36,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5181347150259067
+      },
+      {
+        "group_key": [
+          36,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.48704663212435234
+      },
+      {
+        "group_key": [
+          37,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6172248803827751
+      },
+      {
+        "group_key": [
+          37,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6842105263157895
+      },
+      {
+        "group_key": [
+          37,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.631578947368421
+      },
+      {
+        "group_key": [
+          38,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7708333333333334
+      },
+      {
+        "group_key": [
+          38,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5260416666666666
+      },
+      {
+        "group_key": [
+          38,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.515625
+      },
+      {
+        "group_key": [
+          39,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.2283464566929134
+      },
+      {
+        "group_key": [
+          39,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3779527559055118
+      },
+      {
+        "group_key": [
+          39,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5393700787401575
+      },
+      {
+        "group_key": [
+          40,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          40,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          40,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          41,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.091324200913242
+      },
+      {
+        "group_key": [
+          41,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7123287671232876
+      },
+      {
+        "group_key": [
+          41,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6164383561643836
+      },
+      {
+        "group_key": [
+          42,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.20300751879699247
+      },
+      {
+        "group_key": [
+          42,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7781954887218046
+      },
+      {
+        "group_key": [
+          42,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6691729323308271
+      },
+      {
+        "group_key": [
+          43,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5646551724137931
+      },
+      {
+        "group_key": [
+          43,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "gt_relative_score": 0.7025862068965517
+      },
+      {
+        "group_key": [
+          43,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7370689655172413
+      },
+      {
+        "group_key": [
+          44,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.2733812949640288
+      },
+      {
+        "group_key": [
+          44,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5611510791366906
+      },
+      {
+        "group_key": [
+          44,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5755395683453237
+      },
+      {
+        "group_key": [
+          45,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.33760683760683763
+      },
+      {
+        "group_key": [
+          45,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7435897435897436
+      },
+      {
+        "group_key": [
+          45,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5897435897435898
+      },
+      {
+        "group_key": [
+          46,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          7
+        ],
+        "gt_relative_score": 0.12121212121212122
+      },
+      {
+        "group_key": [
+          46,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 5,
+        "num_available_samples_per_rubric": [
+          4,
+          5,
+          2,
+          1,
+          2
+        ],
+        "gt_relative_score": 0.6931818181818182
+      },
+      {
+        "group_key": [
+          46,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5037878787878788
+      },
+      {
+        "group_key": [
+          47,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.17153284671532848
+      },
+      {
+        "group_key": [
+          47,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8284671532846716
+      },
+      {
+        "group_key": [
+          47,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5401459854014599
+      },
+      {
+        "group_key": [
+          48,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7631578947368421
+      },
+      {
+        "group_key": [
+          48,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7894736842105263
+      },
+      {
+        "group_key": [
+          48,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.9210526315789473
+      },
+      {
+        "group_key": [
+          49,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.20279720279720279
+      },
+      {
+        "group_key": [
+          49,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6433566433566433
+      },
+      {
+        "group_key": [
+          49,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3706293706293706
+      },
+      {
+        "group_key": [
+          50,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8222222222222222
+      },
+      {
+        "group_key": [
+          50,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6755555555555556
+      },
+      {
+        "group_key": [
+          50,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5822222222222222
+      },
+      {
+        "group_key": [
+          51,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4
+      },
+      {
+        "group_key": [
+          51,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.38666666666666666
+      },
+      {
+        "group_key": [
+          51,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.21333333333333335
+      },
+      {
+        "group_key": [
+          52,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4217687074829932
+      },
+      {
+        "group_key": [
+          52,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "gt_relative_score": 0.5170068027210885
+      },
+      {
+        "group_key": [
+          52,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.35374149659863946
+      },
+      {
+        "group_key": [
+          53,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.1650485436893204
+      },
+      {
+        "group_key": [
+          53,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6650485436893204
+      },
+      {
+        "group_key": [
+          53,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7961165048543689
+      },
+      {
+        "group_key": [
+          54,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3389121338912134
+      },
+      {
+        "group_key": [
+          54,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7112970711297071
+      },
+      {
+        "group_key": [
+          54,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          4,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4351464435146444
+      },
+      {
+        "group_key": [
+          55,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.25824175824175827
+      },
+      {
+        "group_key": [
+          55,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4175824175824176
+      },
+      {
+        "group_key": [
+          55,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3901098901098901
+      },
+      {
+        "group_key": [
+          56,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5147058823529411
+      },
+      {
+        "group_key": [
+          56,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          7,
+          7
+        ],
+        "gt_relative_score": 0.5588235294117647
+      },
+      {
+        "group_key": [
+          56,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          57,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          7,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4336734693877551
+      },
+      {
+        "group_key": [
+          57,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": -1.95
+      },
+      {
+        "group_key": [
+          57,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": -1.95
+      },
+      {
+        "group_key": [
+          58,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4304932735426009
+      },
+      {
+        "group_key": [
+          58,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.48878923766816146
+      },
+      {
+        "group_key": [
+          58,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4080717488789238
+      },
+      {
+        "group_key": [
+          59,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7070707070707071
+      },
+      {
+        "group_key": [
+          59,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "gt_relative_score": 0.7272727272727273
+      },
+      {
+        "group_key": [
+          59,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          5,
+          8,
+          5,
+          7,
+          7,
+          8
+        ],
+        "gt_relative_score": 0.7272727272727273
+      },
+      {
+        "group_key": [
+          60,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.266304347826087
+      },
+      {
+        "group_key": [
+          60,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          60,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 5,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.22282608695652173
+      },
+      {
+        "group_key": [
+          61,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 1,
+        "num_available_samples_per_rubric": [
+          8
+        ],
+        "gt_relative_score": 0.4186046511627907
+      },
+      {
+        "group_key": [
+          61,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 1,
+        "num_available_samples_per_rubric": [
+          8
+        ],
+        "gt_relative_score": 0.1744186046511628
+      },
+      {
+        "group_key": [
+          61,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 1,
+        "num_available_samples_per_rubric": [
+          8
+        ],
+        "gt_relative_score": 0.5755813953488372
+      },
+      {
+        "group_key": [
+          62,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.24796747967479674
+      },
+      {
+        "group_key": [
+          62,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.036585365853658534
+      },
+      {
+        "group_key": [
+          62,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6829268292682927
+      },
+      {
+        "group_key": [
+          63,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.2967741935483871
+      },
+      {
+        "group_key": [
+          63,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.13548387096774195
+      },
+      {
+        "group_key": [
+          63,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4129032258064516
+      },
+      {
+        "group_key": [
+          64,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.46994535519125685
+      },
+      {
+        "group_key": [
+          64,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          7,
+          8,
+          8,
+          5,
+          8
+        ],
+        "gt_relative_score": 0.6666666666666666
+      },
+      {
+        "group_key": [
+          64,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3825136612021858
+      },
+      {
+        "group_key": [
+          65,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.1091703056768559
+      },
+      {
+        "group_key": [
+          65,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.2794759825327511
+      },
+      {
+        "group_key": [
+          65,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "gt_relative_score": 0.34497816593886466
+      },
+      {
+        "group_key": [
+          66,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5952380952380952
+      },
+      {
+        "group_key": [
+          66,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7476190476190476
+      },
+      {
+        "group_key": [
+          66,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7380952380952381
+      },
+      {
+        "group_key": [
+          67,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4785276073619632
+      },
+      {
+        "group_key": [
+          67,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7914110429447853
+      },
+      {
+        "group_key": [
+          67,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          7,
+          4,
+          3,
+          8
+        ],
+        "gt_relative_score": 0.7791411042944786
+      },
+      {
+        "group_key": [
+          68,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          7,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.39855072463768115
+      },
+      {
+        "group_key": [
+          68,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7137681159420289
+      },
+      {
+        "group_key": [
+          68,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6159420289855072
+      },
+      {
+        "group_key": [
+          69,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.2358490566037736
+      },
+      {
+        "group_key": [
+          69,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.1792452830188679
+      },
+      {
+        "group_key": [
+          69,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          70,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 4,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.17647058823529413
+      },
+      {
+        "group_key": [
+          70,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 4,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.42780748663101603
+      },
+      {
+        "group_key": [
+          70,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 4,
+        "num_available_samples_per_rubric": [
+          2,
+          4,
+          4,
+          5
+        ],
+        "gt_relative_score": 0.36363636363636365
+      },
+      {
+        "group_key": [
+          71,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4946236559139785
+      },
+      {
+        "group_key": [
+          71,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4731182795698925
+      },
+      {
+        "group_key": [
+          71,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5161290322580645
+      },
+      {
+        "group_key": [
+          72,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.84
+      },
+      {
+        "group_key": [
+          72,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.84
+      },
+      {
+        "group_key": [
+          72,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.88
+      },
+      {
+        "group_key": [
+          73,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4716981132075472
+      },
+      {
+        "group_key": [
+          73,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5141509433962265
+      },
+      {
+        "group_key": [
+          73,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4009433962264151
+      },
+      {
+        "group_key": [
+          74,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5287356321839081
+      },
+      {
+        "group_key": [
+          74,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5804597701149425
+      },
+      {
+        "group_key": [
+          74,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5747126436781609
+      },
+      {
+        "group_key": [
+          75,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.37185929648241206
+      },
+      {
+        "group_key": [
+          75,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          7,
+          6,
+          8,
+          7,
+          8
+        ],
+        "gt_relative_score": 0.6331658291457286
+      },
+      {
+        "group_key": [
+          75,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          4,
+          8,
+          8,
+          5,
+          8
+        ],
+        "gt_relative_score": 0.6934673366834171
+      },
+      {
+        "group_key": [
+          76,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "gt_relative_score": 0.7518796992481203
+      },
+      {
+        "group_key": [
+          76,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.9398496240601504
+      },
+      {
+        "group_key": [
+          76,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5488721804511278
+      },
+      {
+        "group_key": [
+          77,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5659340659340659
+      },
+      {
+        "group_key": [
+          77,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          7,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.489010989010989
+      },
+      {
+        "group_key": [
+          77,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5494505494505495
+      },
+      {
+        "group_key": [
+          78,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.2885572139303483
+      },
+      {
+        "group_key": [
+          78,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7711442786069652
+      },
+      {
+        "group_key": [
+          78,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5771144278606966
+      },
+      {
+        "group_key": [
+          79,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6046511627906976
+      },
+      {
+        "group_key": [
+          79,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8372093023255814
+      },
+      {
+        "group_key": [
+          79,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8255813953488372
+      },
+      {
+        "group_key": [
+          80,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.295
+      },
+      {
+        "group_key": [
+          80,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.255
+      },
+      {
+        "group_key": [
+          80,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          7,
+          7,
+          8
+        ],
+        "gt_relative_score": 0.215
+      },
+      {
+        "group_key": [
+          81,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.026143790849673203
+      },
+      {
+        "group_key": [
+          81,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4117647058823529
+      },
+      {
+        "group_key": [
+          81,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          5,
+          8,
+          8,
+          8,
+          6
+        ],
+        "gt_relative_score": 0.21568627450980393
+      },
+      {
+        "group_key": [
+          82,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5548780487804879
+      },
+      {
+        "group_key": [
+          82,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7560975609756098
+      },
+      {
+        "group_key": [
+          82,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.75
+      },
+      {
+        "group_key": [
+          83,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.648854961832061
+      },
+      {
+        "group_key": [
+          83,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7709923664122137
+      },
+      {
+        "group_key": [
+          83,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.648854961832061
+      },
+      {
+        "group_key": [
+          84,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3761904761904762
+      },
+      {
+        "group_key": [
+          84,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5619047619047619
+      },
+      {
+        "group_key": [
+          84,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.49523809523809526
+      },
+      {
+        "group_key": [
+          85,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.16772151898734178
+      },
+      {
+        "group_key": [
+          85,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          7,
+          7,
+          8,
+          6,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6360759493670886
+      },
+      {
+        "group_key": [
+          85,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5569620253164557
+      },
+      {
+        "group_key": [
+          86,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6054054054054054
+      },
+      {
+        "group_key": [
+          86,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5405405405405406
+      },
+      {
+        "group_key": [
+          86,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7081081081081081
+      },
+      {
+        "group_key": [
+          87,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.16901408450704225
+      },
+      {
+        "group_key": [
+          87,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.4647887323943662
+      },
+      {
+        "group_key": [
+          87,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.38028169014084506
+      },
+      {
+        "group_key": [
+          88,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3576923076923077
+      },
+      {
+        "group_key": [
+          88,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5461538461538461
+      },
+      {
+        "group_key": [
+          88,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6807692307692308
+      },
+      {
+        "group_key": [
+          89,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6303317535545023
+      },
+      {
+        "group_key": [
+          89,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          6
+        ],
+        "gt_relative_score": 0.7440758293838863
+      },
+      {
+        "group_key": [
+          89,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          3,
+          6,
+          8
+        ],
+        "gt_relative_score": 0.7677725118483413
+      },
+      {
+        "group_key": [
+          90,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.640926640926641
+      },
+      {
+        "group_key": [
+          90,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.47876447876447875
+      },
+      {
+        "group_key": [
+          90,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6061776061776062
+      },
+      {
+        "group_key": [
+          91,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.36423841059602646
+      },
+      {
+        "group_key": [
+          91,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.47019867549668876
+      },
+      {
+        "group_key": [
+          91,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "gt_relative_score": 0.6423841059602649
+      },
+      {
+        "group_key": [
+          92,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.30337078651685395
+      },
+      {
+        "group_key": [
+          92,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8202247191011236
+      },
+      {
+        "group_key": [
+          92,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          93,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3050847457627119
+      },
+      {
+        "group_key": [
+          93,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5819209039548022
+      },
+      {
+        "group_key": [
+          93,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6101694915254238
+      },
+      {
+        "group_key": [
+          94,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.04371584699453552
+      },
+      {
+        "group_key": [
+          94,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7540983606557377
+      },
+      {
+        "group_key": [
+          94,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.7540983606557377
+      },
+      {
+        "group_key": [
+          95,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.21739130434782608
+      },
+      {
+        "group_key": [
+          95,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          95,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.41304347826086957
+      },
+      {
+        "group_key": [
+          96,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6090225563909775
+      },
+      {
+        "group_key": [
+          96,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          6,
+          6
+        ],
+        "gt_relative_score": 0.40601503759398494
+      },
+      {
+        "group_key": [
+          96,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8120300751879699
+      },
+      {
+        "group_key": [
+          97,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.19411764705882353
+      },
+      {
+        "group_key": [
+          97,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.0
+      },
+      {
+        "group_key": [
+          97,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.42058823529411765
+      },
+      {
+        "group_key": [
+          98,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.3225806451612903
+      },
+      {
+        "group_key": [
+          98,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          5,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.5806451612903226
+      },
+      {
+        "group_key": [
+          98,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.8709677419354839
+      },
+      {
+        "group_key": [
+          99,
+          "qwen2.5-72b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.267515923566879
+      },
+      {
+        "group_key": [
+          99,
+          "gpt-oss-120b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.6242038216560509
+      },
+      {
+        "group_key": [
+          99,
+          "qwen3-235b"
+        ],
+        "num_rubric_samples": 6,
+        "num_available_samples_per_rubric": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "gt_relative_score": 0.47770700636942676
+      }
+    ]
+  },
+  "query_level_rubric_sample_fused_common_n": {
+    "n_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "mean_spearman": [
+      0.3220552698374955,
+      0.3399732900554932,
+      0.35187989525654373,
+      0.3518449515362461,
+      0.3598299469911616,
+      0.36169730101750036,
+      0.36080341149253853,
+      0.36360627861825473
+    ],
+    "bucket_counts_by_n": [
+      297,
+      297,
+      297,
+      297,
+      297,
+      297,
+      297,
+      297
+    ],
+    "num_buckets": 297,
+    "per_bucket_summary": [
+      {
+        "bucket_key": [
+          0,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.32679738562091504
+      },
+      {
+        "bucket_key": [
+          0,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5882352941176471
+      },
+      {
+        "bucket_key": [
+          0,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5359477124183006
+      },
+      {
+        "bucket_key": [
+          1,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.04
+      },
+      {
+        "bucket_key": [
+          1,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          1,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.48444444444444446
+      },
+      {
+        "bucket_key": [
+          2,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5045045045045045
+      },
+      {
+        "bucket_key": [
+          2,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6306306306306306
+      },
+      {
+        "bucket_key": [
+          2,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6306306306306306
+      },
+      {
+        "bucket_key": [
+          3,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 16,
+        "gt_relative_score": 0.4161073825503356
+      },
+      {
+        "bucket_key": [
+          3,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 16,
+        "gt_relative_score": 0.30201342281879195
+      },
+      {
+        "bucket_key": [
+          3,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 16,
+        "gt_relative_score": 0.6442953020134228
+      },
+      {
+        "bucket_key": [
+          5,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.08771929824561403
+      },
+      {
+        "bucket_key": [
+          5,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5906432748538012
+      },
+      {
+        "bucket_key": [
+          5,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 34,
+        "gt_relative_score": 0.40350877192982454
+      },
+      {
+        "bucket_key": [
+          6,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7165354330708661
+      },
+      {
+        "bucket_key": [
+          6,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7283464566929134
+      },
+      {
+        "bucket_key": [
+          6,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7165354330708661
+      },
+      {
+        "bucket_key": [
+          7,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.40828402366863903
+      },
+      {
+        "bucket_key": [
+          7,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7633136094674556
+      },
+      {
+        "bucket_key": [
+          7,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6863905325443787
+      },
+      {
+        "bucket_key": [
+          8,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3970037453183521
+      },
+      {
+        "bucket_key": [
+          8,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          8,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5168539325842697
+      },
+      {
+        "bucket_key": [
+          9,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.10919540229885058
+      },
+      {
+        "bucket_key": [
+          9,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 1.0
+      },
+      {
+        "bucket_key": [
+          9,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6954022988505747
+      },
+      {
+        "bucket_key": [
+          10,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5757575757575758
+      },
+      {
+        "bucket_key": [
+          10,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 45,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          10,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6477272727272727
+      },
+      {
+        "bucket_key": [
+          11,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.23394495412844038
+      },
+      {
+        "bucket_key": [
+          11,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5091743119266054
+      },
+      {
+        "bucket_key": [
+          11,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.3486238532110092
+      },
+      {
+        "bucket_key": [
+          12,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 32,
+        "gt_relative_score": 0.11442786069651742
+      },
+      {
+        "bucket_key": [
+          12,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 32,
+        "gt_relative_score": 0.6119402985074627
+      },
+      {
+        "bucket_key": [
+          12,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 32,
+        "gt_relative_score": 0.14925373134328357
+      },
+      {
+        "bucket_key": [
+          13,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4146341463414634
+      },
+      {
+        "bucket_key": [
+          13,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5853658536585366
+      },
+      {
+        "bucket_key": [
+          13,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6524390243902439
+      },
+      {
+        "bucket_key": [
+          14,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.11594202898550725
+      },
+      {
+        "bucket_key": [
+          14,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 39,
+        "gt_relative_score": 0.3507246376811594
+      },
+      {
+        "bucket_key": [
+          14,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6376811594202898
+      },
+      {
+        "bucket_key": [
+          15,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7548387096774194
+      },
+      {
+        "bucket_key": [
+          15,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7870967741935484
+      },
+      {
+        "bucket_key": [
+          15,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7548387096774194
+      },
+      {
+        "bucket_key": [
+          16,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.26666666666666666
+      },
+      {
+        "bucket_key": [
+          16,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.44166666666666665
+      },
+      {
+        "bucket_key": [
+          16,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4583333333333333
+      },
+      {
+        "bucket_key": [
+          17,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.135678391959799
+      },
+      {
+        "bucket_key": [
+          17,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3165829145728643
+      },
+      {
+        "bucket_key": [
+          17,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3768844221105528
+      },
+      {
+        "bucket_key": [
+          18,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 42,
+        "gt_relative_score": 0.6865671641791045
+      },
+      {
+        "bucket_key": [
+          18,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.22388059701492538
+      },
+      {
+        "bucket_key": [
+          18,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.22388059701492538
+      },
+      {
+        "bucket_key": [
+          19,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.1606425702811245
+      },
+      {
+        "bucket_key": [
+          19,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6465863453815262
+      },
+      {
+        "bucket_key": [
+          19,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3493975903614458
+      },
+      {
+        "bucket_key": [
+          20,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.33962264150943394
+      },
+      {
+        "bucket_key": [
+          20,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6226415094339622
+      },
+      {
+        "bucket_key": [
+          20,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4528301886792453
+      },
+      {
+        "bucket_key": [
+          21,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.38
+      },
+      {
+        "bucket_key": [
+          21,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          21,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.265
+      },
+      {
+        "bucket_key": [
+          22,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6176470588235294
+      },
+      {
+        "bucket_key": [
+          22,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6882352941176471
+      },
+      {
+        "bucket_key": [
+          22,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5941176470588235
+      },
+      {
+        "bucket_key": [
+          23,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.43670886075949367
+      },
+      {
+        "bucket_key": [
+          23,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8164556962025317
+      },
+      {
+        "bucket_key": [
+          23,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5759493670886076
+      },
+      {
+        "bucket_key": [
+          24,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.12547528517110265
+      },
+      {
+        "bucket_key": [
+          24,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          24,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 42,
+        "gt_relative_score": 0.3726235741444867
+      },
+      {
+        "bucket_key": [
+          25,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4476744186046512
+      },
+      {
+        "bucket_key": [
+          25,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8488372093023255
+      },
+      {
+        "bucket_key": [
+          25,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5406976744186046
+      },
+      {
+        "bucket_key": [
+          26,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4488888888888889
+      },
+      {
+        "bucket_key": [
+          26,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7244444444444444
+      },
+      {
+        "bucket_key": [
+          26,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5911111111111111
+      },
+      {
+        "bucket_key": [
+          27,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.472636815920398
+      },
+      {
+        "bucket_key": [
+          27,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8208955223880597
+      },
+      {
+        "bucket_key": [
+          27,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 46,
+        "gt_relative_score": 0.6169154228855721
+      },
+      {
+        "bucket_key": [
+          28,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5371428571428571
+      },
+      {
+        "bucket_key": [
+          28,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4514285714285714
+      },
+      {
+        "bucket_key": [
+          28,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6057142857142858
+      },
+      {
+        "bucket_key": [
+          29,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 40,
+        "gt_relative_score": 0.8235294117647058
+      },
+      {
+        "bucket_key": [
+          29,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 40,
+        "gt_relative_score": 0.7330316742081447
+      },
+      {
+        "bucket_key": [
+          29,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 35,
+        "gt_relative_score": 0.7375565610859729
+      },
+      {
+        "bucket_key": [
+          30,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.668918918918919
+      },
+      {
+        "bucket_key": [
+          30,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7432432432432432
+      },
+      {
+        "bucket_key": [
+          30,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.668918918918919
+      },
+      {
+        "bucket_key": [
+          31,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.1712962962962963
+      },
+      {
+        "bucket_key": [
+          31,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4537037037037037
+      },
+      {
+        "bucket_key": [
+          31,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 46,
+        "gt_relative_score": 0.375
+      },
+      {
+        "bucket_key": [
+          32,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5448275862068965
+      },
+      {
+        "bucket_key": [
+          32,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7034482758620689
+      },
+      {
+        "bucket_key": [
+          32,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.6137931034482759
+      },
+      {
+        "bucket_key": [
+          33,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5595238095238095
+      },
+      {
+        "bucket_key": [
+          33,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6904761904761905
+      },
+      {
+        "bucket_key": [
+          33,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6904761904761905
+      },
+      {
+        "bucket_key": [
+          34,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8368794326241135
+      },
+      {
+        "bucket_key": [
+          34,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8723404255319149
+      },
+      {
+        "bucket_key": [
+          34,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8723404255319149
+      },
+      {
+        "bucket_key": [
+          35,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.05789473684210526
+      },
+      {
+        "bucket_key": [
+          35,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.49473684210526314
+      },
+      {
+        "bucket_key": [
+          35,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.11578947368421053
+      },
+      {
+        "bucket_key": [
+          36,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5129533678756477
+      },
+      {
+        "bucket_key": [
+          36,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5181347150259067
+      },
+      {
+        "bucket_key": [
+          36,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.48704663212435234
+      },
+      {
+        "bucket_key": [
+          37,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6172248803827751
+      },
+      {
+        "bucket_key": [
+          37,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6842105263157895
+      },
+      {
+        "bucket_key": [
+          37,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.631578947368421
+      },
+      {
+        "bucket_key": [
+          38,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7708333333333334
+      },
+      {
+        "bucket_key": [
+          38,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5260416666666666
+      },
+      {
+        "bucket_key": [
+          38,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.515625
+      },
+      {
+        "bucket_key": [
+          39,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.2283464566929134
+      },
+      {
+        "bucket_key": [
+          39,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3779527559055118
+      },
+      {
+        "bucket_key": [
+          39,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5393700787401575
+      },
+      {
+        "bucket_key": [
+          40,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          40,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          40,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          41,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.091324200913242
+      },
+      {
+        "bucket_key": [
+          41,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7123287671232876
+      },
+      {
+        "bucket_key": [
+          41,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6164383561643836
+      },
+      {
+        "bucket_key": [
+          42,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.20300751879699247
+      },
+      {
+        "bucket_key": [
+          42,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7781954887218046
+      },
+      {
+        "bucket_key": [
+          42,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6691729323308271
+      },
+      {
+        "bucket_key": [
+          43,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5646551724137931
+      },
+      {
+        "bucket_key": [
+          43,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.7025862068965517
+      },
+      {
+        "bucket_key": [
+          43,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7370689655172413
+      },
+      {
+        "bucket_key": [
+          44,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.2733812949640288
+      },
+      {
+        "bucket_key": [
+          44,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5611510791366906
+      },
+      {
+        "bucket_key": [
+          44,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5755395683453237
+      },
+      {
+        "bucket_key": [
+          45,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.33760683760683763
+      },
+      {
+        "bucket_key": [
+          45,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7435897435897436
+      },
+      {
+        "bucket_key": [
+          45,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5897435897435898
+      },
+      {
+        "bucket_key": [
+          46,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 46,
+        "gt_relative_score": 0.12121212121212122
+      },
+      {
+        "bucket_key": [
+          46,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 14,
+        "gt_relative_score": 0.6931818181818182
+      },
+      {
+        "bucket_key": [
+          46,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5037878787878788
+      },
+      {
+        "bucket_key": [
+          47,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.17153284671532848
+      },
+      {
+        "bucket_key": [
+          47,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8284671532846716
+      },
+      {
+        "bucket_key": [
+          47,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5401459854014599
+      },
+      {
+        "bucket_key": [
+          48,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7631578947368421
+      },
+      {
+        "bucket_key": [
+          48,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7894736842105263
+      },
+      {
+        "bucket_key": [
+          48,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.9210526315789473
+      },
+      {
+        "bucket_key": [
+          49,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.20279720279720279
+      },
+      {
+        "bucket_key": [
+          49,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6433566433566433
+      },
+      {
+        "bucket_key": [
+          49,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3706293706293706
+      },
+      {
+        "bucket_key": [
+          50,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8222222222222222
+      },
+      {
+        "bucket_key": [
+          50,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6755555555555556
+      },
+      {
+        "bucket_key": [
+          50,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5822222222222222
+      },
+      {
+        "bucket_key": [
+          51,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4
+      },
+      {
+        "bucket_key": [
+          51,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.38666666666666666
+      },
+      {
+        "bucket_key": [
+          51,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.21333333333333335
+      },
+      {
+        "bucket_key": [
+          52,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4217687074829932
+      },
+      {
+        "bucket_key": [
+          52,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.5170068027210885
+      },
+      {
+        "bucket_key": [
+          52,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.35374149659863946
+      },
+      {
+        "bucket_key": [
+          53,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.1650485436893204
+      },
+      {
+        "bucket_key": [
+          53,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6650485436893204
+      },
+      {
+        "bucket_key": [
+          53,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7961165048543689
+      },
+      {
+        "bucket_key": [
+          54,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3389121338912134
+      },
+      {
+        "bucket_key": [
+          54,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7112970711297071
+      },
+      {
+        "bucket_key": [
+          54,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.4351464435146444
+      },
+      {
+        "bucket_key": [
+          55,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.25824175824175827
+      },
+      {
+        "bucket_key": [
+          55,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4175824175824176
+      },
+      {
+        "bucket_key": [
+          55,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3901098901098901
+      },
+      {
+        "bucket_key": [
+          56,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5147058823529411
+      },
+      {
+        "bucket_key": [
+          56,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 46,
+        "gt_relative_score": 0.5588235294117647
+      },
+      {
+        "bucket_key": [
+          56,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          57,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.4336734693877551
+      },
+      {
+        "bucket_key": [
+          57,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": -1.95
+      },
+      {
+        "bucket_key": [
+          57,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": -1.95
+      },
+      {
+        "bucket_key": [
+          58,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4304932735426009
+      },
+      {
+        "bucket_key": [
+          58,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.48878923766816146
+      },
+      {
+        "bucket_key": [
+          58,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4080717488789238
+      },
+      {
+        "bucket_key": [
+          59,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7070707070707071
+      },
+      {
+        "bucket_key": [
+          59,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.7272727272727273
+      },
+      {
+        "bucket_key": [
+          59,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 40,
+        "gt_relative_score": 0.7272727272727273
+      },
+      {
+        "bucket_key": [
+          60,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.266304347826087
+      },
+      {
+        "bucket_key": [
+          60,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          60,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 40,
+        "gt_relative_score": 0.22282608695652173
+      },
+      {
+        "bucket_key": [
+          61,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 8,
+        "gt_relative_score": 0.4186046511627907
+      },
+      {
+        "bucket_key": [
+          61,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 8,
+        "gt_relative_score": 0.1744186046511628
+      },
+      {
+        "bucket_key": [
+          61,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 8,
+        "gt_relative_score": 0.5755813953488372
+      },
+      {
+        "bucket_key": [
+          62,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.24796747967479674
+      },
+      {
+        "bucket_key": [
+          62,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.036585365853658534
+      },
+      {
+        "bucket_key": [
+          62,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6829268292682927
+      },
+      {
+        "bucket_key": [
+          63,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.2967741935483871
+      },
+      {
+        "bucket_key": [
+          63,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.13548387096774195
+      },
+      {
+        "bucket_key": [
+          63,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4129032258064516
+      },
+      {
+        "bucket_key": [
+          64,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.46994535519125685
+      },
+      {
+        "bucket_key": [
+          64,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.6666666666666666
+      },
+      {
+        "bucket_key": [
+          64,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3825136612021858
+      },
+      {
+        "bucket_key": [
+          65,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.1091703056768559
+      },
+      {
+        "bucket_key": [
+          65,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.2794759825327511
+      },
+      {
+        "bucket_key": [
+          65,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.34497816593886466
+      },
+      {
+        "bucket_key": [
+          66,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5952380952380952
+      },
+      {
+        "bucket_key": [
+          66,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7476190476190476
+      },
+      {
+        "bucket_key": [
+          66,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7380952380952381
+      },
+      {
+        "bucket_key": [
+          67,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4785276073619632
+      },
+      {
+        "bucket_key": [
+          67,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7914110429447853
+      },
+      {
+        "bucket_key": [
+          67,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 38,
+        "gt_relative_score": 0.7791411042944786
+      },
+      {
+        "bucket_key": [
+          68,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.39855072463768115
+      },
+      {
+        "bucket_key": [
+          68,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7137681159420289
+      },
+      {
+        "bucket_key": [
+          68,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.6159420289855072
+      },
+      {
+        "bucket_key": [
+          69,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.2358490566037736
+      },
+      {
+        "bucket_key": [
+          69,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.1792452830188679
+      },
+      {
+        "bucket_key": [
+          69,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          70,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 32,
+        "gt_relative_score": 0.17647058823529413
+      },
+      {
+        "bucket_key": [
+          70,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 32,
+        "gt_relative_score": 0.42780748663101603
+      },
+      {
+        "bucket_key": [
+          70,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 15,
+        "gt_relative_score": 0.36363636363636365
+      },
+      {
+        "bucket_key": [
+          71,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4946236559139785
+      },
+      {
+        "bucket_key": [
+          71,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4731182795698925
+      },
+      {
+        "bucket_key": [
+          71,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5161290322580645
+      },
+      {
+        "bucket_key": [
+          72,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.84
+      },
+      {
+        "bucket_key": [
+          72,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.84
+      },
+      {
+        "bucket_key": [
+          72,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.88
+      },
+      {
+        "bucket_key": [
+          73,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4716981132075472
+      },
+      {
+        "bucket_key": [
+          73,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5141509433962265
+      },
+      {
+        "bucket_key": [
+          73,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4009433962264151
+      },
+      {
+        "bucket_key": [
+          74,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5287356321839081
+      },
+      {
+        "bucket_key": [
+          74,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5804597701149425
+      },
+      {
+        "bucket_key": [
+          74,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5747126436781609
+      },
+      {
+        "bucket_key": [
+          75,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.37185929648241206
+      },
+      {
+        "bucket_key": [
+          75,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.6331658291457286
+      },
+      {
+        "bucket_key": [
+          75,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 41,
+        "gt_relative_score": 0.6934673366834171
+      },
+      {
+        "bucket_key": [
+          76,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.7518796992481203
+      },
+      {
+        "bucket_key": [
+          76,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.9398496240601504
+      },
+      {
+        "bucket_key": [
+          76,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5488721804511278
+      },
+      {
+        "bucket_key": [
+          77,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5659340659340659
+      },
+      {
+        "bucket_key": [
+          77,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.489010989010989
+      },
+      {
+        "bucket_key": [
+          77,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5494505494505495
+      },
+      {
+        "bucket_key": [
+          78,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.2885572139303483
+      },
+      {
+        "bucket_key": [
+          78,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7711442786069652
+      },
+      {
+        "bucket_key": [
+          78,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5771144278606966
+      },
+      {
+        "bucket_key": [
+          79,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6046511627906976
+      },
+      {
+        "bucket_key": [
+          79,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8372093023255814
+      },
+      {
+        "bucket_key": [
+          79,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8255813953488372
+      },
+      {
+        "bucket_key": [
+          80,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.295
+      },
+      {
+        "bucket_key": [
+          80,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.255
+      },
+      {
+        "bucket_key": [
+          80,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 46,
+        "gt_relative_score": 0.215
+      },
+      {
+        "bucket_key": [
+          81,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.026143790849673203
+      },
+      {
+        "bucket_key": [
+          81,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4117647058823529
+      },
+      {
+        "bucket_key": [
+          81,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 43,
+        "gt_relative_score": 0.21568627450980393
+      },
+      {
+        "bucket_key": [
+          82,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5548780487804879
+      },
+      {
+        "bucket_key": [
+          82,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7560975609756098
+      },
+      {
+        "bucket_key": [
+          82,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.75
+      },
+      {
+        "bucket_key": [
+          83,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.648854961832061
+      },
+      {
+        "bucket_key": [
+          83,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7709923664122137
+      },
+      {
+        "bucket_key": [
+          83,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.648854961832061
+      },
+      {
+        "bucket_key": [
+          84,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3761904761904762
+      },
+      {
+        "bucket_key": [
+          84,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5619047619047619
+      },
+      {
+        "bucket_key": [
+          84,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.49523809523809526
+      },
+      {
+        "bucket_key": [
+          85,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.16772151898734178
+      },
+      {
+        "bucket_key": [
+          85,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.6360759493670886
+      },
+      {
+        "bucket_key": [
+          85,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5569620253164557
+      },
+      {
+        "bucket_key": [
+          86,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6054054054054054
+      },
+      {
+        "bucket_key": [
+          86,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5405405405405406
+      },
+      {
+        "bucket_key": [
+          86,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7081081081081081
+      },
+      {
+        "bucket_key": [
+          87,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.16901408450704225
+      },
+      {
+        "bucket_key": [
+          87,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.4647887323943662
+      },
+      {
+        "bucket_key": [
+          87,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.38028169014084506
+      },
+      {
+        "bucket_key": [
+          88,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3576923076923077
+      },
+      {
+        "bucket_key": [
+          88,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5461538461538461
+      },
+      {
+        "bucket_key": [
+          88,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6807692307692308
+      },
+      {
+        "bucket_key": [
+          89,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6303317535545023
+      },
+      {
+        "bucket_key": [
+          89,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 46,
+        "gt_relative_score": 0.7440758293838863
+      },
+      {
+        "bucket_key": [
+          89,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 41,
+        "gt_relative_score": 0.7677725118483413
+      },
+      {
+        "bucket_key": [
+          90,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.640926640926641
+      },
+      {
+        "bucket_key": [
+          90,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.47876447876447875
+      },
+      {
+        "bucket_key": [
+          90,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6061776061776062
+      },
+      {
+        "bucket_key": [
+          91,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.36423841059602646
+      },
+      {
+        "bucket_key": [
+          91,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 47,
+        "gt_relative_score": 0.47019867549668876
+      },
+      {
+        "bucket_key": [
+          91,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.6423841059602649
+      },
+      {
+        "bucket_key": [
+          92,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.30337078651685395
+      },
+      {
+        "bucket_key": [
+          92,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8202247191011236
+      },
+      {
+        "bucket_key": [
+          92,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          93,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3050847457627119
+      },
+      {
+        "bucket_key": [
+          93,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.5819209039548022
+      },
+      {
+        "bucket_key": [
+          93,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6101694915254238
+      },
+      {
+        "bucket_key": [
+          94,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.04371584699453552
+      },
+      {
+        "bucket_key": [
+          94,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7540983606557377
+      },
+      {
+        "bucket_key": [
+          94,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.7540983606557377
+      },
+      {
+        "bucket_key": [
+          95,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.21739130434782608
+      },
+      {
+        "bucket_key": [
+          95,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          95,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.41304347826086957
+      },
+      {
+        "bucket_key": [
+          96,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6090225563909775
+      },
+      {
+        "bucket_key": [
+          96,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 44,
+        "gt_relative_score": 0.40601503759398494
+      },
+      {
+        "bucket_key": [
+          96,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8120300751879699
+      },
+      {
+        "bucket_key": [
+          97,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.19411764705882353
+      },
+      {
+        "bucket_key": [
+          97,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.0
+      },
+      {
+        "bucket_key": [
+          97,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.42058823529411765
+      },
+      {
+        "bucket_key": [
+          98,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.3225806451612903
+      },
+      {
+        "bucket_key": [
+          98,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 45,
+        "gt_relative_score": 0.5806451612903226
+      },
+      {
+        "bucket_key": [
+          98,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.8709677419354839
+      },
+      {
+        "bucket_key": [
+          99,
+          "qwen2.5-72b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.267515923566879
+      },
+      {
+        "bucket_key": [
+          99,
+          "gpt-oss-120b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.6242038216560509
+      },
+      {
+        "bucket_key": [
+          99,
+          "qwen3-235b"
+        ],
+        "num_available_samples": 48,
+        "gt_relative_score": 0.47770700636942676
+      }
+    ]
+  }
+}
