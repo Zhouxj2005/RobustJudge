@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -9,7 +10,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_PATH = BASE_DIR / "rubric_with_simplified_prompt.json"
 MATRIX_PATH = BASE_DIR / "rubric_matrix.json"
-OUTPUT_PATH = BASE_DIR / "rubric_case_study_first3.md"
+OUTPUT_PATH = BASE_DIR / "rubric_case_study_first3_v2.md"
 NUM_QUESTIONS = 3
 TOP_K = 3
 SCORE_MARGIN = 0.08
@@ -139,8 +140,13 @@ def render_question_section(item: dict, matrix_item: dict) -> str:
 
 
 def main() -> None:
-    input_data = load_json(INPUT_PATH)
-    matrix_data = load_json(MATRIX_PATH)
+    input_path = Path(os.environ.get("CASE_STUDY_INPUT_PATH", str(INPUT_PATH)))
+    matrix_path = Path(os.environ.get("CASE_STUDY_MATRIX_PATH", str(MATRIX_PATH)))
+    output_path = Path(os.environ.get("CASE_STUDY_OUTPUT_PATH", str(OUTPUT_PATH)))
+    num_questions = int(os.environ.get("CASE_STUDY_NUM_QUESTIONS", str(NUM_QUESTIONS)))
+
+    input_data = load_json(input_path)
+    matrix_data = load_json(matrix_path)
     matrix_by_question = {
         item["question_index"]: item
         for item in matrix_data
@@ -148,7 +154,7 @@ def main() -> None:
     }
 
     sections = ["# Rubric Dedup Case Study", ""]
-    for item in input_data[:NUM_QUESTIONS]:
+    for item in input_data[:num_questions]:
         question_index = item["question_index"]
         matrix_item = matrix_by_question.get(question_index)
         if not matrix_item:
@@ -156,8 +162,8 @@ def main() -> None:
         sections.append(render_question_section(item, matrix_item))
         sections.append("")
 
-    OUTPUT_PATH.write_text("\n".join(sections).strip() + "\n", encoding="utf-8")
-    print(f"Saved case study markdown to {OUTPUT_PATH}")
+    output_path.write_text("\n".join(sections).strip() + "\n", encoding="utf-8")
+    print(f"Saved case study markdown to {output_path}")
 
 
 if __name__ == "__main__":

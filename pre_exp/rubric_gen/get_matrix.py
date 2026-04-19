@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from threading import Lock, Semaphore
@@ -13,13 +14,13 @@ except ImportError:
 
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_PATH = BASE_DIR / "rubric_with_simplified_prompt.json"
-OUTPUT_PATH = BASE_DIR / "rubric_matrix.json"
+OUTPUT_PATH = BASE_DIR / "rubric_matrix_100.json"
 PROMPT_PATH = BASE_DIR / "rubric_dedup_prompt.json"
 
-NUM_QUESTIONS = 3
+NUM_QUESTIONS = 100
 TARGET_INPUT_BUDGET = 12000
 MAX_CANDIDATES_PER_BATCH = 50
-QUESTION_WORKERS = 3
+QUESTION_WORKERS = 100
 BATCH_WORKERS = 8
 MAX_API_CONCURRENCY = 24
 SKIP_FAILED_BATCH = True
@@ -31,8 +32,14 @@ API_SEMAPHORE = Semaphore(MAX_API_CONCURRENCY)
 with PROMPT_PATH.open("r", encoding="utf-8") as f:
     prompt_config = json.load(f)
 
-SYSTEM_PROMPT = prompt_config["system_prompt"]
-BATCH_MATCH_PROMPT = prompt_config["batch_match_prompt"]
+SYSTEM_PROMPT = prompt_config.get(
+    "system_prompt_with_question_oneshot_v1",
+    prompt_config["system_prompt"],
+)
+BATCH_MATCH_PROMPT = prompt_config.get(
+    "batch_match_prompt_with_question_oneshot_v1",
+    prompt_config["batch_match_prompt"],
+)
 
 
 def parse_rubric_response(rubric_response: str) -> list[str]:
@@ -58,13 +65,14 @@ def estimate_tokens(text: str) -> int:
     return max(1, len(text) // 4)
 
 
-def build_prompt(query_rubric: str, candidates: list[str]) -> str:
+def build_prompt(question: str, query_rubric: str, candidates: list[str]) -> str:
     candidate_text = "\n".join(f"{i}. {rubric}" for i, rubric in enumerate(candidates, 1))
-    return (
+    prompt = (
         BATCH_MATCH_PROMPT
         .replace("[[QUERY_RUBRIC]]", query_rubric)
         .replace("[[CANDIDATE_RUBRICS]]", candidate_text)
     )
+    return prompt.replace("[[QUESTION]]", question)
 
 
 def parse_batch_match_response(response: str | None, candidate_count: int) -> list[int]:
@@ -133,8 +141,8 @@ def show_prompt_once(prompt: str) -> None:
         SHOW_PROMPT_ONCE = True
 
 
-def run_batch_match(query_rubric: str, start: int, batch: list[str]) -> list[int]:
-    prompt = build_prompt(query_rubric, batch)
+def run_batch_match(question: str, query_rubric: str, start: int, batch: list[str]) -> list[int]:
+    prompt = build_prompt(question, query_rubric, batch)
     show_prompt_once(prompt)
     with API_SEMAPHORE:
         response = call_kimi(prompt, system_prompt=SYSTEM_PROMPT)
@@ -142,7 +150,7 @@ def run_batch_match(query_rubric: str, start: int, batch: list[str]) -> list[int
     return [start + index - 1 for index in batch_matches]
 
 
-def find_match_index(query_rubric: str, unique_rubrics: list[str]) -> int | None:
+def find_match_index(question: str, query_rubric: str, unique_rubrics: list[str]) -> int | None:
     batches = split_batches(unique_rubrics)
     if not batches:
         return None
@@ -151,7 +159,7 @@ def find_match_index(query_rubric: str, unique_rubrics: list[str]) -> int | None
     failed_batches = []
     with ThreadPoolExecutor(max_workers=min(BATCH_WORKERS, len(batches))) as executor:
         future_to_batch = {
-            executor.submit(run_batch_match, query_rubric, start, batch): (start, batch)
+            executor.submit(run_batch_match, question, query_rubric, start, batch): (start, batch)
             for start, batch in batches
         }
         for future in as_completed(future_to_batch):
@@ -168,7 +176,7 @@ def find_match_index(query_rubric: str, unique_rubrics: list[str]) -> int | None
     for start, batch in failed_batches:
         print(f"Retrying batch sequentially: start={start}, size={len(batch)}")
         try:
-            matched.extend(run_batch_match(query_rubric, start, batch))
+            matched.extend(run_batch_match(question, query_rubric, start, batch))
         except Exception as exc:
             print(
                 f"Sequential retry failed for query='{query_rubric[:60]}', "
@@ -181,6 +189,7 @@ def find_match_index(query_rubric: str, unique_rubrics: list[str]) -> int | None
 
 
 def build_matrix_for_question(item: dict) -> dict:
+    question = item["question"]
     sample_rubrics = [parse_rubric_response(r) for r in item.get("rubric_responses", [])]
 
     unique_rubrics: list[str] = []
@@ -193,7 +202,7 @@ def build_matrix_for_question(item: dict) -> dict:
         for rubric in rubrics:
             processed += 1
             print(f"question_index={item['question_index']}: {processed}/{total_rubrics}")
-            match_index = find_match_index(rubric, unique_rubrics)
+            match_index = find_match_index(question, rubric, unique_rubrics)
             if match_index is None:
                 unique_rubrics.append(rubric)
                 match_index = len(unique_rubrics) - 1
@@ -239,15 +248,19 @@ def process_question(item: dict) -> tuple[int, dict]:
 
 
 def main() -> None:
-    data = load_json(INPUT_PATH, [])
-    results = load_json(OUTPUT_PATH, [])
+    input_path = Path(os.environ.get("RUBRIC_MATRIX_INPUT_PATH", str(INPUT_PATH)))
+    output_path = Path(os.environ.get("RUBRIC_MATRIX_OUTPUT_PATH", str(OUTPUT_PATH)))
+    num_questions = int(os.environ.get("RUBRIC_MATRIX_NUM_QUESTIONS", str(NUM_QUESTIONS)))
+
+    data = load_json(input_path, [])
+    results = load_json(output_path, [])
     completed_question_indices = {
         item["question_index"] for item in results if "question_index" in item
     }
     pending_items = []
 
     for i, item in enumerate(data):
-        if i >= NUM_QUESTIONS:
+        if i >= num_questions:
             break
         if item["question_index"] in completed_question_indices:
             print(f"Skipping question_index={item['question_index']}")
@@ -255,8 +268,8 @@ def main() -> None:
         pending_items.append(item)
 
     if not pending_items:
-        save_json(OUTPUT_PATH, results)
-        print(f"Saved matrix results to {OUTPUT_PATH}")
+        save_json(output_path, results)
+        print(f"Saved matrix results to {output_path}")
         return
 
     with ThreadPoolExecutor(max_workers=min(QUESTION_WORKERS, len(pending_items))) as executor:
@@ -269,10 +282,10 @@ def main() -> None:
                 continue
             results.append(result)
             results.sort(key=lambda item: item.get("question_index", float("inf")))
-            save_json(OUTPUT_PATH, results)
+            save_json(output_path, results)
             print(f"Finished question_index={question_index}")
 
-    print(f"Saved matrix results to {OUTPUT_PATH}")
+    print(f"Saved matrix results to {output_path}")
 
 
 if __name__ == "__main__":
