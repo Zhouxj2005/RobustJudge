@@ -5,7 +5,7 @@ import time
 import requests
 
 
-API_KEY = "your_api_key_here"
+API_KEY = "QST4e0788eb8f1eb7f7a228fa490b526e71"
 BASE_URL = "https://maas.devops.beta.xiaohongshu.com/dqaservice-medical-v25/v1"
 MODEL = "Kimi-K2.5"
 MAX_RETRIES = 5
@@ -32,9 +32,8 @@ def call_kimi(prompt: str, system_prompt: str = "You are a helpful AI assistant.
                             {"role": "user", "content": prompt},
                         ],
                         "stream": False,
-                        "max_tokens": 4096,
                         "temperature": 0.1,
-                        "enable_thinking": False,
+                        "enable_thinking": True,
                     }
                 ),
                 timeout=REQUEST_TIMEOUT,

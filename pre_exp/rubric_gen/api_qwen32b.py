@@ -4,18 +4,20 @@ import time
 import requests
 
 
-API_KEY = "your_api_key_here"
+API_KEY = "MAASee984d11177e419293ee7fc8f5dd6248"
 BASE_URL = "https://maas.devops.xiaohongshu.com/v1"
 MODEL = "qwen3-32b"
-MAX_RETRIES = 5
-RETRY_SLEEP = 3
+MAX_RETRIES = 3
+RETRY_SLEEP = 2
+REQUEST_TIMEOUT = 300
 
 
 def call_qwen32b(
     prompt: str,
     system_prompt: str = "You are a helpful AI assistant.",
     model: str = MODEL,
-    temperature: float = 0.1,
+    temperature: float = 1.0,
+    timeout: float = REQUEST_TIMEOUT,
 ) -> str:
     last_error = None
     for _ in range(MAX_RETRIES):
@@ -34,12 +36,11 @@ def call_qwen32b(
                             {"role": "user", "content": prompt},
                         ],
                         "stream": False,
-                        "max_tokens": 4096,
                         "temperature": temperature,
-                        "enable_thinking": False,
+                        "enable_thinking": True,
                     }
                 ),
-                timeout=600,
+                timeout=timeout,
             )
 
             try:

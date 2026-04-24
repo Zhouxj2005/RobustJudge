@@ -10,7 +10,7 @@ import numpy as np
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parent.parent
-DEFAULT_RUBRIC_PATH = BASE_DIR / "rubric_with_simplified_prompt.json"
+DEFAULT_RUBRIC_PATH = BASE_DIR / "rubric_with_dedup_oriented_prompt.json"
 DEFAULT_RESULT_PATH = BASE_DIR / "generated_rubric_judge_result.json"
 DEFAULT_OUTPUT_JSON = BASE_DIR / "query_level_r_sem_metrics.json"
 DEFAULT_OUTPUT_PNG = ROOT_DIR / "figures" / "generated_rubric_query_level_r_sem_vs_n.png"

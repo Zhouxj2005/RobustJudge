@@ -636,6 +636,5288 @@
     ]
   },
   {
+    "question_index": 3,
+    "question": "请列出高中英语课堂教学评价用语，不少于2000字",
+    "num_samples": 6,
+    "num_unique_rubrics": 526,
+    "unique_rubrics": [
+      {
+        "rubric_index": 1,
+        "criterion": "The response provides a list of English classroom evaluation phrases for high school."
+      },
+      {
+        "rubric_index": 2,
+        "criterion": "The response includes phrases for positive feedback."
+      },
+      {
+        "rubric_index": 3,
+        "criterion": "The response includes phrases for constructive criticism."
+      },
+      {
+        "rubric_index": 4,
+        "criterion": "The response includes phrases for encouraging student improvement."
+      },
+      {
+        "rubric_index": 5,
+        "criterion": "The response includes phrases for assessing student participation."
+      },
+      {
+        "rubric_index": 6,
+        "criterion": "The response includes phrases for evaluating student pronunciation."
+      },
+      {
+        "rubric_index": 7,
+        "criterion": "The response includes phrases for evaluating student grammar usage."
+      },
+      {
+        "rubric_index": 8,
+        "criterion": "The response includes phrases for evaluating student vocabulary usage."
+      },
+      {
+        "rubric_index": 9,
+        "criterion": "The response includes phrases for evaluating student writing skills."
+      },
+      {
+        "rubric_index": 10,
+        "criterion": "The response includes phrases for evaluating student speaking skills."
+      },
+      {
+        "rubric_index": 11,
+        "criterion": "The response includes phrases for assessing student comprehension."
+      },
+      {
+        "rubric_index": 12,
+        "criterion": "The response includes phrases for assessing homework quality."
+      },
+      {
+        "rubric_index": 13,
+        "criterion": "The response includes phrases for evaluating group work participation."
+      },
+      {
+        "rubric_index": 14,
+        "criterion": "The response includes phrases for assessing individual presentations."
+      },
+      {
+        "rubric_index": 15,
+        "criterion": "The response includes phrases for giving general academic feedback."
+      },
+      {
+        "rubric_index": 16,
+        "criterion": "The response includes phrases for noting student progress over time."
+      },
+      {
+        "rubric_index": 17,
+        "criterion": "The response includes phrases for pointing out common errors."
+      },
+      {
+        "rubric_index": 18,
+        "criterion": "The response includes phrases for praising specific strengths."
+      },
+      {
+        "rubric_index": 19,
+        "criterion": "The response includes phrases for suggesting specific improvements."
+      },
+      {
+        "rubric_index": 20,
+        "criterion": "The response includes phrases for evaluating reading comprehension."
+      },
+      {
+        "rubric_index": 21,
+        "criterion": "The response includes phrases for evaluating listening comprehension."
+      },
+      {
+        "rubric_index": 22,
+        "criterion": "The response includes phrases for assessing classroom behavior."
+      },
+      {
+        "rubric_index": 23,
+        "criterion": "The response includes phrases for assessing student motivation."
+      },
+      {
+        "rubric_index": 24,
+        "criterion": "The response includes phrases for assessing student engagement in lessons."
+      },
+      {
+        "rubric_index": 25,
+        "criterion": "The response includes phrases for encouraging student self-reflection."
+      },
+      {
+        "rubric_index": 26,
+        "criterion": "The response includes phrases for assessing student preparedness."
+      },
+      {
+        "rubric_index": 27,
+        "criterion": "The response includes phrases for assessing student punctuality."
+      },
+      {
+        "rubric_index": 28,
+        "criterion": "The response includes phrases for assessing student effort."
+      },
+      {
+        "rubric_index": 29,
+        "criterion": "The response includes phrases for assessing student confidence in speaking."
+      },
+      {
+        "rubric_index": 30,
+        "criterion": "The response includes phrases for assessing student fluency in English."
+      },
+      {
+        "rubric_index": 31,
+        "criterion": "The response includes phrases for assessing student accuracy in grammar."
+      },
+      {
+        "rubric_index": 32,
+        "criterion": "The response includes phrases for assessing student clarity in writing."
+      },
+      {
+        "rubric_index": 33,
+        "criterion": "The response includes phrases for assessing student creativity in assignments."
+      },
+      {
+        "rubric_index": 34,
+        "criterion": "The response includes phrases for assessing student use of language resources."
+      },
+      {
+        "rubric_index": 35,
+        "criterion": "The response includes phrases for assessing student responsiveness to feedback."
+      },
+      {
+        "rubric_index": 36,
+        "criterion": "The response includes phrases for assessing student willingness to take risks in communication."
+      },
+      {
+        "rubric_index": 37,
+        "criterion": "The response includes phrases for assessing student collaboration with peers."
+      },
+      {
+        "rubric_index": 38,
+        "criterion": "The response includes phrases for assessing student willingness to ask questions."
+      },
+      {
+        "rubric_index": 39,
+        "criterion": "The response includes phrases for assessing student confidence in answering questions."
+      },
+      {
+        "rubric_index": 40,
+        "criterion": "The response includes phrases for assessing student ability to follow instructions."
+      },
+      {
+        "rubric_index": 41,
+        "criterion": "The response includes phrases for assessing student ability to work independently."
+      },
+      {
+        "rubric_index": 42,
+        "criterion": "The response includes phrases for assessing student use of English in real-life contexts."
+      },
+      {
+        "rubric_index": 43,
+        "criterion": "The response includes phrases for assessing student ability to use English in various situations."
+      },
+      {
+        "rubric_index": 44,
+        "criterion": "The response includes phrases for assessing student understanding of cultural context in English."
+      },
+      {
+        "rubric_index": 45,
+        "criterion": "The response includes phrases for assessing student ability to recognize and correct their own mistakes."
+      },
+      {
+        "rubric_index": 46,
+        "criterion": "The response includes phrases for assessing student ability to express opinions clearly."
+      },
+      {
+        "rubric_index": 47,
+        "criterion": "The response includes phrases for assessing student ability to explain their thinking in English."
+      },
+      {
+        "rubric_index": 48,
+        "criterion": "The response includes phrases for assessing student ability to summarize information accurately."
+      },
+      {
+        "rubric_index": 49,
+        "criterion": "The response includes phrases for assessing student ability to paraphrase information."
+      },
+      {
+        "rubric_index": 50,
+        "criterion": "The response includes phrases for assessing student ability to identify the main idea in texts."
+      },
+      {
+        "rubric_index": 51,
+        "criterion": "The response includes phrases for assessing student ability to find supporting details in texts."
+      },
+      {
+        "rubric_index": 52,
+        "criterion": "The response includes phrases for assessing student ability to infer meaning from context."
+      },
+      {
+        "rubric_index": 53,
+        "criterion": "The response includes phrases for assessing student ability to make predictions based on texts."
+      },
+      {
+        "rubric_index": 54,
+        "criterion": "The response includes phrases for assessing student ability to identify tone and attitude in texts."
+      },
+      {
+        "rubric_index": 55,
+        "criterion": "The response includes phrases for assessing student ability to identify cause and effect relationships."
+      },
+      {
+        "rubric_index": 56,
+        "criterion": "The response includes phrases for assessing student ability to compare and contrast ideas."
+      },
+      {
+        "rubric_index": 57,
+        "criterion": "The response includes phrases for assessing student ability to analyze the structure of texts."
+      },
+      {
+        "rubric_index": 58,
+        "criterion": "The response includes phrases for assessing student ability to identify the author’s purpose."
+      },
+      {
+        "rubric_index": 59,
+        "criterion": "The response includes phrases for assessing student ability to evaluate the credibility of sources."
+      },
+      {
+        "rubric_index": 60,
+        "criterion": "The response includes phrases for assessing student ability to recognize bias in texts."
+      },
+      {
+        "rubric_index": 61,
+        "criterion": "The response includes phrases for assessing student ability to organize ideas logically."
+      },
+      {
+        "rubric_index": 62,
+        "criterion": "The response includes phrases for assessing student ability to use transition words effectively."
+      },
+      {
+        "rubric_index": 63,
+        "criterion": "The response includes phrases for assessing student ability to connect ideas cohesively."
+      },
+      {
+        "rubric_index": 64,
+        "criterion": "The response includes phrases for assessing student ability to vary sentence structures."
+      },
+      {
+        "rubric_index": 65,
+        "criterion": "The response includes phrases for assessing student ability to use appropriate tenses."
+      },
+      {
+        "rubric_index": 66,
+        "criterion": "The response includes phrases for assessing student ability to use articles correctly."
+      },
+      {
+        "rubric_index": 67,
+        "criterion": "The response includes phrases for assessing student ability to use prepositions correctly."
+      },
+      {
+        "rubric_index": 68,
+        "criterion": "The response includes phrases for assessing student ability to use conjunctions correctly."
+      },
+      {
+        "rubric_index": 69,
+        "criterion": "The response includes phrases for assessing student ability to use capitalization correctly."
+      },
+      {
+        "rubric_index": 70,
+        "criterion": "The response includes phrases for assessing student ability to use punctuation correctly."
+      },
+      {
+        "rubric_index": 71,
+        "criterion": "The response includes phrases for assessing student ability to avoid common spelling errors."
+      },
+      {
+        "rubric_index": 72,
+        "criterion": "The response includes phrases for assessing student ability to use dictionaries or other resources effectively."
+      },
+      {
+        "rubric_index": 73,
+        "criterion": "The response includes phrases for assessing student ability to take notes during lessons."
+      },
+      {
+        "rubric_index": 74,
+        "criterion": "The response includes phrases for assessing student ability to prepare for class activities."
+      },
+      {
+        "rubric_index": 75,
+        "criterion": "The response includes phrases for assessing student ability to complete tasks on time."
+      },
+      {
+        "rubric_index": 76,
+        "criterion": "The response includes phrases for assessing student ability to manage their own learning progress."
+      },
+      {
+        "rubric_index": 77,
+        "criterion": "The response includes phrases for assessing student ability to set learning goals."
+      },
+      {
+        "rubric_index": 78,
+        "criterion": "The response includes phrases for assessing student ability to reflect on their own learning."
+      },
+      {
+        "rubric_index": 79,
+        "criterion": "The response includes phrases for assessing student ability to seek help when needed."
+      },
+      {
+        "rubric_index": 80,
+        "criterion": "The response includes phrases for assessing student ability to participate in peer evaluations."
+      },
+      {
+        "rubric_index": 81,
+        "criterion": "The response includes phrases for assessing student ability to accept feedback from others."
+      },
+      {
+        "rubric_index": 82,
+        "criterion": "The response includes phrases for assessing student ability to give feedback to others."
+      },
+      {
+        "rubric_index": 83,
+        "criterion": "The response includes phrases for assessing student ability to take initiative in group work."
+      },
+      {
+        "rubric_index": 84,
+        "criterion": "The response includes phrases for assessing student ability to share responsibility in group work."
+      },
+      {
+        "rubric_index": 85,
+        "criterion": "The response includes phrases for assessing student ability to listen actively during discussions."
+      },
+      {
+        "rubric_index": 86,
+        "criterion": "The response includes phrases for assessing student ability to ask meaningful questions during discussions."
+      },
+      {
+        "rubric_index": 87,
+        "criterion": "The response includes phrases for assessing student ability to respond to others' ideas during discussions."
+      },
+      {
+        "rubric_index": 88,
+        "criterion": "The response includes phrases for assessing student ability to summarize discussions after they occur."
+      },
+      {
+        "rubric_index": 89,
+        "criterion": "The response includes phrases for assessing student ability to identify and correct grammatical errors in texts."
+      },
+      {
+        "rubric_index": 90,
+        "criterion": "The response includes phrases for assessing student ability to identify and correct spelling errors in texts."
+      },
+      {
+        "rubric_index": 91,
+        "criterion": "The response includes phrases for assessing student ability to identify and correct punctuation errors in texts."
+      },
+      {
+        "rubric_index": 92,
+        "criterion": "The response includes phrases for assessing student ability to identify and correct vocabulary errors in texts."
+      },
+      {
+        "rubric_index": 93,
+        "criterion": "The response includes phrases for assessing student ability to identify and correct structural errors in texts."
+      },
+      {
+        "rubric_index": 94,
+        "criterion": "The response includes phrases for assessing student ability to identify and correct semantic errors in texts."
+      },
+      {
+        "rubric_index": 95,
+        "criterion": "The response includes phrases for assessing student ability to use English creatively in writing."
+      },
+      {
+        "rubric_index": 96,
+        "criterion": "The response includes phrases for assessing student ability to write for different purposes (e.g., narration, description, argument)."
+      },
+      {
+        "rubric_index": 97,
+        "criterion": "The response includes phrases for assessing student ability to write for different audiences."
+      },
+      {
+        "rubric_index": 98,
+        "criterion": "The response includes phrases for assessing student ability to write clear and concise sentences."
+      },
+      {
+        "rubric_index": 99,
+        "criterion": "The response includes phrases for assessing student ability to write formal and informal texts appropriately."
+      },
+      {
+        "rubric_index": 100,
+        "criterion": "The response includes phrases for assessing student ability to use formal language when needed."
+      },
+      {
+        "rubric_index": 101,
+        "criterion": "The response includes phrases for assessing student ability to use informal language appropriately."
+      },
+      {
+        "rubric_index": 102,
+        "criterion": "The response includes phrases for assessing student ability to use idiomatic expressions appropriately."
+      },
+      {
+        "rubric_index": 103,
+        "criterion": "The response includes phrases for assessing student ability to use phrasal verbs appropriately."
+      },
+      {
+        "rubric_index": 104,
+        "criterion": "The response includes phrases for assessing student ability to understand and use figurative language."
+      },
+      {
+        "rubric_index": 105,
+        "criterion": "The response includes phrases for assessing student ability to use English in academic contexts."
+      },
+      {
+        "rubric_index": 106,
+        "criterion": "The response includes phrases for assessing student ability to use English in social contexts."
+      },
+      {
+        "rubric_index": 107,
+        "criterion": "The response includes phrases for assessing student ability to use English in professional contexts."
+      },
+      {
+        "rubric_index": 108,
+        "criterion": "The response includes phrases for assessing student ability to adapt language to different situations."
+      },
+      {
+        "rubric_index": 109,
+        "criterion": "The response includes phrases for assessing student ability to use language with appropriate tone."
+      },
+      {
+        "rubric_index": 110,
+        "criterion": "The response includes phrases for assessing student ability to use language with appropriate level of formality."
+      },
+      {
+        "rubric_index": 111,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct verb forms."
+      },
+      {
+        "rubric_index": 112,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct subject-verb agreement."
+      },
+      {
+        "rubric_index": 113,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct comparative and superlative forms."
+      },
+      {
+        "rubric_index": 114,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct noun forms."
+      },
+      {
+        "rubric_index": 115,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct adjective forms."
+      },
+      {
+        "rubric_index": 116,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct adverb forms."
+      },
+      {
+        "rubric_index": 117,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct pronoun forms."
+      },
+      {
+        "rubric_index": 118,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct preposition forms."
+      },
+      {
+        "rubric_index": 119,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct conjunction forms."
+      },
+      {
+        "rubric_index": 120,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct modal verb forms."
+      },
+      {
+        "rubric_index": 121,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct phrasal verb forms."
+      },
+      {
+        "rubric_index": 122,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct conditional sentence forms."
+      },
+      {
+        "rubric_index": 123,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct reported speech forms."
+      },
+      {
+        "rubric_index": 124,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct passive voice forms."
+      },
+      {
+        "rubric_index": 125,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct gerund and infinitive forms."
+      },
+      {
+        "rubric_index": 126,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct present, past, and future tenses."
+      },
+      {
+        "rubric_index": 127,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct perfect tenses."
+      },
+      {
+        "rubric_index": 128,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct progressive tenses."
+      },
+      {
+        "rubric_index": 129,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct past perfect tenses."
+      },
+      {
+        "rubric_index": 130,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct future perfect tenses."
+      },
+      {
+        "rubric_index": 131,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct past progressive tenses."
+      },
+      {
+        "rubric_index": 132,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct present perfect progressive tenses."
+      },
+      {
+        "rubric_index": 133,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct past perfect progressive tenses."
+      },
+      {
+        "rubric_index": 134,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct future perfect progressive tenses."
+      },
+      {
+        "rubric_index": 135,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct present continuous tenses."
+      },
+      {
+        "rubric_index": 136,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct future continuous tenses."
+      },
+      {
+        "rubric_index": 137,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct present perfect tenses."
+      },
+      {
+        "rubric_index": 138,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct present simple tenses."
+      },
+      {
+        "rubric_index": 139,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct past simple tenses."
+      },
+      {
+        "rubric_index": 140,
+        "criterion": "The response includes phrases for assessing student ability to recognize and use correct future simple tenses."
+      },
+      {
+        "rubric_index": 141,
+        "criterion": "The response contains at least 2000 Chinese characters."
+      },
+      {
+        "rubric_index": 142,
+        "criterion": "The response is written in Chinese."
+      },
+      {
+        "rubric_index": 143,
+        "criterion": "The evaluation phrases or expressions are appropriate for classroom settings."
+      },
+      {
+        "rubric_index": 144,
+        "criterion": "The phrases or expressions are suitable for high school English teaching contexts."
+      },
+      {
+        "rubric_index": 145,
+        "criterion": "The response presents the evaluation phrases in a structured or categorized manner."
+      },
+      {
+        "rubric_index": 146,
+        "criterion": "The response includes corrective feedback-oriented phrases for students."
+      },
+      {
+        "rubric_index": 147,
+        "criterion": "The response includes phrases for assessing student group work."
+      },
+      {
+        "rubric_index": 148,
+        "criterion": "The response includes phrases for assessing student homework."
+      },
+      {
+        "rubric_index": 149,
+        "criterion": "The response includes phrases for encouraging students."
+      },
+      {
+        "rubric_index": 150,
+        "criterion": "The response includes phrases for guiding classroom discussion."
+      },
+      {
+        "rubric_index": 151,
+        "criterion": "The response includes phrases for giving instructions clearly."
+      },
+      {
+        "rubric_index": 152,
+        "criterion": "The response includes phrases for giving explanations of grammar points."
+      },
+      {
+        "rubric_index": 153,
+        "criterion": "The response includes phrases for praising student effort."
+      },
+      {
+        "rubric_index": 154,
+        "criterion": "The response includes phrases for setting classroom expectations."
+      },
+      {
+        "rubric_index": 155,
+        "criterion": "The response includes phrases for managing classroom behavior."
+      },
+      {
+        "rubric_index": 156,
+        "criterion": "The response includes phrases for summarizing lesson content."
+      },
+      {
+        "rubric_index": 157,
+        "criterion": "The response includes phrases for assigning classroom activities."
+      },
+      {
+        "rubric_index": 158,
+        "criterion": "The response includes phrases for encouraging peer feedback."
+      },
+      {
+        "rubric_index": 159,
+        "criterion": "The response includes phrases for introducing new lesson topics."
+      },
+      {
+        "rubric_index": 160,
+        "criterion": "The response includes phrases for concluding classroom sessions."
+      },
+      {
+        "rubric_index": 161,
+        "criterion": "The response includes phrases for encouraging self-assessment by students."
+      },
+      {
+        "rubric_index": 162,
+        "criterion": "The response includes phrases for reminding students of learning objectives."
+      },
+      {
+        "rubric_index": 163,
+        "criterion": "The response includes phrases for reminding students of deadlines."
+      },
+      {
+        "rubric_index": 164,
+        "criterion": "The response includes phrases for encouraging students to ask questions."
+      },
+      {
+        "rubric_index": 165,
+        "criterion": "The response includes phrases for inviting student opinions."
+      },
+      {
+        "rubric_index": 166,
+        "criterion": "The response includes phrases for reinforcing classroom rules."
+      },
+      {
+        "rubric_index": 167,
+        "criterion": "The response includes phrases for creating a supportive learning environment."
+      },
+      {
+        "rubric_index": 168,
+        "criterion": "The response includes phrases for fostering student confidence."
+      },
+      {
+        "rubric_index": 169,
+        "criterion": "The response includes phrases for promoting critical thinking."
+      },
+      {
+        "rubric_index": 170,
+        "criterion": "The response includes phrases for promoting creativity in learning."
+      },
+      {
+        "rubric_index": 171,
+        "criterion": "The response includes phrases for promoting student independence in learning."
+      },
+      {
+        "rubric_index": 172,
+        "criterion": "The response includes phrases for encouraging student collaboration."
+      },
+      {
+        "rubric_index": 173,
+        "criterion": "The response includes phrases for promoting student responsibility for learning."
+      },
+      {
+        "rubric_index": 174,
+        "criterion": "The response includes phrases for encouraging students to use English in daily life."
+      },
+      {
+        "rubric_index": 175,
+        "criterion": "The response includes phrases for reinforcing cultural awareness in language learning."
+      },
+      {
+        "rubric_index": 176,
+        "criterion": "The response includes phrases for promoting respect for others' opinions."
+      },
+      {
+        "rubric_index": 177,
+        "criterion": "The response includes phrases for encouraging students to revise their work."
+      },
+      {
+        "rubric_index": 178,
+        "criterion": "The response includes phrases for encouraging students to review previous lessons."
+      },
+      {
+        "rubric_index": 179,
+        "criterion": "The response includes phrases for giving instructions on how to submit assignments."
+      },
+      {
+        "rubric_index": 180,
+        "criterion": "The response includes phrases for explaining the purpose of a learning task."
+      },
+      {
+        "rubric_index": 181,
+        "criterion": "The response includes phrases for explaining the difficulty level of a task."
+      },
+      {
+        "rubric_index": 182,
+        "criterion": "The response includes phrases for explaining the expected time needed for a task."
+      },
+      {
+        "rubric_index": 183,
+        "criterion": "The response includes phrases for explaining how a task relates to real-life contexts."
+      },
+      {
+        "rubric_index": 184,
+        "criterion": "The response includes phrases for explaining the connection between different language skills."
+      },
+      {
+        "rubric_index": 185,
+        "criterion": "The response includes phrases for giving clear explanations of instructions."
+      },
+      {
+        "rubric_index": 186,
+        "criterion": "The response includes phrases for checking students' comprehension of instructions."
+      },
+      {
+        "rubric_index": 187,
+        "criterion": "The response includes phrases for offering help when students are struggling."
+      },
+      {
+        "rubric_index": 188,
+        "criterion": "The response includes phrases for helping students organize their thoughts."
+      },
+      {
+        "rubric_index": 189,
+        "criterion": "The response includes phrases for helping students structure their writing."
+      },
+      {
+        "rubric_index": 190,
+        "criterion": "The response includes phrases for helping students improve their speaking clarity."
+      },
+      {
+        "rubric_index": 191,
+        "criterion": "The response includes phrases for helping students improve their listening skills."
+      },
+      {
+        "rubric_index": 192,
+        "criterion": "The response includes phrases for helping students build vocabulary."
+      },
+      {
+        "rubric_index": 193,
+        "criterion": "The response includes phrases for helping students learn how to learn English."
+      },
+      {
+        "rubric_index": 194,
+        "criterion": "The response includes phrases for helping students set language learning goals."
+      },
+      {
+        "rubric_index": 195,
+        "criterion": "The response includes phrases for helping students prepare for examinations."
+      },
+      {
+        "rubric_index": 196,
+        "criterion": "The response includes phrases for helping students prepare for presentations."
+      },
+      {
+        "rubric_index": 197,
+        "criterion": "The response includes phrases for helping students prepare for group projects."
+      },
+      {
+        "rubric_index": 198,
+        "criterion": "The response includes phrases for helping students prepare for oral exams."
+      },
+      {
+        "rubric_index": 199,
+        "criterion": "The response includes phrases for helping students prepare for written exams."
+      },
+      {
+        "rubric_index": 200,
+        "criterion": "The response includes phrases for helping students avoid common errors."
+      },
+      {
+        "rubric_index": 201,
+        "criterion": "The response includes phrases for helping students understand the importance of practice."
+      },
+      {
+        "rubric_index": 202,
+        "criterion": "The response includes phrases for helping students understand the value of language learning."
+      },
+      {
+        "rubric_index": 203,
+        "criterion": "The response includes phrases for encouraging students to speak up in class."
+      },
+      {
+        "rubric_index": 204,
+        "criterion": "The response includes phrases for encouraging students to participate in class activities."
+      },
+      {
+        "rubric_index": 205,
+        "criterion": "The response includes phrases for encouraging students to take notes during lessons."
+      },
+      {
+        "rubric_index": 206,
+        "criterion": "The response includes phrases for encouraging students to review notes after class."
+      },
+      {
+        "rubric_index": 207,
+        "criterion": "The response includes phrases for encouraging students to practice English outside of class."
+      },
+      {
+        "rubric_index": 208,
+        "criterion": "The response includes phrases for encouraging students to use dictionaries."
+      },
+      {
+        "rubric_index": 209,
+        "criterion": "The response includes phrases for encouraging students to use online learning resources."
+      },
+      {
+        "rubric_index": 210,
+        "criterion": "The response includes phrases for encouraging students to watch English movies."
+      },
+      {
+        "rubric_index": 211,
+        "criterion": "The response includes phrases for encouraging students to listen to English songs."
+      },
+      {
+        "rubric_index": 212,
+        "criterion": "The response includes phrases for encouraging students to read English books."
+      },
+      {
+        "rubric_index": 213,
+        "criterion": "The response includes phrases for encouraging students to ask for clarification when needed."
+      },
+      {
+        "rubric_index": 214,
+        "criterion": "The response includes phrases for encouraging students to think critically about what they read or hear."
+      },
+      {
+        "rubric_index": 215,
+        "criterion": "The response includes phrases for encouraging students to think about grammar in context."
+      },
+      {
+        "rubric_index": 216,
+        "criterion": "The response includes phrases for encouraging students to think about the meaning of words in context."
+      },
+      {
+        "rubric_index": 217,
+        "criterion": "The response includes phrases for encouraging students to think about language patterns."
+      },
+      {
+        "rubric_index": 218,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different cultures."
+      },
+      {
+        "rubric_index": 219,
+        "criterion": "The response includes phrases for encouraging students to think about how to improve their English level."
+      },
+      {
+        "rubric_index": 220,
+        "criterion": "The response includes phrases for encouraging students to think about the connection between different language skills."
+      },
+      {
+        "rubric_index": 221,
+        "criterion": "The response includes phrases for encouraging students to think about the purpose of learning English."
+      },
+      {
+        "rubric_index": 222,
+        "criterion": "The response includes phrases for encouraging students to think about the real-world use of English."
+      },
+      {
+        "rubric_index": 223,
+        "criterion": "The response includes phrases for encouraging students to think about their personal goals in learning English."
+      },
+      {
+        "rubric_index": 224,
+        "criterion": "The response includes phrases for encouraging students to think about how to support each other in learning."
+      },
+      {
+        "rubric_index": 225,
+        "criterion": "The response includes phrases for encouraging students to think about how to make mistakes and learn from them."
+      },
+      {
+        "rubric_index": 226,
+        "criterion": "The response includes phrases for encouraging students to think about how to improve their English skills systematically."
+      },
+      {
+        "rubric_index": 227,
+        "criterion": "The response includes phrases for encouraging students to think about the relationship between language and identity."
+      },
+      {
+        "rubric_index": 228,
+        "criterion": "The response includes phrases for encouraging students to think about the importance of language in global communication."
+      },
+      {
+        "rubric_index": 229,
+        "criterion": "The response includes phrases for encouraging students to think about the power of language in shaping understanding."
+      },
+      {
+        "rubric_index": 230,
+        "criterion": "The response includes phrases for encouraging students to think about the impact of language on learning outcomes."
+      },
+      {
+        "rubric_index": 231,
+        "criterion": "The response includes phrases for encouraging students to think about the relationship between language and thought."
+      },
+      {
+        "rubric_index": 232,
+        "criterion": "The response includes phrases for encouraging students to think about how language reflects culture."
+      },
+      {
+        "rubric_index": 233,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different social situations."
+      },
+      {
+        "rubric_index": 234,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different educational contexts."
+      },
+      {
+        "rubric_index": 235,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different professional settings."
+      },
+      {
+        "rubric_index": 236,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different media."
+      },
+      {
+        "rubric_index": 237,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different texts."
+      },
+      {
+        "rubric_index": 238,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different genres."
+      },
+      {
+        "rubric_index": 239,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different styles."
+      },
+      {
+        "rubric_index": 240,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different voices."
+      },
+      {
+        "rubric_index": 241,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different perspectives."
+      },
+      {
+        "rubric_index": 242,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different tones."
+      },
+      {
+        "rubric_index": 243,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different purposes."
+      },
+      {
+        "rubric_index": 244,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different audiences."
+      },
+      {
+        "rubric_index": 245,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different contexts."
+      },
+      {
+        "rubric_index": 246,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different ways."
+      },
+      {
+        "rubric_index": 247,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different forms."
+      },
+      {
+        "rubric_index": 248,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different platforms of communication."
+      },
+      {
+        "rubric_index": 249,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different technologies of communication."
+      },
+      {
+        "rubric_index": 250,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different tools of communication."
+      },
+      {
+        "rubric_index": 251,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different networks of communication."
+      },
+      {
+        "rubric_index": 252,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different channels of communication."
+      },
+      {
+        "rubric_index": 253,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different routes of communication."
+      },
+      {
+        "rubric_index": 254,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different methods of communication."
+      },
+      {
+        "rubric_index": 255,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different approaches to communication."
+      },
+      {
+        "rubric_index": 256,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different forms of expression."
+      },
+      {
+        "rubric_index": 257,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different modes of expression."
+      },
+      {
+        "rubric_index": 258,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different styles of expression."
+      },
+      {
+        "rubric_index": 259,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different techniques of expression."
+      },
+      {
+        "rubric_index": 260,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different methods of expression."
+      },
+      {
+        "rubric_index": 261,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different approaches to expression."
+      },
+      {
+        "rubric_index": 262,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different forms of creativity."
+      },
+      {
+        "rubric_index": 263,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different ways of creativity."
+      },
+      {
+        "rubric_index": 264,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different modes of creativity."
+      },
+      {
+        "rubric_index": 265,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different styles of creativity."
+      },
+      {
+        "rubric_index": 266,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different techniques of creativity."
+      },
+      {
+        "rubric_index": 267,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different methods of creativity."
+      },
+      {
+        "rubric_index": 268,
+        "criterion": "The response includes phrases for encouraging students to think about how language is used in different approaches to creativity."
+      },
+      {
+        "rubric_index": 269,
+        "criterion": "The response includes at least twenty items in the list."
+      },
+      {
+        "rubric_index": 270,
+        "criterion": "Each item in the list is distinct and not repeated."
+      },
+      {
+        "rubric_index": 271,
+        "criterion": "The response is organized in a clear, list-like format."
+      },
+      {
+        "rubric_index": 272,
+        "criterion": "The evaluation phrases can be applied to both student performance and classroom participation."
+      },
+      {
+        "rubric_index": 273,
+        "criterion": "The response does not include explanations or elaborations beyond the list."
+      },
+      {
+        "rubric_index": 274,
+        "criterion": "The response does not include formatting such as headers or section titles."
+      },
+      {
+        "rubric_index": 275,
+        "criterion": "The response avoids using markdown or any other formatting syntax."
+      },
+      {
+        "rubric_index": 276,
+        "criterion": "The response does not include irrelevant or off-topic content."
+      },
+      {
+        "rubric_index": 277,
+        "criterion": "The response does not include personal opinions or subjective interpretations."
+      },
+      {
+        "rubric_index": 278,
+        "criterion": "The response does not include external references or citations."
+      },
+      {
+        "rubric_index": 279,
+        "criterion": "The response does not include a summary or conclusion paragraph."
+      },
+      {
+        "rubric_index": 280,
+        "criterion": "The response is written in full sentences and not as bullet points or fragments."
+      },
+      {
+        "rubric_index": 281,
+        "criterion": "The response adheres to the original instruction without adding extra requirements or constraints."
+      },
+      {
+        "rubric_index": 282,
+        "criterion": "The response does not include any explanations, rationales, or formatting guidance."
+      },
+      {
+        "rubric_index": 283,
+        "criterion": "The response does not include any unrelated content such as examples, teaching strategies, or lesson plans."
+      },
+      {
+        "rubric_index": 284,
+        "criterion": "The response does not mention or evaluate student performance directly."
+      },
+      {
+        "rubric_index": 285,
+        "criterion": "The response is a plain text list of classroom evaluation phrases with no markdown formatting."
+      },
+      {
+        "rubric_index": 286,
+        "criterion": "The response provides specific examples of classroom evaluation language."
+      },
+      {
+        "rubric_index": 287,
+        "criterion": "The response covers a variety of evaluation contexts (e.g., speaking, listening, reading, writing)."
+      },
+      {
+        "rubric_index": 288,
+        "criterion": "The response includes positive evaluation phrases."
+      },
+      {
+        "rubric_index": 289,
+        "criterion": "The response includes constructive feedback phrases."
+      },
+      {
+        "rubric_index": 290,
+        "criterion": "The response includes evaluation language suitable for different proficiency levels (e.g., basic, intermediate, advanced)."
+      },
+      {
+        "rubric_index": 291,
+        "criterion": "The response includes phrases for peer assessment."
+      },
+      {
+        "rubric_index": 292,
+        "criterion": "The response includes phrases for individual student performance evaluation."
+      },
+      {
+        "rubric_index": 293,
+        "criterion": "The response includes phrases for group or class performance evaluation."
+      },
+      {
+        "rubric_index": 294,
+        "criterion": "The response includes general feedback for classroom participation."
+      },
+      {
+        "rubric_index": 295,
+        "criterion": "The response includes general feedback for language accuracy (e.g., grammar, vocabulary, spelling)."
+      },
+      {
+        "rubric_index": 296,
+        "criterion": "The response includes general feedback for language coherence and logic."
+      },
+      {
+        "rubric_index": 297,
+        "criterion": "The response includes general feedback for task completion and effort."
+      },
+      {
+        "rubric_index": 298,
+        "criterion": "The response includes examples of praise for student progress."
+      },
+      {
+        "rubric_index": 299,
+        "criterion": "The response includes evaluation language for essay writing."
+      },
+      {
+        "rubric_index": 300,
+        "criterion": "The response includes evaluation language for oral presentations."
+      },
+      {
+        "rubric_index": 301,
+        "criterion": "The response includes evaluation language for grammar exercises."
+      },
+      {
+        "rubric_index": 302,
+        "criterion": "The response includes evaluation language for sentence structure."
+      },
+      {
+        "rubric_index": 303,
+        "criterion": "The response includes evaluation language for project-based learning tasks."
+      },
+      {
+        "rubric_index": 304,
+        "criterion": "The response includes evaluation language for in-class activities and quizzes."
+      },
+      {
+        "rubric_index": 305,
+        "criterion": "The response includes evaluation language for creativity and originality in student work."
+      },
+      {
+        "rubric_index": 306,
+        "criterion": "The response includes evaluation language for critical thinking and analysis."
+      },
+      {
+        "rubric_index": 307,
+        "criterion": "The response includes evaluation language for cultural awareness and sensitivity."
+      },
+      {
+        "rubric_index": 308,
+        "criterion": "The response includes evaluation language for time management and organization."
+      },
+      {
+        "rubric_index": 309,
+        "criterion": "The response includes evaluation language for goal-setting and self-reflection."
+      },
+      {
+        "rubric_index": 310,
+        "criterion": "The response includes evaluation language for English learning strategies."
+      },
+      {
+        "rubric_index": 311,
+        "criterion": "The response includes evaluation language for student confidence and participation in English."
+      },
+      {
+        "rubric_index": 312,
+        "criterion": "The response includes evaluation language for improvement in English learning."
+      },
+      {
+        "rubric_index": 313,
+        "criterion": "The response includes evaluation language for English learning motivation and attitude."
+      },
+      {
+        "rubric_index": 314,
+        "criterion": "The response includes evaluation language for peer interactions in English."
+      },
+      {
+        "rubric_index": 315,
+        "criterion": "The response includes evaluation language for class discussion participation."
+      },
+      {
+        "rubric_index": 316,
+        "criterion": "The response includes evaluation language for use of English in daily life."
+      },
+      {
+        "rubric_index": 317,
+        "criterion": "The response includes evaluation language for use of English in multimedia and technology-based tasks."
+      },
+      {
+        "rubric_index": 318,
+        "criterion": "The response includes evaluation language for development of English learning habits."
+      },
+      {
+        "rubric_index": 319,
+        "criterion": "The response includes evaluation language for development of self-learning ability in English."
+      },
+      {
+        "rubric_index": 320,
+        "criterion": "The response includes evaluation language for use of English learning strategies in different contexts."
+      },
+      {
+        "rubric_index": 321,
+        "criterion": "The response includes evaluation language for student understanding of English grammar rules."
+      },
+      {
+        "rubric_index": 322,
+        "criterion": "The response includes evaluation language for student use of correct vocabulary in context."
+      },
+      {
+        "rubric_index": 323,
+        "criterion": "The response includes evaluation language for student ability to write clear and coherent sentences."
+      },
+      {
+        "rubric_index": 324,
+        "criterion": "The response includes evaluation language for student ability to write clear and coherent paragraphs."
+      },
+      {
+        "rubric_index": 325,
+        "criterion": "The response includes evaluation language for student ability to express ideas clearly in English."
+      },
+      {
+        "rubric_index": 326,
+        "criterion": "The response includes evaluation language for student ability to understand and respond to English texts."
+      },
+      {
+        "rubric_index": 327,
+        "criterion": "The response includes evaluation language for student ability to interpret the meaning of English texts."
+      },
+      {
+        "rubric_index": 328,
+        "criterion": "The response includes evaluation language for student ability to understand English spoken in different accents."
+      },
+      {
+        "rubric_index": 329,
+        "criterion": "The response includes evaluation language for student ability to understand and produce English pronunciation."
+      },
+      {
+        "rubric_index": 330,
+        "criterion": "The response includes evaluation language for student ability to use English for communication purposes."
+      },
+      {
+        "rubric_index": 331,
+        "criterion": "The response includes evaluation language for student ability to use English for academic purposes."
+      },
+      {
+        "rubric_index": 332,
+        "criterion": "The response includes evaluation language for student ability to use English for social purposes."
+      },
+      {
+        "rubric_index": 333,
+        "criterion": "The response includes evaluation language for student ability to use English in academic writing."
+      },
+      {
+        "rubric_index": 334,
+        "criterion": "The response includes evaluation language for student ability to use English in formal speaking situations."
+      },
+      {
+        "rubric_index": 335,
+        "criterion": "The response includes evaluation language for student ability to use English in informal speaking situations."
+      },
+      {
+        "rubric_index": 336,
+        "criterion": "The response includes evaluation language for student ability to understand and use English idioms and expressions."
+      },
+      {
+        "rubric_index": 337,
+        "criterion": "The response includes evaluation language for student ability to understand and use English proverbs and sayings."
+      },
+      {
+        "rubric_index": 338,
+        "criterion": "The response includes evaluation language for student ability to understand and use English collocations."
+      },
+      {
+        "rubric_index": 339,
+        "criterion": "The response includes evaluation language for student ability to understand and use English relative clauses."
+      },
+      {
+        "rubric_index": 340,
+        "criterion": "The response includes evaluation language for student ability to understand and use English modal verbs."
+      },
+      {
+        "rubric_index": 341,
+        "criterion": "The response includes evaluation language for student ability to understand and use English comparative and superlative forms."
+      },
+      {
+        "rubric_index": 342,
+        "criterion": "The response includes evaluation language for student ability to understand and use English future forms."
+      },
+      {
+        "rubric_index": 343,
+        "criterion": "The response includes evaluation language for student ability to understand and use English past forms."
+      },
+      {
+        "rubric_index": 344,
+        "criterion": "The response includes evaluation language for student ability to understand and use English present forms."
+      },
+      {
+        "rubric_index": 345,
+        "criterion": "The response includes evaluation language for student ability to understand and use English word forms (e.g., nouns, verbs, adjectives, adverbs)."
+      },
+      {
+        "rubric_index": 346,
+        "criterion": "The response includes evaluation language for student ability to understand and use English synonyms and antonyms."
+      },
+      {
+        "rubric_index": 347,
+        "criterion": "The response includes evaluation language for student ability to understand and use English homophones."
+      },
+      {
+        "rubric_index": 348,
+        "criterion": "The response includes evaluation language for student ability to understand and use English spelling patterns."
+      },
+      {
+        "rubric_index": 349,
+        "criterion": "The response includes evaluation language for student ability to understand and use English punctuation."
+      },
+      {
+        "rubric_index": 350,
+        "criterion": "The response includes evaluation language for student ability to understand and use English capitalization rules."
+      },
+      {
+        "rubric_index": 351,
+        "criterion": "The response includes evaluation language for student ability to understand and use English direct and indirect speech."
+      },
+      {
+        "rubric_index": 352,
+        "criterion": "The response includes evaluation language for student ability to understand and use English tag questions."
+      },
+      {
+        "rubric_index": 353,
+        "criterion": "The response includes evaluation language for student ability to understand and use English sentence stress."
+      },
+      {
+        "rubric_index": 354,
+        "criterion": "The response includes evaluation language for student ability to understand and use English intonation patterns."
+      },
+      {
+        "rubric_index": 355,
+        "criterion": "The response includes evaluation language for student ability to understand and use English stress patterns in words and sentences."
+      },
+      {
+        "rubric_index": 356,
+        "criterion": "The response includes evaluation language for student ability to understand and use English rhythm in speaking."
+      },
+      {
+        "rubric_index": 357,
+        "criterion": "The response includes evaluation language for student ability to understand and use English phonetics."
+      },
+      {
+        "rubric_index": 358,
+        "criterion": "The response includes evaluation language for student ability to understand and use English phonology."
+      },
+      {
+        "rubric_index": 359,
+        "criterion": "The response includes evaluation language for student ability to understand and use English accents and dialects."
+      },
+      {
+        "rubric_index": 360,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for formal writing."
+      },
+      {
+        "rubric_index": 361,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for informal writing."
+      },
+      {
+        "rubric_index": 362,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for academic writing."
+      },
+      {
+        "rubric_index": 363,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for creative writing."
+      },
+      {
+        "rubric_index": 364,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for journalistic writing."
+      },
+      {
+        "rubric_index": 365,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for business writing."
+      },
+      {
+        "rubric_index": 366,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for scientific writing."
+      },
+      {
+        "rubric_index": 367,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for legal writing."
+      },
+      {
+        "rubric_index": 368,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for medical writing."
+      },
+      {
+        "rubric_index": 369,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for technical writing."
+      },
+      {
+        "rubric_index": 370,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for literary writing."
+      },
+      {
+        "rubric_index": 371,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for persuasive writing."
+      },
+      {
+        "rubric_index": 372,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for descriptive writing."
+      },
+      {
+        "rubric_index": 373,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for narrative writing."
+      },
+      {
+        "rubric_index": 374,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for argumentative writing."
+      },
+      {
+        "rubric_index": 375,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for critical writing."
+      },
+      {
+        "rubric_index": 376,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for analytical writing."
+      },
+      {
+        "rubric_index": 377,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for report writing."
+      },
+      {
+        "rubric_index": 378,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for essay writing."
+      },
+      {
+        "rubric_index": 379,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for article writing."
+      },
+      {
+        "rubric_index": 380,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for poetry writing."
+      },
+      {
+        "rubric_index": 381,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for dialogue writing."
+      },
+      {
+        "rubric_index": 382,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise messages."
+      },
+      {
+        "rubric_index": 383,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise instructions."
+      },
+      {
+        "rubric_index": 384,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise explanations."
+      },
+      {
+        "rubric_index": 385,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise descriptions."
+      },
+      {
+        "rubric_index": 386,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise arguments."
+      },
+      {
+        "rubric_index": 387,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise summaries."
+      },
+      {
+        "rubric_index": 388,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise reports."
+      },
+      {
+        "rubric_index": 389,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise essays."
+      },
+      {
+        "rubric_index": 390,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise articles."
+      },
+      {
+        "rubric_index": 391,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise stories."
+      },
+      {
+        "rubric_index": 392,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise poetry."
+      },
+      {
+        "rubric_index": 393,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise dialogues."
+      },
+      {
+        "rubric_index": 394,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise messages in formal contexts."
+      },
+      {
+        "rubric_index": 395,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise instructions in formal contexts."
+      },
+      {
+        "rubric_index": 396,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise explanations in formal contexts."
+      },
+      {
+        "rubric_index": 397,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise descriptions in formal contexts."
+      },
+      {
+        "rubric_index": 398,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise arguments in formal contexts."
+      },
+      {
+        "rubric_index": 399,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise summaries in formal contexts."
+      },
+      {
+        "rubric_index": 400,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise reports in formal contexts."
+      },
+      {
+        "rubric_index": 401,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise essays in formal contexts."
+      },
+      {
+        "rubric_index": 402,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise articles in formal contexts."
+      },
+      {
+        "rubric_index": 403,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise stories in formal contexts."
+      },
+      {
+        "rubric_index": 404,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise poetry in formal contexts."
+      },
+      {
+        "rubric_index": 405,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise dialogues in formal contexts."
+      },
+      {
+        "rubric_index": 406,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise messages in informal contexts."
+      },
+      {
+        "rubric_index": 407,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise instructions in informal contexts."
+      },
+      {
+        "rubric_index": 408,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise explanations in informal contexts."
+      },
+      {
+        "rubric_index": 409,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise descriptions in informal contexts."
+      },
+      {
+        "rubric_index": 410,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise arguments in informal contexts."
+      },
+      {
+        "rubric_index": 411,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise summaries in informal contexts."
+      },
+      {
+        "rubric_index": 412,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise reports in informal contexts."
+      },
+      {
+        "rubric_index": 413,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise essays in informal contexts."
+      },
+      {
+        "rubric_index": 414,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise articles in informal contexts."
+      },
+      {
+        "rubric_index": 415,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise stories in informal contexts."
+      },
+      {
+        "rubric_index": 416,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise poetry in informal contexts."
+      },
+      {
+        "rubric_index": 417,
+        "criterion": "The response includes evaluation language for student ability to understand and use English for writing clear and concise dialogues in informal contexts."
+      },
+      {
+        "rubric_index": 418,
+        "criterion": "The response begins with an introduction about the importance of classroom evaluation in high school English education."
+      },
+      {
+        "rubric_index": 419,
+        "criterion": "The response includes examples of evaluation phrases for student homework or written assignments."
+      },
+      {
+        "rubric_index": 420,
+        "criterion": "The response includes examples of evaluation phrases for group work or collaborative activities."
+      },
+      {
+        "rubric_index": 421,
+        "criterion": "The response includes examples of evaluation phrases for speaking or presentation tasks."
+      },
+      {
+        "rubric_index": 422,
+        "criterion": "The response includes examples of evaluation phrases for classroom behavior or attitude."
+      },
+      {
+        "rubric_index": 423,
+        "criterion": "The response includes examples of evaluation phrases for vocabulary usage or development."
+      },
+      {
+        "rubric_index": 424,
+        "criterion": "The response includes examples of positive reinforcement language for student achievement."
+      },
+      {
+        "rubric_index": 425,
+        "criterion": "The response includes examples of phrases for encouraging student self-assessment or reflection."
+      },
+      {
+        "rubric_index": 426,
+        "criterion": "The response includes a section on how to give effective verbal feedback during class."
+      },
+      {
+        "rubric_index": 427,
+        "criterion": "The response includes a section on how to write effective written feedback on student work."
+      },
+      {
+        "rubric_index": 428,
+        "criterion": "The response includes a section on the use of rubrics for classroom evaluation."
+      },
+      {
+        "rubric_index": 429,
+        "criterion": "The response includes a section on using descriptive feedback rather than only grades or scores."
+      },
+      {
+        "rubric_index": 430,
+        "criterion": "The response includes examples of phrases for different learning styles or diverse student needs."
+      },
+      {
+        "rubric_index": 431,
+        "criterion": "The response includes examples of phrases for evaluating creativity or critical thinking."
+      },
+      {
+        "rubric_index": 432,
+        "criterion": "The response includes examples of phrases for evaluating effort and engagement."
+      },
+      {
+        "rubric_index": 433,
+        "criterion": "The response includes examples of phrases for evaluating improvement despite challenges."
+      },
+      {
+        "rubric_index": 434,
+        "criterion": "The response includes examples of phrases for evaluating peer interactions or support."
+      },
+      {
+        "rubric_index": 435,
+        "criterion": "The response includes a section on the importance of consistency in evaluation criteria."
+      },
+      {
+        "rubric_index": 436,
+        "criterion": "The response includes a section on the role of formative assessment in English instruction."
+      },
+      {
+        "rubric_index": 437,
+        "criterion": "The response includes a section on the role of summative assessment in English instruction."
+      },
+      {
+        "rubric_index": 438,
+        "criterion": "The response includes a section on aligning evaluation with learning objectives."
+      },
+      {
+        "rubric_index": 439,
+        "criterion": "The response includes a section on using student-centered language in evaluation feedback."
+      },
+      {
+        "rubric_index": 440,
+        "criterion": "The response includes a section on balancing strengths and areas for growth in feedback."
+      },
+      {
+        "rubric_index": 441,
+        "criterion": "The response includes a section on cultural sensitivity in classroom evaluation."
+      },
+      {
+        "rubric_index": 442,
+        "criterion": "The response includes examples of evaluation phrases suitable for beginners in English."
+      },
+      {
+        "rubric_index": 443,
+        "criterion": "The response includes examples of evaluation phrases that promote a growth mindset."
+      },
+      {
+        "rubric_index": 444,
+        "criterion": "The response includes examples of phrases for evaluating pronunciation or speaking clarity."
+      },
+      {
+        "rubric_index": 445,
+        "criterion": "The response includes examples of phrases for evaluating written expression or clarity."
+      },
+      {
+        "rubric_index": 446,
+        "criterion": "The response includes a section on using specific, actionable feedback in classroom evaluation."
+      },
+      {
+        "rubric_index": 447,
+        "criterion": "The response includes a section on the use of emojis or symbols in informal feedback."
+      },
+      {
+        "rubric_index": 448,
+        "criterion": "The response includes examples of phrases for evaluating student responses to reading or listening materials."
+      },
+      {
+        "rubric_index": 449,
+        "criterion": "The response includes examples of phrases for evaluating student understanding of literary devices or techniques."
+      },
+      {
+        "rubric_index": 450,
+        "criterion": "The response includes examples of phrases for evaluating student comprehension of vocabulary in context."
+      },
+      {
+        "rubric_index": 451,
+        "criterion": "The response includes a section on how to give feedback in real-time during lessons."
+      },
+      {
+        "rubric_index": 452,
+        "criterion": "The response includes a section on giving feedback in a way that respects student dignity and self-esteem."
+      },
+      {
+        "rubric_index": 453,
+        "criterion": "The response includes examples of phrases for encouraging students to take risks in learning English."
+      },
+      {
+        "rubric_index": 454,
+        "criterion": "The response includes examples of phrases for acknowledging effort in learning English."
+      },
+      {
+        "rubric_index": 455,
+        "criterion": "The response includes examples of phrases for guiding students to correct their own mistakes."
+      },
+      {
+        "rubric_index": 456,
+        "criterion": "The response includes examples of phrases for reinforcing correct language use."
+      },
+      {
+        "rubric_index": 457,
+        "criterion": "The response includes a section on using feedback to guide future teaching strategies."
+      },
+      {
+        "rubric_index": 458,
+        "criterion": "The response includes examples of phrases for evaluating student fluency in spoken English."
+      },
+      {
+        "rubric_index": 459,
+        "criterion": "The response includes examples of phrases for evaluating student writing for structure and coherence."
+      },
+      {
+        "rubric_index": 460,
+        "criterion": "The response includes a section on the use of feedback to support differentiation in the classroom."
+      },
+      {
+        "rubric_index": 461,
+        "criterion": "The response includes a section on using feedback to support inclusive teaching practices."
+      },
+      {
+        "rubric_index": 462,
+        "criterion": "The response includes a section on the importance of student-teacher communication in evaluation."
+      },
+      {
+        "rubric_index": 463,
+        "criterion": "The response includes a section on how to give feedback to students who are shy or reluctant to participate."
+      },
+      {
+        "rubric_index": 464,
+        "criterion": "The response includes a section on how to give feedback to students who are performing at or above grade level."
+      },
+      {
+        "rubric_index": 465,
+        "criterion": "The response includes a section on how to give feedback to students who are struggling with the language."
+      },
+      {
+        "rubric_index": 466,
+        "criterion": "The response includes a section on how to give feedback that aligns with assessment for learning (AFL) principles."
+      },
+      {
+        "rubric_index": 467,
+        "criterion": "The response includes a section on how to give feedback in a way that is culturally responsive."
+      },
+      {
+        "rubric_index": 468,
+        "criterion": "The response includes a section on the use of feedback in developing student self-efficacy."
+      },
+      {
+        "rubric_index": 469,
+        "criterion": "The response includes a section on how feedback supports the language learning process."
+      },
+      {
+        "rubric_index": 470,
+        "criterion": "The response includes a section on the ethical considerations in classroom evaluation."
+      },
+      {
+        "rubric_index": 471,
+        "criterion": "The response includes a section on how to give feedback during peer assessment."
+      },
+      {
+        "rubric_index": 472,
+        "criterion": "The response includes examples of phrases for evaluating student use of grammar in communication."
+      },
+      {
+        "rubric_index": 473,
+        "criterion": "The response includes examples of phrases for evaluating student comprehension of academic texts."
+      },
+      {
+        "rubric_index": 474,
+        "criterion": "The response includes examples of phrases for evaluating student comprehension of narrative texts."
+      },
+      {
+        "rubric_index": 475,
+        "criterion": "The response includes a section on how to give feedback on student performance in role-plays or simulations."
+      },
+      {
+        "rubric_index": 476,
+        "criterion": "The response includes a section on how to give feedback on student performance in debates or discussions."
+      },
+      {
+        "rubric_index": 477,
+        "criterion": "The response includes a section on how to give feedback during reading circles or literature circles."
+      },
+      {
+        "rubric_index": 478,
+        "criterion": "The response includes examples of phrases for evaluating student use of online learning tools or platforms."
+      },
+      {
+        "rubric_index": 479,
+        "criterion": "The response includes a section on how to give feedback during student presentations using multimedia."
+      },
+      {
+        "rubric_index": 480,
+        "criterion": "The response includes a section on how to give feedback on student research projects in English."
+      },
+      {
+        "rubric_index": 481,
+        "criterion": "The response includes a section on how to give feedback on student writing for specific audiences or purposes."
+      },
+      {
+        "rubric_index": 482,
+        "criterion": "The response includes examples of phrases for evaluating student use of figurative language."
+      },
+      {
+        "rubric_index": 483,
+        "criterion": "The response includes examples of phrases for evaluating student use of tone or voice in writing."
+      },
+      {
+        "rubric_index": 484,
+        "criterion": "The response includes examples of phrases for evaluating student ability to summarize information."
+      },
+      {
+        "rubric_index": 485,
+        "criterion": "The response includes examples of phrases for evaluating student ability to draw inferences or make predictions."
+      },
+      {
+        "rubric_index": 486,
+        "criterion": "The response includes examples of phrases for evaluating student ability to identify main ideas or themes."
+      },
+      {
+        "rubric_index": 487,
+        "criterion": "The response includes examples of phrases for evaluating student ability to identify the author’s purpose or intent."
+      },
+      {
+        "rubric_index": 488,
+        "criterion": "The response includes examples of phrases for evaluating student ability to identify the audience or context of a text."
+      },
+      {
+        "rubric_index": 489,
+        "criterion": "The response includes a section on how to give feedback on student use of evidence in their arguments or responses."
+      },
+      {
+        "rubric_index": 490,
+        "criterion": "The response includes a section on how to give feedback on student transitions or coherence between ideas."
+      },
+      {
+        "rubric_index": 491,
+        "criterion": "The response includes a section on how to give feedback on student language development across four skills: reading, writing, speaking, and listening."
+      },
+      {
+        "rubric_index": 492,
+        "criterion": "The response includes a section on how to give feedback on student use of English in academic or non-academic settings."
+      },
+      {
+        "rubric_index": 493,
+        "criterion": "The response includes a section on how to give feedback that supports student metacognition in language learning."
+      },
+      {
+        "rubric_index": 494,
+        "criterion": "The response includes a section on how to give feedback that is developmentally appropriate for high school students."
+      },
+      {
+        "rubric_index": 495,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the Common Core State Standards or similar educational frameworks."
+      },
+      {
+        "rubric_index": 496,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the curriculum goals of the school or district."
+      },
+      {
+        "rubric_index": 497,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the learning styles and preferences of students."
+      },
+      {
+        "rubric_index": 498,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the learning goals of the individual student or group."
+      },
+      {
+        "rubric_index": 499,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the long-term goals of English language development."
+      },
+      {
+        "rubric_index": 500,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the standards of language assessment and evaluation."
+      },
+      {
+        "rubric_index": 501,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the principles of language acquisition and development."
+      },
+      {
+        "rubric_index": 502,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the best practices of language teaching and assessment."
+      },
+      {
+        "rubric_index": 503,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of developing global citizens through language learning."
+      },
+      {
+        "rubric_index": 504,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of fostering intercultural understanding through language learning."
+      },
+      {
+        "rubric_index": 505,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of preparing students for higher education or future careers."
+      },
+      {
+        "rubric_index": 506,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of promoting lifelong learning in English."
+      },
+      {
+        "rubric_index": 507,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of building student confidence and independence in using English."
+      },
+      {
+        "rubric_index": 508,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of enhancing student language accuracy and fluency."
+      },
+      {
+        "rubric_index": 509,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of promoting student creativity and critical thinking in English."
+      },
+      {
+        "rubric_index": 510,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student collaboration and teamwork in English."
+      },
+      {
+        "rubric_index": 511,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student self-expression and voice in English."
+      },
+      {
+        "rubric_index": 512,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student identity and agency in language learning."
+      },
+      {
+        "rubric_index": 513,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student motivation and engagement in English learning."
+      },
+      {
+        "rubric_index": 514,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student progress in all four language skills."
+      },
+      {
+        "rubric_index": 515,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student academic success in English."
+      },
+      {
+        "rubric_index": 516,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student social and emotional development through language learning."
+      },
+      {
+        "rubric_index": 517,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student inclusion and belonging in the classroom."
+      },
+      {
+        "rubric_index": 518,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student equity and access in English education."
+      },
+      {
+        "rubric_index": 519,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student achievement and growth in English."
+      },
+      {
+        "rubric_index": 520,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student success in assessments and exams."
+      },
+      {
+        "rubric_index": 521,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student success in real-world applications of English."
+      },
+      {
+        "rubric_index": 522,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student success in academic writing and communication."
+      },
+      {
+        "rubric_index": 523,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student success in speaking and presentation skills."
+      },
+      {
+        "rubric_index": 524,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student success in reading comprehension and analysis."
+      },
+      {
+        "rubric_index": 525,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student success in listening comprehension and interpretation."
+      },
+      {
+        "rubric_index": 526,
+        "criterion": "The response includes a section on how to give feedback that is aligned with the goals of supporting student success in all aspects of English language learning."
+      }
+    ],
+    "matrix": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  {
     "question_index": 4,
     "question": "سلام ",
     "num_samples": 6,

@@ -17,8 +17,8 @@
   "dataset_summary": {
     "num_questions_in_result": 100,
     "num_gt_pairs": 300,
-    "num_query_buckets": 1738,
-    "num_fused_query_buckets": 297
+    "num_query_buckets": 1251,
+    "num_fused_query_buckets": 283
   },
   "query_level_rubric_sample_independent": {
     "n_values": [
@@ -32,38 +32,34 @@
       8
     ],
     "mean_spearman": [
-      0.3198468037348972,
-      0.3213671914821842,
-      0.32599755167668554,
-      0.3257770255678211,
-      0.32183955495788724,
-      0.3167213876013253,
-      0.3245049506409614,
-      0.33377282706793404
+      0.26805829365127604,
+      0.29238013941991015,
+      0.306587284785385,
+      0.3002221948732939,
+      0.30633123719496025,
+      0.31085953072642836,
+      0.3190992761180666,
+      0.3228254361500101
     ],
     "group_counts_by_n": [
-      297,
-      297,
-      297,
-      297,
-      297,
-      295,
-      295,
-      295
+      283,
+      281,
+      280,
+      279,
+      278,
+      275,
+      274,
+      271
     ],
-    "num_groups": 297,
+    "num_groups": 283,
     "per_group_summary": [
       {
         "group_key": [
           0,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -74,12 +70,8 @@
           0,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -90,12 +82,8 @@
           0,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -106,11 +94,8 @@
           1,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -122,11 +107,8 @@
           1,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -138,11 +120,8 @@
           1,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -154,9 +133,8 @@
           2,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -170,9 +148,8 @@
           2,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -186,9 +163,8 @@
           2,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -199,51 +175,11 @@
       },
       {
         "group_key": [
-          3,
-          "qwen2.5-72b"
-        ],
-        "num_rubric_samples": 2,
-        "num_available_samples_per_rubric": [
-          8,
-          8
-        ],
-        "gt_relative_score": 0.4161073825503356
-      },
-      {
-        "group_key": [
-          3,
-          "gpt-oss-120b"
-        ],
-        "num_rubric_samples": 2,
-        "num_available_samples_per_rubric": [
-          8,
-          8
-        ],
-        "gt_relative_score": 0.30201342281879195
-      },
-      {
-        "group_key": [
-          3,
-          "qwen3-235b"
-        ],
-        "num_rubric_samples": 2,
-        "num_available_samples_per_rubric": [
-          8,
-          8
-        ],
-        "gt_relative_score": 0.6442953020134228
-      },
-      {
-        "group_key": [
           5,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -254,12 +190,8 @@
           5,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -270,14 +202,11 @@
           5,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
-          6,
-          3,
-          5,
-          5,
-          7
+          8,
+          2
         ],
         "gt_relative_score": 0.40350877192982454
       },
@@ -286,12 +215,8 @@
           6,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -302,13 +227,10 @@
           6,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          8,
-          8,
-          8,
+          1,
           8
         ],
         "gt_relative_score": 0.7283464566929134
@@ -318,12 +240,8 @@
           6,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -382,13 +300,8 @@
           8,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.3970037453183521
@@ -398,14 +311,9 @@
           8,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.0
       },
@@ -414,13 +322,8 @@
           8,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.5168539325842697
@@ -453,7 +356,7 @@
           8,
           8,
           8,
-          8
+          6
         ],
         "gt_relative_score": 1.0
       },
@@ -469,7 +372,7 @@
           8,
           8,
           8,
-          8
+          7
         ],
         "gt_relative_score": 0.6954022988505747
       },
@@ -478,14 +381,13 @@
           10,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          8,
-          8,
-          8,
-          8
+          7,
+          6,
+          7,
+          3
         ],
         "gt_relative_score": 0.5757575757575758
       },
@@ -498,10 +400,10 @@
         "num_available_samples_per_rubric": [
           8,
           8,
-          7,
-          6,
           8,
-          8
+          8,
+          8,
+          7
         ],
         "gt_relative_score": 0.0
       },
@@ -510,14 +412,13 @@
           10,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          8,
-          8,
-          8,
-          8
+          7,
+          5,
+          5,
+          2
         ],
         "gt_relative_score": 0.6477272727272727
       },
@@ -526,9 +427,8 @@
           11,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -542,9 +442,8 @@
           11,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -558,13 +457,12 @@
           11,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           7,
           7,
-          6,
           8
         ],
         "gt_relative_score": 0.3486238532110092
@@ -616,10 +514,8 @@
           13,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -632,10 +528,8 @@
           13,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -648,10 +542,8 @@
           13,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -664,14 +556,10 @@
           14,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
+          7,
+          2
         ],
         "gt_relative_score": 0.11594202898550725
       },
@@ -680,14 +568,10 @@
           14,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          3,
-          4,
-          8,
-          8,
-          8
+          5,
+          1
         ],
         "gt_relative_score": 0.3507246376811594
       },
@@ -696,14 +580,9 @@
           14,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
+          3
         ],
         "gt_relative_score": 0.6376811594202898
       },
@@ -760,9 +639,8 @@
           16,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -776,9 +654,8 @@
           16,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -792,9 +669,8 @@
           16,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -808,11 +684,8 @@
           17,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -824,11 +697,8 @@
           17,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -840,11 +710,8 @@
           17,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -863,7 +730,7 @@
           8,
           8,
           8,
-          2
+          8
         ],
         "gt_relative_score": 0.6865671641791045
       },
@@ -904,9 +771,8 @@
           19,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -920,9 +786,8 @@
           19,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -936,9 +801,8 @@
           19,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -954,11 +818,11 @@
         ],
         "num_rubric_samples": 6,
         "num_available_samples_per_rubric": [
+          4,
+          7,
           8,
           8,
-          8,
-          8,
-          8,
+          7,
           8
         ],
         "gt_relative_score": 0.33962264150943394
@@ -975,7 +839,7 @@
           8,
           8,
           8,
-          8
+          6
         ],
         "gt_relative_score": 0.6226415094339622
       },
@@ -1000,10 +864,8 @@
           21,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -1016,10 +878,8 @@
           21,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -1032,10 +892,8 @@
           21,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -1048,12 +906,8 @@
           22,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -1064,12 +918,8 @@
           22,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -1080,14 +930,10 @@
           22,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          8,
-          8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.5941176470588235
       },
@@ -1096,10 +942,8 @@
           23,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -1112,14 +956,12 @@
           23,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
-          8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.8164556962025317
       },
@@ -1128,10 +970,8 @@
           23,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -1150,7 +990,7 @@
           8,
           8,
           8,
-          7,
+          8,
           8
         ],
         "gt_relative_score": 0.12547528517110265
@@ -1179,11 +1019,11 @@
         "num_rubric_samples": 6,
         "num_available_samples_per_rubric": [
           8,
-          6,
-          6,
+          8,
+          8,
           7,
           8,
-          7
+          8
         ],
         "gt_relative_score": 0.3726235741444867
       },
@@ -1192,9 +1032,8 @@
           25,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1208,9 +1047,8 @@
           25,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1224,14 +1062,13 @@
           25,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
-          8,
-          8,
-          8
+          7,
+          6
         ],
         "gt_relative_score": 0.5406976744186046
       },
@@ -1240,9 +1077,8 @@
           26,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1256,9 +1092,8 @@
           26,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1272,9 +1107,8 @@
           26,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1295,7 +1129,7 @@
           8,
           8,
           8,
-          8
+          7
         ],
         "gt_relative_score": 0.472636815920398
       },
@@ -1311,7 +1145,7 @@
           8,
           8,
           8,
-          8
+          7
         ],
         "gt_relative_score": 0.8208955223880597
       },
@@ -1325,7 +1159,7 @@
           8,
           8,
           8,
-          7,
+          8,
           7,
           8
         ],
@@ -1402,7 +1236,7 @@
         "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
-          8,
+          7,
           8,
           8,
           8
@@ -1417,10 +1251,10 @@
         "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
-          6,
           8,
-          6,
-          7
+          8,
+          8,
+          8
         ],
         "gt_relative_score": 0.7375565610859729
       },
@@ -1513,7 +1347,7 @@
         "num_available_samples_per_rubric": [
           8,
           8,
-          6,
+          8,
           8,
           8,
           8
@@ -1560,9 +1394,9 @@
         "num_rubric_samples": 6,
         "num_available_samples_per_rubric": [
           8,
-          7,
-          6,
-          7,
+          8,
+          8,
+          8,
           8,
           8
         ],
@@ -1573,11 +1407,8 @@
           33,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -1589,11 +1420,8 @@
           33,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -1605,13 +1433,12 @@
           33,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
+          4,
           8,
-          8,
-          8,
-          8,
+          1,
           8
         ],
         "gt_relative_score": 0.6904761904761905
@@ -1660,7 +1487,7 @@
           8,
           8,
           8,
-          8
+          5
         ],
         "gt_relative_score": 0.8723404255319149
       },
@@ -1669,9 +1496,8 @@
           35,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1685,14 +1511,13 @@
           35,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
           8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.49473684210526314
       },
@@ -1701,14 +1526,13 @@
           35,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
+          7,
           8,
           8,
-          8,
-          8,
-          8
+          5
         ],
         "gt_relative_score": 0.11578947368421053
       },
@@ -1803,7 +1627,7 @@
           8,
           8,
           8,
-          8,
+          7,
           8
         ],
         "gt_relative_score": 0.631578947368421
@@ -1813,9 +1637,8 @@
           38,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1829,9 +1652,8 @@
           38,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1845,9 +1667,8 @@
           38,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1861,12 +1682,8 @@
           39,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -1877,12 +1694,8 @@
           39,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -1893,12 +1706,8 @@
           39,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -1909,9 +1718,8 @@
           40,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -1925,12 +1733,11 @@
           40,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
-          7,
           8,
           8
         ],
@@ -1941,9 +1748,8 @@
           40,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2050,63 +1856,11 @@
       },
       {
         "group_key": [
-          43,
-          "qwen2.5-72b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.5646551724137931
-      },
-      {
-        "group_key": [
-          43,
-          "gpt-oss-120b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          7
-        ],
-        "gt_relative_score": 0.7025862068965517
-      },
-      {
-        "group_key": [
-          43,
-          "qwen3-235b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.7370689655172413
-      },
-      {
-        "group_key": [
           44,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -2117,12 +1871,8 @@
           44,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -2133,12 +1883,8 @@
           44,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -2149,14 +1895,13 @@
           45,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
           8,
-          8,
-          8
+          5
         ],
         "gt_relative_score": 0.33760683760683763
       },
@@ -2165,14 +1910,13 @@
           45,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
           8,
-          8,
-          8
+          1
         ],
         "gt_relative_score": 0.7435897435897436
       },
@@ -2181,14 +1925,13 @@
           45,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
           8,
-          8,
-          8
+          4
         ],
         "gt_relative_score": 0.5897435897435898
       },
@@ -2199,12 +1942,12 @@
         ],
         "num_rubric_samples": 6,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           7,
           8,
-          7
+          8,
+          8,
+          8,
+          8
         ],
         "gt_relative_score": 0.12121212121212122
       },
@@ -2213,13 +1956,14 @@
           46,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 5,
+        "num_rubric_samples": 6,
         "num_available_samples_per_rubric": [
-          4,
+          8,
+          7,
+          6,
           5,
-          2,
-          1,
-          2
+          4,
+          6
         ],
         "gt_relative_score": 0.6931818181818182
       },
@@ -2234,7 +1978,7 @@
           8,
           8,
           8,
-          8,
+          7,
           8
         ],
         "gt_relative_score": 0.5037878787878788
@@ -2244,10 +1988,8 @@
           47,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -2260,10 +2002,8 @@
           47,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -2276,10 +2016,8 @@
           47,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -2385,60 +2123,11 @@
       },
       {
         "group_key": [
-          50,
-          "qwen2.5-72b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.8222222222222222
-      },
-      {
-        "group_key": [
-          50,
-          "gpt-oss-120b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.6755555555555556
-      },
-      {
-        "group_key": [
-          50,
-          "qwen3-235b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.5822222222222222
-      },
-      {
-        "group_key": [
           51,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2452,9 +2141,8 @@
           51,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2468,9 +2156,8 @@
           51,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2504,10 +2191,10 @@
         "num_available_samples_per_rubric": [
           8,
           8,
-          8,
-          8,
           7,
-          8
+          7,
+          8,
+          7
         ],
         "gt_relative_score": 0.5170068027210885
       },
@@ -2532,9 +2219,8 @@
           53,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2548,9 +2234,8 @@
           53,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2564,9 +2249,8 @@
           53,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2580,14 +2264,12 @@
           54,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
-          8,
-          8,
-          8
+          5
         ],
         "gt_relative_score": 0.3389121338912134
       },
@@ -2596,14 +2278,12 @@
           54,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
           8,
-          8,
-          8,
-          8,
-          8
+          7,
+          2
         ],
         "gt_relative_score": 0.7112970711297071
       },
@@ -2612,14 +2292,12 @@
           54,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
+          8,
+          8,
           4,
-          8,
-          8,
-          8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.4351464435146444
       },
@@ -2628,9 +2306,8 @@
           55,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2644,9 +2321,8 @@
           55,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2660,14 +2336,13 @@
           55,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
+          7,
           8,
           8,
-          8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.3901098901098901
       },
@@ -2676,11 +2351,8 @@
           56,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -2692,14 +2364,11 @@
           56,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
           8,
-          8,
-          8,
-          7,
-          7
+          6
         ],
         "gt_relative_score": 0.5588235294117647
       },
@@ -2708,11 +2377,8 @@
           56,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -2724,12 +2390,8 @@
           57,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          7,
-          8,
-          8,
           8,
           8
         ],
@@ -2740,14 +2402,10 @@
           57,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
+          1,
+          2
         ],
         "gt_relative_score": -1.95
       },
@@ -2756,14 +2414,9 @@
           57,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
+          1
         ],
         "gt_relative_score": -1.95
       },
@@ -2772,9 +2425,8 @@
           58,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2788,9 +2440,8 @@
           58,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2804,14 +2455,13 @@
           58,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
           8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.4080717488789238
       },
@@ -2820,10 +2470,8 @@
           59,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -2836,14 +2484,12 @@
           59,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
-          8,
-          8,
-          7
+          8
         ],
         "gt_relative_score": 0.7272727272727273
       },
@@ -2852,13 +2498,11 @@
           59,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          5,
           8,
-          5,
-          7,
-          7,
+          8,
+          8,
           8
         ],
         "gt_relative_score": 0.7272727272727273
@@ -2868,9 +2512,8 @@
           60,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2884,14 +2527,13 @@
           60,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
           8,
-          8,
-          7
+          8
         ],
         "gt_relative_score": 0.0
       },
@@ -2917,20 +2559,9 @@
         ],
         "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8
+          1
         ],
         "gt_relative_score": 0.4186046511627907
-      },
-      {
-        "group_key": [
-          61,
-          "gpt-oss-120b"
-        ],
-        "num_rubric_samples": 1,
-        "num_available_samples_per_rubric": [
-          8
-        ],
-        "gt_relative_score": 0.1744186046511628
       },
       {
         "group_key": [
@@ -2939,7 +2570,7 @@
         ],
         "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8
+          5
         ],
         "gt_relative_score": 0.5755813953488372
       },
@@ -2948,9 +2579,8 @@
           62,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2964,9 +2594,8 @@
           62,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -2980,9 +2609,8 @@
           62,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -3044,11 +2672,8 @@
           64,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3060,14 +2685,11 @@
           64,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
-          7,
           8,
-          8,
-          5,
-          8
+          7
         ],
         "gt_relative_score": 0.6666666666666666
       },
@@ -3076,11 +2698,8 @@
           64,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3130,7 +2749,7 @@
           8,
           8,
           8,
-          7,
+          8,
           8
         ],
         "gt_relative_score": 0.34497816593886466
@@ -3140,9 +2759,8 @@
           66,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -3156,9 +2774,8 @@
           66,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -3172,9 +2789,8 @@
           66,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -3188,11 +2804,8 @@
           67,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3204,11 +2817,8 @@
           67,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3220,13 +2830,11 @@
           67,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
+          1,
           8,
           8,
-          7,
-          4,
-          3,
           8
         ],
         "gt_relative_score": 0.7791411042944786
@@ -3236,46 +2844,20 @@
           68,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          7,
-          8,
-          8,
-          8,
-          8,
-          8
+          5
         ],
         "gt_relative_score": 0.39855072463768115
       },
       {
         "group_key": [
           68,
-          "gpt-oss-120b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.7137681159420289
-      },
-      {
-        "group_key": [
-          68,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          7,
-          8,
-          8,
-          8
+          4
         ],
         "gt_relative_score": 0.6159420289855072
       },
@@ -3284,10 +2866,8 @@
           69,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -3300,10 +2880,8 @@
           69,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -3316,10 +2894,8 @@
           69,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -3332,11 +2908,9 @@
           70,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 4,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
+          1,
           8
         ],
         "gt_relative_score": 0.17647058823529413
@@ -3346,11 +2920,8 @@
           70,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 4,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.42780748663101603
@@ -3360,12 +2931,11 @@
           70,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 4,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          2,
-          4,
-          4,
-          5
+          1,
+          1,
+          6
         ],
         "gt_relative_score": 0.36363636363636365
       },
@@ -3504,11 +3074,11 @@
         ],
         "num_rubric_samples": 6,
         "num_available_samples_per_rubric": [
+          7,
           8,
           8,
-          8,
-          8,
-          8,
+          7,
+          6,
           8
         ],
         "gt_relative_score": 0.4009433962264151
@@ -3518,10 +3088,8 @@
           74,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -3534,10 +3102,8 @@
           74,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -3550,10 +3116,8 @@
           74,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -3566,11 +3130,8 @@
           75,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3582,13 +3143,10 @@
           75,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
-          7,
-          6,
           8,
-          7,
           8
         ],
         "gt_relative_score": 0.6331658291457286
@@ -3598,13 +3156,10 @@
           75,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
-          4,
           8,
-          8,
-          5,
           8
         ],
         "gt_relative_score": 0.6934673366834171
@@ -3614,14 +3169,11 @@
           76,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
           8,
-          8,
-          8,
-          8,
-          7
+          8
         ],
         "gt_relative_score": 0.7518796992481203
       },
@@ -3630,11 +3182,8 @@
           76,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3646,11 +3195,8 @@
           76,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3662,11 +3208,8 @@
           77,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3678,11 +3221,8 @@
           77,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          7,
-          8,
           8,
           8,
           8
@@ -3694,11 +3234,8 @@
           77,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3758,13 +3295,8 @@
           79,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.6046511627906976
@@ -3774,13 +3306,8 @@
           79,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.8372093023255814
@@ -3790,13 +3317,8 @@
           79,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.8255813953488372
@@ -3842,9 +3364,9 @@
         "num_available_samples_per_rubric": [
           8,
           8,
-          8,
-          7,
-          7,
+          6,
+          5,
+          6,
           8
         ],
         "gt_relative_score": 0.215
@@ -3854,11 +3376,8 @@
           81,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3870,11 +3389,8 @@
           81,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3886,14 +3402,11 @@
           81,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
           8,
-          5,
           8,
-          8,
-          8,
-          6
+          8
         ],
         "gt_relative_score": 0.21568627450980393
       },
@@ -3950,11 +3463,8 @@
           83,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3966,11 +3476,8 @@
           83,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -3982,11 +3489,8 @@
           83,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 3,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
           8,
           8,
           8
@@ -4046,14 +3550,10 @@
           85,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          8,
-          8,
-          8,
-          8
+          3
         ],
         "gt_relative_score": 0.16772151898734178
       },
@@ -4062,14 +3562,9 @@
           85,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          7,
-          7,
-          8,
-          6,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.6360759493670886
       },
@@ -4078,13 +3573,8 @@
           85,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.5569620253164557
@@ -4094,9 +3584,8 @@
           86,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4110,9 +3599,8 @@
           86,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4126,9 +3614,8 @@
           86,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4142,9 +3629,8 @@
           87,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4158,9 +3644,8 @@
           87,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4174,9 +3659,8 @@
           87,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4190,9 +3674,8 @@
           88,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4206,9 +3689,8 @@
           88,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4222,9 +3704,8 @@
           88,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4238,10 +3719,8 @@
           89,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -4254,14 +3733,12 @@
           89,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
           8,
-          8,
-          8,
-          8,
-          6
+          7,
+          8
         ],
         "gt_relative_score": 0.7440758293838863
       },
@@ -4270,13 +3747,11 @@
           89,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
-          3,
-          6,
           8
         ],
         "gt_relative_score": 0.7677725118483413
@@ -4286,14 +3761,10 @@
           90,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          8,
-          8,
-          8,
-          8
+          1
         ],
         "gt_relative_score": 0.640926640926641
       },
@@ -4302,13 +3773,8 @@
           90,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 1,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          7,
-          8,
-          8,
           8
         ],
         "gt_relative_score": 0.47876447876447875
@@ -4318,14 +3784,10 @@
           90,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          8,
-          8,
-          8,
-          8
+          4
         ],
         "gt_relative_score": 0.6061776061776062
       },
@@ -4354,10 +3816,10 @@
         "num_available_samples_per_rubric": [
           8,
           8,
-          7,
           8,
           8,
-          8
+          8,
+          7
         ],
         "gt_relative_score": 0.47019867549668876
       },
@@ -4369,11 +3831,11 @@
         "num_rubric_samples": 6,
         "num_available_samples_per_rubric": [
           8,
-          7,
-          7,
           8,
-          7,
-          7
+          8,
+          8,
+          8,
+          8
         ],
         "gt_relative_score": 0.6423841059602649
       },
@@ -4405,7 +3867,7 @@
           8,
           8,
           8,
-          8
+          7
         ],
         "gt_relative_score": 0.8202247191011236
       },
@@ -4430,9 +3892,8 @@
           93,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4446,9 +3907,8 @@
           93,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4466,72 +3926,20 @@
         "num_available_samples_per_rubric": [
           8,
           8,
+          1,
           8,
           8,
-          8,
-          8
+          7
         ],
         "gt_relative_score": 0.6101694915254238
-      },
-      {
-        "group_key": [
-          94,
-          "qwen2.5-72b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.04371584699453552
-      },
-      {
-        "group_key": [
-          94,
-          "gpt-oss-120b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.7540983606557377
-      },
-      {
-        "group_key": [
-          94,
-          "qwen3-235b"
-        ],
-        "num_rubric_samples": 6,
-        "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
-          8,
-          8
-        ],
-        "gt_relative_score": 0.7540983606557377
       },
       {
         "group_key": [
           95,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -4542,12 +3950,8 @@
           95,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -4558,12 +3962,8 @@
           95,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -4574,10 +3974,8 @@
           96,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -4590,14 +3988,12 @@
           96,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
           8,
           8,
-          8,
-          6,
-          6
+          8
         ],
         "gt_relative_score": 0.40601503759398494
       },
@@ -4606,10 +4002,8 @@
           96,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -4622,12 +4016,8 @@
           97,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -4638,12 +4028,8 @@
           97,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -4654,12 +4040,8 @@
           97,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 2,
         "num_available_samples_per_rubric": [
-          8,
-          8,
-          8,
-          8,
           8,
           8
         ],
@@ -4670,10 +4052,8 @@
           98,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -4686,11 +4066,9 @@
           98,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
           8,
-          8,
-          5,
           8,
           8,
           8
@@ -4702,10 +4080,8 @@
           98,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 4,
         "num_available_samples_per_rubric": [
-          8,
-          8,
           8,
           8,
           8,
@@ -4718,9 +4094,8 @@
           99,
           "qwen2.5-72b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4734,9 +4109,8 @@
           99,
           "gpt-oss-120b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4750,9 +4124,8 @@
           99,
           "qwen3-235b"
         ],
-        "num_rubric_samples": 6,
+        "num_rubric_samples": 5,
         "num_available_samples_per_rubric": [
-          8,
           8,
           8,
           8,
@@ -4775,33 +4148,33 @@
       8
     ],
     "mean_spearman": [
-      0.3220552698374955,
-      0.3399732900554932,
-      0.35187989525654373,
-      0.3518449515362461,
-      0.3598299469911616,
-      0.36169730101750036,
-      0.36080341149253853,
-      0.36360627861825473
+      0.27433629870300913,
+      0.2992388248200473,
+      0.31951104108355877,
+      0.32547453549600036,
+      0.3275767264462656,
+      0.3368600749574566,
+      0.3368457853384731,
+      0.3355441537840709
     ],
     "bucket_counts_by_n": [
-      297,
-      297,
-      297,
-      297,
-      297,
-      297,
-      297,
-      297
+      283,
+      281,
+      281,
+      279,
+      278,
+      276,
+      275,
+      273
     ],
-    "num_buckets": 297,
+    "num_buckets": 283,
     "per_bucket_summary": [
       {
         "bucket_key": [
           0,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.32679738562091504
       },
       {
@@ -4809,7 +4182,7 @@
           0,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.5882352941176471
       },
       {
@@ -4817,7 +4190,7 @@
           0,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.5359477124183006
       },
       {
@@ -4825,7 +4198,7 @@
           1,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.04
       },
       {
@@ -4833,7 +4206,7 @@
           1,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.0
       },
       {
@@ -4841,7 +4214,7 @@
           1,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.48444444444444446
       },
       {
@@ -4849,7 +4222,7 @@
           2,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5045045045045045
       },
       {
@@ -4857,7 +4230,7 @@
           2,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6306306306306306
       },
       {
@@ -4865,39 +4238,15 @@
           2,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6306306306306306
-      },
-      {
-        "bucket_key": [
-          3,
-          "qwen2.5-72b"
-        ],
-        "num_available_samples": 16,
-        "gt_relative_score": 0.4161073825503356
-      },
-      {
-        "bucket_key": [
-          3,
-          "gpt-oss-120b"
-        ],
-        "num_available_samples": 16,
-        "gt_relative_score": 0.30201342281879195
-      },
-      {
-        "bucket_key": [
-          3,
-          "qwen3-235b"
-        ],
-        "num_available_samples": 16,
-        "gt_relative_score": 0.6442953020134228
       },
       {
         "bucket_key": [
           5,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.08771929824561403
       },
       {
@@ -4905,7 +4254,7 @@
           5,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.5906432748538012
       },
       {
@@ -4913,7 +4262,7 @@
           5,
           "qwen3-235b"
         ],
-        "num_available_samples": 34,
+        "num_available_samples": 18,
         "gt_relative_score": 0.40350877192982454
       },
       {
@@ -4921,7 +4270,7 @@
           6,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.7165354330708661
       },
       {
@@ -4929,7 +4278,7 @@
           6,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 17,
         "gt_relative_score": 0.7283464566929134
       },
       {
@@ -4937,7 +4286,7 @@
           6,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.7165354330708661
       },
       {
@@ -4969,7 +4318,7 @@
           8,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 8,
         "gt_relative_score": 0.3970037453183521
       },
       {
@@ -4977,7 +4326,7 @@
           8,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 7,
         "gt_relative_score": 0.0
       },
       {
@@ -4985,7 +4334,7 @@
           8,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 8,
         "gt_relative_score": 0.5168539325842697
       },
       {
@@ -5001,7 +4350,7 @@
           9,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 46,
         "gt_relative_score": 1.0
       },
       {
@@ -5009,7 +4358,7 @@
           9,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 47,
         "gt_relative_score": 0.6954022988505747
       },
       {
@@ -5017,7 +4366,7 @@
           10,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 31,
         "gt_relative_score": 0.5757575757575758
       },
       {
@@ -5025,7 +4374,7 @@
           10,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 45,
+        "num_available_samples": 47,
         "gt_relative_score": 0.0
       },
       {
@@ -5033,7 +4382,7 @@
           10,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 27,
         "gt_relative_score": 0.6477272727272727
       },
       {
@@ -5041,7 +4390,7 @@
           11,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.23394495412844038
       },
       {
@@ -5049,7 +4398,7 @@
           11,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5091743119266054
       },
       {
@@ -5057,7 +4406,7 @@
           11,
           "qwen3-235b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 38,
         "gt_relative_score": 0.3486238532110092
       },
       {
@@ -5089,7 +4438,7 @@
           13,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.4146341463414634
       },
       {
@@ -5097,7 +4446,7 @@
           13,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.5853658536585366
       },
       {
@@ -5105,7 +4454,7 @@
           13,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.6524390243902439
       },
       {
@@ -5113,7 +4462,7 @@
           14,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 9,
         "gt_relative_score": 0.11594202898550725
       },
       {
@@ -5121,7 +4470,7 @@
           14,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 39,
+        "num_available_samples": 6,
         "gt_relative_score": 0.3507246376811594
       },
       {
@@ -5129,7 +4478,7 @@
           14,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 3,
         "gt_relative_score": 0.6376811594202898
       },
       {
@@ -5161,7 +4510,7 @@
           16,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.26666666666666666
       },
       {
@@ -5169,7 +4518,7 @@
           16,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.44166666666666665
       },
       {
@@ -5177,7 +4526,7 @@
           16,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.4583333333333333
       },
       {
@@ -5185,7 +4534,7 @@
           17,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.135678391959799
       },
       {
@@ -5193,7 +4542,7 @@
           17,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.3165829145728643
       },
       {
@@ -5201,7 +4550,7 @@
           17,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.3768844221105528
       },
       {
@@ -5209,7 +4558,7 @@
           18,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 42,
+        "num_available_samples": 48,
         "gt_relative_score": 0.6865671641791045
       },
       {
@@ -5233,7 +4582,7 @@
           19,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.1606425702811245
       },
       {
@@ -5241,7 +4590,7 @@
           19,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6465863453815262
       },
       {
@@ -5249,7 +4598,7 @@
           19,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.3493975903614458
       },
       {
@@ -5257,7 +4606,7 @@
           20,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 42,
         "gt_relative_score": 0.33962264150943394
       },
       {
@@ -5265,7 +4614,7 @@
           20,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 46,
         "gt_relative_score": 0.6226415094339622
       },
       {
@@ -5281,7 +4630,7 @@
           21,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.38
       },
       {
@@ -5289,7 +4638,7 @@
           21,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.0
       },
       {
@@ -5297,7 +4646,7 @@
           21,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.265
       },
       {
@@ -5305,7 +4654,7 @@
           22,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.6176470588235294
       },
       {
@@ -5313,7 +4662,7 @@
           22,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.6882352941176471
       },
       {
@@ -5321,7 +4670,7 @@
           22,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 15,
         "gt_relative_score": 0.5941176470588235
       },
       {
@@ -5329,7 +4678,7 @@
           23,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.43670886075949367
       },
       {
@@ -5337,7 +4686,7 @@
           23,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 31,
         "gt_relative_score": 0.8164556962025317
       },
       {
@@ -5345,7 +4694,7 @@
           23,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.5759493670886076
       },
       {
@@ -5353,7 +4702,7 @@
           24,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 48,
         "gt_relative_score": 0.12547528517110265
       },
       {
@@ -5369,7 +4718,7 @@
           24,
           "qwen3-235b"
         ],
-        "num_available_samples": 42,
+        "num_available_samples": 47,
         "gt_relative_score": 0.3726235741444867
       },
       {
@@ -5377,7 +4726,7 @@
           25,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.4476744186046512
       },
       {
@@ -5385,7 +4734,7 @@
           25,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.8488372093023255
       },
       {
@@ -5393,7 +4742,7 @@
           25,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 37,
         "gt_relative_score": 0.5406976744186046
       },
       {
@@ -5401,7 +4750,7 @@
           26,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.4488888888888889
       },
       {
@@ -5409,7 +4758,7 @@
           26,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.7244444444444444
       },
       {
@@ -5417,7 +4766,7 @@
           26,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5911111111111111
       },
       {
@@ -5425,7 +4774,7 @@
           27,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 47,
         "gt_relative_score": 0.472636815920398
       },
       {
@@ -5433,7 +4782,7 @@
           27,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 47,
         "gt_relative_score": 0.8208955223880597
       },
       {
@@ -5441,7 +4790,7 @@
           27,
           "qwen3-235b"
         ],
-        "num_available_samples": 46,
+        "num_available_samples": 47,
         "gt_relative_score": 0.6169154228855721
       },
       {
@@ -5481,7 +4830,7 @@
           29,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 40,
+        "num_available_samples": 39,
         "gt_relative_score": 0.7330316742081447
       },
       {
@@ -5489,7 +4838,7 @@
           29,
           "qwen3-235b"
         ],
-        "num_available_samples": 35,
+        "num_available_samples": 40,
         "gt_relative_score": 0.7375565610859729
       },
       {
@@ -5537,7 +4886,7 @@
           31,
           "qwen3-235b"
         ],
-        "num_available_samples": 46,
+        "num_available_samples": 48,
         "gt_relative_score": 0.375
       },
       {
@@ -5561,7 +4910,7 @@
           32,
           "qwen3-235b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 48,
         "gt_relative_score": 0.6137931034482759
       },
       {
@@ -5569,7 +4918,7 @@
           33,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.5595238095238095
       },
       {
@@ -5577,7 +4926,7 @@
           33,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.6904761904761905
       },
       {
@@ -5585,7 +4934,7 @@
           33,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 29,
         "gt_relative_score": 0.6904761904761905
       },
       {
@@ -5609,7 +4958,7 @@
           34,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 45,
         "gt_relative_score": 0.8723404255319149
       },
       {
@@ -5617,7 +4966,7 @@
           35,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.05789473684210526
       },
       {
@@ -5625,7 +4974,7 @@
           35,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 39,
         "gt_relative_score": 0.49473684210526314
       },
       {
@@ -5633,7 +4982,7 @@
           35,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 36,
         "gt_relative_score": 0.11578947368421053
       },
       {
@@ -5681,7 +5030,7 @@
           37,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 47,
         "gt_relative_score": 0.631578947368421
       },
       {
@@ -5689,7 +5038,7 @@
           38,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.7708333333333334
       },
       {
@@ -5697,7 +5046,7 @@
           38,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5260416666666666
       },
       {
@@ -5705,7 +5054,7 @@
           38,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.515625
       },
       {
@@ -5713,7 +5062,7 @@
           39,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.2283464566929134
       },
       {
@@ -5721,7 +5070,7 @@
           39,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.3779527559055118
       },
       {
@@ -5729,7 +5078,7 @@
           39,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.5393700787401575
       },
       {
@@ -5737,7 +5086,7 @@
           40,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.0
       },
       {
@@ -5745,7 +5094,7 @@
           40,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 40,
         "gt_relative_score": 0.0
       },
       {
@@ -5753,7 +5102,7 @@
           40,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.0
       },
       {
@@ -5806,34 +5155,10 @@
       },
       {
         "bucket_key": [
-          43,
-          "qwen2.5-72b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.5646551724137931
-      },
-      {
-        "bucket_key": [
-          43,
-          "gpt-oss-120b"
-        ],
-        "num_available_samples": 47,
-        "gt_relative_score": 0.7025862068965517
-      },
-      {
-        "bucket_key": [
-          43,
-          "qwen3-235b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.7370689655172413
-      },
-      {
-        "bucket_key": [
           44,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.2733812949640288
       },
       {
@@ -5841,7 +5166,7 @@
           44,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.5611510791366906
       },
       {
@@ -5849,7 +5174,7 @@
           44,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.5755395683453237
       },
       {
@@ -5857,7 +5182,7 @@
           45,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 37,
         "gt_relative_score": 0.33760683760683763
       },
       {
@@ -5865,7 +5190,7 @@
           45,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 33,
         "gt_relative_score": 0.7435897435897436
       },
       {
@@ -5873,7 +5198,7 @@
           45,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 36,
         "gt_relative_score": 0.5897435897435898
       },
       {
@@ -5881,7 +5206,7 @@
           46,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 46,
+        "num_available_samples": 47,
         "gt_relative_score": 0.12121212121212122
       },
       {
@@ -5889,7 +5214,7 @@
           46,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 14,
+        "num_available_samples": 36,
         "gt_relative_score": 0.6931818181818182
       },
       {
@@ -5897,7 +5222,7 @@
           46,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 47,
         "gt_relative_score": 0.5037878787878788
       },
       {
@@ -5905,7 +5230,7 @@
           47,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.17153284671532848
       },
       {
@@ -5913,7 +5238,7 @@
           47,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.8284671532846716
       },
       {
@@ -5921,7 +5246,7 @@
           47,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.5401459854014599
       },
       {
@@ -5974,34 +5299,10 @@
       },
       {
         "bucket_key": [
-          50,
-          "qwen2.5-72b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.8222222222222222
-      },
-      {
-        "bucket_key": [
-          50,
-          "gpt-oss-120b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.6755555555555556
-      },
-      {
-        "bucket_key": [
-          50,
-          "qwen3-235b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.5822222222222222
-      },
-      {
-        "bucket_key": [
           51,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.4
       },
       {
@@ -6009,7 +5310,7 @@
           51,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.38666666666666666
       },
       {
@@ -6017,7 +5318,7 @@
           51,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.21333333333333335
       },
       {
@@ -6033,7 +5334,7 @@
           52,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 45,
         "gt_relative_score": 0.5170068027210885
       },
       {
@@ -6049,7 +5350,7 @@
           53,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.1650485436893204
       },
       {
@@ -6057,7 +5358,7 @@
           53,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6650485436893204
       },
       {
@@ -6065,7 +5366,7 @@
           53,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.7961165048543689
       },
       {
@@ -6073,7 +5374,7 @@
           54,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 29,
         "gt_relative_score": 0.3389121338912134
       },
       {
@@ -6081,7 +5382,7 @@
           54,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 25,
         "gt_relative_score": 0.7112970711297071
       },
       {
@@ -6089,7 +5390,7 @@
           54,
           "qwen3-235b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 27,
         "gt_relative_score": 0.4351464435146444
       },
       {
@@ -6097,7 +5398,7 @@
           55,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.25824175824175827
       },
       {
@@ -6105,7 +5406,7 @@
           55,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.4175824175824176
       },
       {
@@ -6113,7 +5414,7 @@
           55,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 38,
         "gt_relative_score": 0.3901098901098901
       },
       {
@@ -6121,7 +5422,7 @@
           56,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.5147058823529411
       },
       {
@@ -6129,7 +5430,7 @@
           56,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 46,
+        "num_available_samples": 22,
         "gt_relative_score": 0.5588235294117647
       },
       {
@@ -6137,7 +5438,7 @@
           56,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.0
       },
       {
@@ -6145,7 +5446,7 @@
           57,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 16,
         "gt_relative_score": 0.4336734693877551
       },
       {
@@ -6153,7 +5454,7 @@
           57,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 3,
         "gt_relative_score": -1.95
       },
       {
@@ -6161,7 +5462,7 @@
           57,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 1,
         "gt_relative_score": -1.95
       },
       {
@@ -6169,7 +5470,7 @@
           58,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.4304932735426009
       },
       {
@@ -6177,7 +5478,7 @@
           58,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.48878923766816146
       },
       {
@@ -6185,7 +5486,7 @@
           58,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 39,
         "gt_relative_score": 0.4080717488789238
       },
       {
@@ -6193,7 +5494,7 @@
           59,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.7070707070707071
       },
       {
@@ -6201,7 +5502,7 @@
           59,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 32,
         "gt_relative_score": 0.7272727272727273
       },
       {
@@ -6209,7 +5510,7 @@
           59,
           "qwen3-235b"
         ],
-        "num_available_samples": 40,
+        "num_available_samples": 32,
         "gt_relative_score": 0.7272727272727273
       },
       {
@@ -6217,7 +5518,7 @@
           60,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.266304347826087
       },
       {
@@ -6225,7 +5526,7 @@
           60,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 40,
         "gt_relative_score": 0.0
       },
       {
@@ -6241,23 +5542,15 @@
           61,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 8,
+        "num_available_samples": 1,
         "gt_relative_score": 0.4186046511627907
-      },
-      {
-        "bucket_key": [
-          61,
-          "gpt-oss-120b"
-        ],
-        "num_available_samples": 8,
-        "gt_relative_score": 0.1744186046511628
       },
       {
         "bucket_key": [
           61,
           "qwen3-235b"
         ],
-        "num_available_samples": 8,
+        "num_available_samples": 5,
         "gt_relative_score": 0.5755813953488372
       },
       {
@@ -6265,7 +5558,7 @@
           62,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.24796747967479674
       },
       {
@@ -6273,7 +5566,7 @@
           62,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.036585365853658534
       },
       {
@@ -6281,7 +5574,7 @@
           62,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6829268292682927
       },
       {
@@ -6313,7 +5606,7 @@
           64,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.46994535519125685
       },
       {
@@ -6321,7 +5614,7 @@
           64,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 23,
         "gt_relative_score": 0.6666666666666666
       },
       {
@@ -6329,7 +5622,7 @@
           64,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.3825136612021858
       },
       {
@@ -6353,7 +5646,7 @@
           65,
           "qwen3-235b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 48,
         "gt_relative_score": 0.34497816593886466
       },
       {
@@ -6361,7 +5654,7 @@
           66,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5952380952380952
       },
       {
@@ -6369,7 +5662,7 @@
           66,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.7476190476190476
       },
       {
@@ -6377,7 +5670,7 @@
           66,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.7380952380952381
       },
       {
@@ -6385,7 +5678,7 @@
           67,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.4785276073619632
       },
       {
@@ -6393,7 +5686,7 @@
           67,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.7914110429447853
       },
       {
@@ -6401,7 +5694,7 @@
           67,
           "qwen3-235b"
         ],
-        "num_available_samples": 38,
+        "num_available_samples": 25,
         "gt_relative_score": 0.7791411042944786
       },
       {
@@ -6409,23 +5702,15 @@
           68,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 5,
         "gt_relative_score": 0.39855072463768115
-      },
-      {
-        "bucket_key": [
-          68,
-          "gpt-oss-120b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.7137681159420289
       },
       {
         "bucket_key": [
           68,
           "qwen3-235b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 4,
         "gt_relative_score": 0.6159420289855072
       },
       {
@@ -6433,7 +5718,7 @@
           69,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.2358490566037736
       },
       {
@@ -6441,7 +5726,7 @@
           69,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.1792452830188679
       },
       {
@@ -6449,7 +5734,7 @@
           69,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.0
       },
       {
@@ -6457,7 +5742,7 @@
           70,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 32,
+        "num_available_samples": 9,
         "gt_relative_score": 0.17647058823529413
       },
       {
@@ -6465,7 +5750,7 @@
           70,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 32,
+        "num_available_samples": 8,
         "gt_relative_score": 0.42780748663101603
       },
       {
@@ -6473,7 +5758,7 @@
           70,
           "qwen3-235b"
         ],
-        "num_available_samples": 15,
+        "num_available_samples": 8,
         "gt_relative_score": 0.36363636363636365
       },
       {
@@ -6545,7 +5830,7 @@
           73,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 44,
         "gt_relative_score": 0.4009433962264151
       },
       {
@@ -6553,7 +5838,7 @@
           74,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.5287356321839081
       },
       {
@@ -6561,7 +5846,7 @@
           74,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.5804597701149425
       },
       {
@@ -6569,7 +5854,7 @@
           74,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.5747126436781609
       },
       {
@@ -6577,7 +5862,7 @@
           75,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.37185929648241206
       },
       {
@@ -6585,7 +5870,7 @@
           75,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 24,
         "gt_relative_score": 0.6331658291457286
       },
       {
@@ -6593,7 +5878,7 @@
           75,
           "qwen3-235b"
         ],
-        "num_available_samples": 41,
+        "num_available_samples": 24,
         "gt_relative_score": 0.6934673366834171
       },
       {
@@ -6601,7 +5886,7 @@
           76,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 24,
         "gt_relative_score": 0.7518796992481203
       },
       {
@@ -6609,7 +5894,7 @@
           76,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.9398496240601504
       },
       {
@@ -6617,7 +5902,7 @@
           76,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.5488721804511278
       },
       {
@@ -6625,7 +5910,7 @@
           77,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.5659340659340659
       },
       {
@@ -6633,7 +5918,7 @@
           77,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 24,
         "gt_relative_score": 0.489010989010989
       },
       {
@@ -6641,7 +5926,7 @@
           77,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.5494505494505495
       },
       {
@@ -6673,7 +5958,7 @@
           79,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 8,
         "gt_relative_score": 0.6046511627906976
       },
       {
@@ -6681,7 +5966,7 @@
           79,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 8,
         "gt_relative_score": 0.8372093023255814
       },
       {
@@ -6689,7 +5974,7 @@
           79,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 8,
         "gt_relative_score": 0.8255813953488372
       },
       {
@@ -6713,7 +5998,7 @@
           80,
           "qwen3-235b"
         ],
-        "num_available_samples": 46,
+        "num_available_samples": 41,
         "gt_relative_score": 0.215
       },
       {
@@ -6721,7 +6006,7 @@
           81,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.026143790849673203
       },
       {
@@ -6729,7 +6014,7 @@
           81,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.4117647058823529
       },
       {
@@ -6737,7 +6022,7 @@
           81,
           "qwen3-235b"
         ],
-        "num_available_samples": 43,
+        "num_available_samples": 24,
         "gt_relative_score": 0.21568627450980393
       },
       {
@@ -6769,7 +6054,7 @@
           83,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.648854961832061
       },
       {
@@ -6777,7 +6062,7 @@
           83,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.7709923664122137
       },
       {
@@ -6785,7 +6070,7 @@
           83,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 24,
         "gt_relative_score": 0.648854961832061
       },
       {
@@ -6817,7 +6102,7 @@
           85,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 11,
         "gt_relative_score": 0.16772151898734178
       },
       {
@@ -6825,7 +6110,7 @@
           85,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 7,
         "gt_relative_score": 0.6360759493670886
       },
       {
@@ -6833,7 +6118,7 @@
           85,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 8,
         "gt_relative_score": 0.5569620253164557
       },
       {
@@ -6841,7 +6126,7 @@
           86,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6054054054054054
       },
       {
@@ -6849,7 +6134,7 @@
           86,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5405405405405406
       },
       {
@@ -6857,7 +6142,7 @@
           86,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.7081081081081081
       },
       {
@@ -6865,7 +6150,7 @@
           87,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.16901408450704225
       },
       {
@@ -6873,7 +6158,7 @@
           87,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.4647887323943662
       },
       {
@@ -6881,7 +6166,7 @@
           87,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.38028169014084506
       },
       {
@@ -6889,7 +6174,7 @@
           88,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.3576923076923077
       },
       {
@@ -6897,7 +6182,7 @@
           88,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5461538461538461
       },
       {
@@ -6905,7 +6190,7 @@
           88,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6807692307692308
       },
       {
@@ -6913,7 +6198,7 @@
           89,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.6303317535545023
       },
       {
@@ -6921,7 +6206,7 @@
           89,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 46,
+        "num_available_samples": 31,
         "gt_relative_score": 0.7440758293838863
       },
       {
@@ -6929,7 +6214,7 @@
           89,
           "qwen3-235b"
         ],
-        "num_available_samples": 41,
+        "num_available_samples": 32,
         "gt_relative_score": 0.7677725118483413
       },
       {
@@ -6937,7 +6222,7 @@
           90,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 9,
         "gt_relative_score": 0.640926640926641
       },
       {
@@ -6945,7 +6230,7 @@
           90,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 47,
+        "num_available_samples": 8,
         "gt_relative_score": 0.47876447876447875
       },
       {
@@ -6953,7 +6238,7 @@
           90,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 12,
         "gt_relative_score": 0.6061776061776062
       },
       {
@@ -6977,7 +6262,7 @@
           91,
           "qwen3-235b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 48,
         "gt_relative_score": 0.6423841059602649
       },
       {
@@ -6993,7 +6278,7 @@
           92,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 47,
         "gt_relative_score": 0.8202247191011236
       },
       {
@@ -7009,7 +6294,7 @@
           93,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.3050847457627119
       },
       {
@@ -7017,7 +6302,7 @@
           93,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.5819209039548022
       },
       {
@@ -7025,39 +6310,15 @@
           93,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6101694915254238
-      },
-      {
-        "bucket_key": [
-          94,
-          "qwen2.5-72b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.04371584699453552
-      },
-      {
-        "bucket_key": [
-          94,
-          "gpt-oss-120b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.7540983606557377
-      },
-      {
-        "bucket_key": [
-          94,
-          "qwen3-235b"
-        ],
-        "num_available_samples": 48,
-        "gt_relative_score": 0.7540983606557377
       },
       {
         "bucket_key": [
           95,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.21739130434782608
       },
       {
@@ -7065,7 +6326,7 @@
           95,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.0
       },
       {
@@ -7073,7 +6334,7 @@
           95,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.41304347826086957
       },
       {
@@ -7081,7 +6342,7 @@
           96,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.6090225563909775
       },
       {
@@ -7089,7 +6350,7 @@
           96,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 44,
+        "num_available_samples": 32,
         "gt_relative_score": 0.40601503759398494
       },
       {
@@ -7097,7 +6358,7 @@
           96,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.8120300751879699
       },
       {
@@ -7105,7 +6366,7 @@
           97,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.19411764705882353
       },
       {
@@ -7113,7 +6374,7 @@
           97,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.0
       },
       {
@@ -7121,7 +6382,7 @@
           97,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 16,
         "gt_relative_score": 0.42058823529411765
       },
       {
@@ -7129,7 +6390,7 @@
           98,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.3225806451612903
       },
       {
@@ -7137,7 +6398,7 @@
           98,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 45,
+        "num_available_samples": 32,
         "gt_relative_score": 0.5806451612903226
       },
       {
@@ -7145,7 +6406,7 @@
           98,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 32,
         "gt_relative_score": 0.8709677419354839
       },
       {
@@ -7153,7 +6414,7 @@
           99,
           "qwen2.5-72b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.267515923566879
       },
       {
@@ -7161,7 +6422,7 @@
           99,
           "gpt-oss-120b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.6242038216560509
       },
       {
@@ -7169,7 +6430,7 @@
           99,
           "qwen3-235b"
         ],
-        "num_available_samples": 48,
+        "num_available_samples": 40,
         "gt_relative_score": 0.47770700636942676
       }
     ]

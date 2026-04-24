@@ -14,7 +14,7 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parent.parent
 
-RUBRIC_PATH = BASE_DIR / "rubric_with_simplified_prompt.json"
+RUBRIC_PATH = BASE_DIR / "rubric_with_dedup_oriented_prompt.json"
 RESPONSES_PATH = ROOT_DIR / "model_res.json"
 PROMPT_PATH = ROOT_DIR / "prompt.json"
 RESULT_PATH = BASE_DIR / "generated_rubric_judge_result.json"
@@ -26,6 +26,7 @@ SYSTEM_PROMPT = "You are a rigorous LLM judge. Return only a valid JSON object."
 MAX_SAMPLE_WORKERS = 8
 MAX_TASK_WORKERS = len(GEN_MODELS) * 6
 MAX_RETRIES_PER_SAMPLE = 3
+REQUEST_TIMEOUT = 300
 
 FLAG = False
 
@@ -66,7 +67,19 @@ def parse_trial(text: str):
     return json.loads(text)["scoring_details"]
 
 
-def get_score(query: str, response: str, rubric_list: list[dict], prompt_template: str, n: int):
+def get_score(
+    query: str,
+    response: str,
+    rubric_list: list[dict],
+    prompt_template: str,
+    n: int,
+    q_idx: int,
+    gen_model: str,
+    sample_key: str,
+    max_sample_workers: int,
+    max_retries_per_sample: int,
+    request_timeout: int,
+):
     global FLAG
     rubric_str = json.dumps(rubric_list, ensure_ascii=False)
     prompt = (
@@ -80,8 +93,15 @@ def get_score(query: str, response: str, rubric_list: list[dict], prompt_templat
     #     print(f"Judging with prompt:\n{prompt}\n")
     #     FLAG = True
 
-    def judge_once():
-        for _ in range(MAX_RETRIES_PER_SAMPLE):
+    print(
+        f"start question={q_idx} model={gen_model} sample={sample_key} "
+        f"prompt_len={len(prompt)} repeats={n}",
+        flush=True,
+    )
+
+    def judge_once(repeat_idx: int):
+        last_error = None
+        for attempt_idx in range(max_retries_per_sample):
             # print(f"Attempting to judge sample...")
             try:
                 return parse_trial(
@@ -90,15 +110,35 @@ def get_score(query: str, response: str, rubric_list: list[dict], prompt_templat
                         system_prompt=SYSTEM_PROMPT,
                         model=JUDGE_MODEL,
                         temperature=1.0,
+                        timeout=request_timeout,
                     )
                 )
-            except Exception:
-                pass
+            except Exception as exc:
+                last_error = exc
+                print(
+                    f"retry question={q_idx} model={gen_model} sample={sample_key} "
+                    f"repeat={repeat_idx} attempt={attempt_idx + 1}/{max_retries_per_sample} "
+                    f"error={type(exc).__name__}: {exc}",
+                    flush=True,
+                )
+        print(
+            f"failed question={q_idx} model={gen_model} sample={sample_key} "
+            f"repeat={repeat_idx} error={type(last_error).__name__}: {last_error}",
+            flush=True,
+        )
         return []
 
-    with ThreadPoolExecutor(max_workers=min(MAX_SAMPLE_WORKERS, n)) as executor:
-        futures = [executor.submit(judge_once) for _ in range(n)]
-        return [future.result() for future in futures]
+    with ThreadPoolExecutor(max_workers=min(max_sample_workers, n)) as executor:
+        futures = [executor.submit(judge_once, repeat_idx) for repeat_idx in range(1, n + 1)]
+        scores = [future.result() for future in futures]
+
+    completed = sum(1 for score in scores if score)
+    print(
+        f"done question={q_idx} model={gen_model} sample={sample_key} "
+        f"successful_repeats={completed}/{n}",
+        flush=True,
+    )
+    return scores
 
 
 def main() -> None:
@@ -109,6 +149,10 @@ def main() -> None:
     parser.add_argument("--result-path", type=Path, default=RESULT_PATH)
     parser.add_argument("--n-samples", type=int, default=N_SAMPLES)
     parser.add_argument("--max-questions", type=int, default=None)
+    parser.add_argument("--max-sample-workers", type=int, default=2)
+    parser.add_argument("--max-task-workers", type=int, default=len(GEN_MODELS))
+    parser.add_argument("--max-retries-per-sample", type=int, default=1)
+    parser.add_argument("--request-timeout", type=int, default=180)
     args = parser.parse_args()
 
     rubric_data = load_json(args.rubric_path)
@@ -147,9 +191,9 @@ def main() -> None:
         if not pending:
             continue
 
-        print(f"question={q_idx} pending_tasks={len(pending)}")
+        print(f"question={q_idx} pending_tasks={len(pending)}", flush=True)
 
-        with ThreadPoolExecutor(max_workers=min(MAX_TASK_WORKERS, len(pending))) as executor:
+        with ThreadPoolExecutor(max_workers=min(args.max_task_workers, len(pending))) as executor:
             futures = {
                 executor.submit(
                     get_score,
@@ -158,6 +202,12 @@ def main() -> None:
                     parse_generated_rubric(rubric_response),
                     prompt_template,
                     args.n_samples,
+                    q_idx,
+                    gen_model,
+                    sample_key,
+                    args.max_sample_workers,
+                    args.max_retries_per_sample,
+                    args.request_timeout,
                 ): (gen_model, sample_key)
                 for gen_model, sample_key, response, rubric_response in pending
             }

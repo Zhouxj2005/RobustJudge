@@ -1,9 +1,10 @@
 ## 4.16工作计划
 1. 设计rubric生成的prompt，生成rubric-list：要求生成的rubric原子化、可验证（人工check 5个question），暂定无weight，模型采用qwen3-32b
-2. 每个question重采样6次
+2. 每个question生成rubric-list采样6次
 3. 设计propmt，判断2个rubric是否语义等价：模型采用Kimi k2.5，人工check
-4. 每个question所有rubric求并，构造rubric得分矩阵（得分为0/1）
-5. 对于同一question上的不同rubric-list，独立judge（重采样8次），计算query级和平均rubric级R-SEM。rubric-judge、重采样、计算两种R-SEM的方法见exp.ipynb或eval文件夹下的代码
+4. 每个question所有rubric语义求并，得到语义上不重不漏的unique rubric
+5. 对每个rubric-list-sample构造rubric得分矩阵（得分为0/1），M[i][j]=1表示第i条rubric与unique rubric中的第j条rubric语义等价
+6. 对于同一question上的不同rubric-list，独立judge（重采样8次），计算query级和平均rubric级R-SEM。rubric-judge、重采样、计算两种R-SEM的方法见exp.ipynb或eval文件夹下的代码
 
 
 ### 1. 设计prmopt

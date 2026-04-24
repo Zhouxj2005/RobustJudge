@@ -13,17 +13,13 @@ except ImportError:
 
 
 BASE_DIR = Path(__file__).resolve().parent
-INPUT_PATH = BASE_DIR / "rubric_with_simplified_prompt.json"
-OUTPUT_PATH = BASE_DIR / "rubric_matrix_100.json"
+INPUT_PATH = BASE_DIR / "rubric_with_dedup_oriented_prompt.json"
+OUTPUT_PATH = BASE_DIR / "rubric_matrix_list_match.json"
 PROMPT_PATH = BASE_DIR / "rubric_dedup_prompt.json"
 
 NUM_QUESTIONS = 100
-TARGET_INPUT_BUDGET = 12000
-MAX_CANDIDATES_PER_BATCH = 50
 QUESTION_WORKERS = 100
-BATCH_WORKERS = 8
-MAX_API_CONCURRENCY = 24
-SKIP_FAILED_BATCH = True
+MAX_API_CONCURRENCY = 500
 
 SHOW_PROMPT_ONCE = False
 PROMPT_LOCK = Lock()
@@ -33,12 +29,24 @@ with PROMPT_PATH.open("r", encoding="utf-8") as f:
     prompt_config = json.load(f)
 
 SYSTEM_PROMPT = prompt_config.get(
-    "system_prompt_with_question_oneshot_v1",
-    prompt_config["system_prompt"],
+    "system_prompt_list_match_with_question_requirement_v3",
+    prompt_config.get(
+        "system_prompt_list_match_with_question_cot_v2",
+    prompt_config.get(
+        "system_prompt_with_question_oneshot_v1",
+        prompt_config["system_prompt"],
+    ),
+    ),
 )
-BATCH_MATCH_PROMPT = prompt_config.get(
-    "batch_match_prompt_with_question_oneshot_v1",
-    prompt_config["batch_match_prompt"],
+LIST_MATCH_PROMPT = prompt_config.get(
+    "list_match_prompt_with_question_requirement_v3",
+    prompt_config.get(
+        "list_match_prompt_with_question_cot_v2",
+    prompt_config.get(
+        "batch_match_prompt_with_question_oneshot_v1",
+        prompt_config["batch_match_prompt"],
+    ),
+    ),
 )
 
 
@@ -60,71 +68,64 @@ def parse_rubric_response(rubric_response: str) -> list[str]:
         and item["criterion"].strip()
     ]
 
+def format_numbered_rubrics(rubrics: list[str]) -> str:
+    return "\n".join(f"{i}. {rubric}" for i, rubric in enumerate(rubrics, 1))
 
-def estimate_tokens(text: str) -> int:
-    return max(1, len(text) // 4)
 
-
-def build_prompt(question: str, query_rubric: str, candidates: list[str]) -> str:
-    candidate_text = "\n".join(f"{i}. {rubric}" for i, rubric in enumerate(candidates, 1))
+def build_list_match_prompt(
+    question: str, sample_rubrics: list[str], unique_rubrics: list[str]
+) -> str:
     prompt = (
-        BATCH_MATCH_PROMPT
-        .replace("[[QUERY_RUBRIC]]", query_rubric)
-        .replace("[[CANDIDATE_RUBRICS]]", candidate_text)
+        LIST_MATCH_PROMPT
+        .replace("[[QUESTION]]", question)
+        .replace("[[SAMPLE_RUBRICS]]", format_numbered_rubrics(sample_rubrics))
+        .replace("[[UNIQUE_RUBRICS]]", format_numbered_rubrics(unique_rubrics))
     )
-    return prompt.replace("[[QUESTION]]", question)
+    return prompt
 
 
-def parse_batch_match_response(response: str | None, candidate_count: int) -> list[int]:
+def parse_list_match_response(
+    response: str | None, sample_count: int, candidate_count: int
+) -> tuple[list[int | None], str | None]:
     if not isinstance(response, str):
-        return []
+        return [None] * sample_count, "response is not a string"
+
+    text = response.strip()
+    if text.startswith("```"):
+        lines = text.splitlines()
+        if lines and lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].strip() == "```":
+            lines = lines[:-1]
+        text = "\n".join(lines).strip()
 
     try:
-        data = json.loads(response.strip())
+        data = json.loads(text)
     except json.JSONDecodeError:
-        return []
+        return [None] * sample_count, "response is not valid JSON array text"
 
-    matched_indices = data.get("matched_indices")
-    if not isinstance(matched_indices, list):
-        return []
+    if not isinstance(data, list) or len(data) != sample_count:
+        return [None] * sample_count, (
+            f"response list length mismatch: expected {sample_count}, "
+            f"got {len(data) if isinstance(data, list) else type(data).__name__}"
+        )
 
-    return sorted(
-        {
-            index
-            for index in matched_indices
-            if isinstance(index, int) and 1 <= index <= candidate_count
-        }
-    )
-
-
-def split_batches(unique_rubrics: list[str]) -> list[tuple[int, list[str]]]:
-    batches = []
-    start = 0
-
-    while start < len(unique_rubrics):
-        batch = []
-        tokens = 0
-
-        while start + len(batch) < len(unique_rubrics):
-            rubric = unique_rubrics[start + len(batch)]
-            cost = estimate_tokens(f"{len(batch) + 1}. {rubric}\n")
-
-            if batch and (
-                len(batch) >= MAX_CANDIDATES_PER_BATCH
-                or tokens + cost > TARGET_INPUT_BUDGET
-            ):
-                break
-
-            batch.append(rubric)
-            tokens += cost
-
-            if len(batch) >= MAX_CANDIDATES_PER_BATCH or tokens >= TARGET_INPUT_BUDGET:
-                break
-
-        batches.append((start, batch))
-        start += len(batch)
-
-    return batches
+    parsed: list[int | None] = []
+    invalid_details: list[str] = []
+    for idx, item in enumerate(data, 1):
+        if item == 0:
+            parsed.append(0)
+            continue
+        if isinstance(item, int) and 1 <= item <= candidate_count:
+            parsed.append(item)
+            continue
+        parsed.append(None)
+        invalid_details.append(
+            f"position {idx}: got {item!r}, expected 0 or integer in [1, {candidate_count}]"
+        )
+    if invalid_details:
+        return parsed, "; ".join(invalid_details)
+    return parsed, None
 
 
 def show_prompt_once(prompt: str) -> None:
@@ -135,57 +136,38 @@ def show_prompt_once(prompt: str) -> None:
     with PROMPT_LOCK:
         if SHOW_PROMPT_ONCE:
             return
-        print("Prompt for batch matching:")
+        print("Prompt for list matching:")
         print(prompt)
         print("-" * 50)
         SHOW_PROMPT_ONCE = True
 
 
-def run_batch_match(question: str, query_rubric: str, start: int, batch: list[str]) -> list[int]:
-    prompt = build_prompt(question, query_rubric, batch)
+def run_list_match(
+    question: str, sample_rubrics: list[str], unique_rubrics: list[str]
+) -> list[int | None]:
+    prompt = build_list_match_prompt(question, sample_rubrics, unique_rubrics)
     show_prompt_once(prompt)
     with API_SEMAPHORE:
         response = call_kimi(prompt, system_prompt=SYSTEM_PROMPT)
-    batch_matches = parse_batch_match_response(response, len(batch))
-    return [start + index - 1 for index in batch_matches]
+    batch_matches, parse_error = parse_list_match_response(
+        response, len(sample_rubrics), len(unique_rubrics)
+    )
+    print(f"List match response: {response}")
+    if any(index is None for index in batch_matches):
+        raise ValueError(
+            "Invalid list-match response: "
+            f"{parse_error}. candidate_count={len(unique_rubrics)}, "
+            f"sample_count={len(sample_rubrics)}, response={response}"
+        )
+    return [None if index == 0 else index - 1 for index in batch_matches]
 
 
-def find_match_index(question: str, query_rubric: str, unique_rubrics: list[str]) -> int | None:
-    batches = split_batches(unique_rubrics)
-    if not batches:
-        return None
-
-    matched = []
-    failed_batches = []
-    with ThreadPoolExecutor(max_workers=min(BATCH_WORKERS, len(batches))) as executor:
-        future_to_batch = {
-            executor.submit(run_batch_match, question, query_rubric, start, batch): (start, batch)
-            for start, batch in batches
-        }
-        for future in as_completed(future_to_batch):
-            start, batch = future_to_batch[future]
-            try:
-                matched.extend(future.result())
-            except Exception as exc:
-                print(
-                    f"Batch match failed once for query='{query_rubric[:60]}', "
-                    f"start={start}, size={len(batch)}: {exc}"
-                )
-                failed_batches.append((start, batch))
-
-    for start, batch in failed_batches:
-        print(f"Retrying batch sequentially: start={start}, size={len(batch)}")
-        try:
-            matched.extend(run_batch_match(question, query_rubric, start, batch))
-        except Exception as exc:
-            print(
-                f"Sequential retry failed for query='{query_rubric[:60]}', "
-                f"start={start}, size={len(batch)}: {exc}"
-            )
-            if not SKIP_FAILED_BATCH:
-                raise
-
-    return min(matched) if matched else None
+def find_match_indices_for_sample(
+    question: str, sample_rubrics: list[str], unique_rubrics: list[str]
+) -> list[int | None]:
+    if not unique_rubrics:
+        return [None] * len(sample_rubrics)
+    return run_list_match(question, sample_rubrics, unique_rubrics)
 
 
 def build_matrix_for_question(item: dict) -> dict:
@@ -194,19 +176,23 @@ def build_matrix_for_question(item: dict) -> dict:
 
     unique_rubrics: list[str] = []
     sample_to_unique_indices: list[list[int]] = []
+    sample_match_indices: list[list[int]] = []
     total_rubrics = sum(len(rubrics) for rubrics in sample_rubrics)
     processed = 0
 
     for rubrics in sample_rubrics:
         indices = []
-        for rubric in rubrics:
+        match_indices = find_match_indices_for_sample(question, rubrics, unique_rubrics)
+        for rubric, match_index in zip(rubrics, match_indices):
             processed += 1
             print(f"question_index={item['question_index']}: {processed}/{total_rubrics}")
-            match_index = find_match_index(question, rubric, unique_rubrics)
             if match_index is None:
                 unique_rubrics.append(rubric)
                 match_index = len(unique_rubrics) - 1
             indices.append(match_index)
+        # Keep the per-rubric match order aligned with the original rubric list.
+        # Indices are 0-based so they can be used directly for array lookup.
+        sample_match_indices.append(indices.copy())
         sample_to_unique_indices.append(sorted(set(indices)))
 
     matrix = []
@@ -225,6 +211,7 @@ def build_matrix_for_question(item: dict) -> dict:
             {"rubric_index": i + 1, "criterion": rubric}
             for i, rubric in enumerate(unique_rubrics)
         ],
+        "sample_match_indices": sample_match_indices,
         "matrix": matrix,
     }
 
