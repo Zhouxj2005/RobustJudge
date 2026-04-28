@@ -115,6 +115,52 @@
   - 图：`figures/generated_rubric_context_consistency_t_obs.png`
 - 输出内容：
   - 每个 `(question, gen_model, unique_rubric)` 的 `T_obs`、`p_value`、`context_details`
+  - `T_obs` 定义为不同 context 之间 judge 分数分布的平均两两 Wasserstein distance，越大表示不同 rubric-list context 下的分数分布差异越大。
+  - `p_value` 来自置换检验；默认 `alpha = 0.05`，当 `p_value < alpha` 时，`reject_h0 = true`，认为该 `unique_rubric` 在不同 context 下的分布有显著差异。
+- 置换检验做法：
+  - 对每个 `(question, gen_model, unique_rubric)`，先按 sample/context 收集 judge 分数；默认要求每个 context 有 `8` 个有效 judge 分数，且至少有 `2` 个 context。
+  - 原始统计量 `T_obs`：对所有 context 的分数列表两两计算 Wasserstein distance，再取平均。
+  - 零假设 `H0`：这些分数来自同一个总体分布，context 标签本身不影响分数分布。
+  - 在每次置换中，把所有 context 的分数合并成一个 pooled list，随机打乱后，再按原来各 context 的样本数切回多组，得到一组“如果 H0 成立时可能出现的 context 分组”。
+  - 对这组置换后的分数重新计算 `T_perm`。重复默认 `200` 次，统计有多少次 `T_perm >= T_obs`。
+  - `p_value = (count + 1) / (permutations + 1)`，这里加 `1` 是为了避免 p 值为 `0`，也是常见的置换检验平滑写法。
+  - 如果 `p_value < alpha`，说明在“context 标签无效”的随机打乱情况下，很少能得到不小于当前观测差异的 `T_perm`，因此认为该 rubric 在不同 context 下的分布差异显著。
+- 图中颜色含义：
+  - 蓝点/蓝柱：`reject_h0 = false`，即 `p_value >= alpha`，没有显著证据说明不同 context 下分布不同。
+  - 黄点/黄柱：`reject_h0 = true`，即 `p_value < alpha`，认为不同 context 下分布显著不同。
+- 如果要分析后处理后的 unique rubric，可以把 `--match-path` 指向 `rubric_matrix_list_match_context_postprocessed.json`，并把输出文件另存，例如：
+  - `rubric_context_consistency_metrics_context_postprocessed.json`
+  - `figures/generated_rubric_context_consistency_t_obs_context_postprocessed.png`
+
+### `postprocess_rubric_matrix_by_context_scores.py`
+- 功能：根据 `rubric_context_consistency_analysis.py` 中高 `T_obs` 标记出的疑似问题，对原来的 `unique_rubric` 去重结果做二次后处理，尝试拆开第一次去重时被错误合并的 rubric。
+- 主要思想：
+  - 先从 `rubric_context_consistency_metrics.json` 中筛出 `T_obs` 超过阈值的 `(question_index, unique_rubric_index)`。
+  - 对每个被标记的 `(q, u)`，收集它在不同 sample/context 下对应的 local rubric、judge 分数和 evidence。
+  - 按不同 gen_model 上的 judge score signature 先形成初始 cluster。
+  - 再调用 Kimi 判断这些 cluster 是否仍然语义等价；如果不等价，就在 `unique_rubrics` 中新增条目，并更新 `sample_match_indices` 和 `matrix`。
+- 主要输入：
+  - `rubric_context_consistency_metrics.json`
+  - `rubric_matrix_list_match.json`
+  - `rubric_with_dedup_oriented_prompt.json`
+  - `generated_rubric_judge_result.json`
+  - `../../model_res.json`
+- 主要输出：
+  - `rubric_matrix_list_match_context_postprocessed.json`
+  - `rubric_matrix_list_match_context_postprocess_audit.json`
+- 常用参数：
+  - `--t-obs-threshold`：筛选需要后处理的 `T_obs` 阈值，默认可由环境变量 `RUBRIC_POSTPROCESS_T_OBS_THRESHOLD` 控制，否则为 `0.1`。
+  - `--threshold-inclusive`：是否包含等于阈值的记录。
+  - `--score-gen-models all|flagged`：聚类时使用所有 gen_model 的分数，或只使用触发高 `T_obs` 的 gen_model。
+  - `--dry-run`：不调用 Kimi，全部保持拆分前状态，用于检查流程和 audit 结构。
+  - `--workers`：并发处理 `(q, u)` 的线程数。
+- 调试信息：
+  - 启动后会打印需要处理的 `(question_index, unique_rubric_index)` 总数。
+  - 每完成一个 pair，会打印当前完成进度，例如 `completed 12/475: 1:5`，其中 `1:5` 表示 `question_index = 1`、`unique_rubric_index = 5`。
+- 推荐使用方式：
+  - 先运行原始 `rubric_context_consistency_analysis.py` 得到高 `T_obs` 记录。
+  - 再运行本脚本生成 `rubric_matrix_list_match_context_postprocessed.json`。
+  - 最后再次运行 `rubric_context_consistency_analysis.py`，把 `--match-path` 指向后处理文件，比较后处理前后的 `num_rejected_records`、Top `T_obs` 和 case study。
 
 ### `compare_generated_vs_std_query_scores.py`
 - 功能：比较“生成 rubric judge 得到的 query-level score”是否高于“标准 rubric + `qwen3-32b` judge 得到的 query-level score”。
